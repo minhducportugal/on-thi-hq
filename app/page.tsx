@@ -1,54 +1,109 @@
 "use client";
 
-import QuizApp from "./quizz/page";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { BookOpen, Award, Clock, TrendingUp } from "lucide-react";
 
-// import { useQuery } from "@tanstack/react-query";
+export default function HomePage() {
+	const router = useRouter();
 
-// import Loading from "./loading";
-// import { Input } from "@/components/ui/input";
-// import { Label } from "@/components/ui/label";
-// import { useState } from "react";
-// import { useDebounce } from "@/hooks/useDebounce";
-// import PostList from "@/components/common/PostList";
+	return (
+		<div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+			<div className="container mx-auto px-4 py-16">
+				{/* Hero Section */}
+				<div className="text-center mb-16">
+					<div className="inline-block mb-6">
+						<div className="bg-primary/10 p-4 rounded-full">
+							<BookOpen className="h-16 w-16 text-primary" />
+						</div>
+					</div>
+					<div className="text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent p-2">
+						Hệ Thống Ôn Thi Hải Quan
+					</div>
+					<p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+						Nền tảng luyện thi trắc nghiệm chuyên nghiệp dành cho công chức hải quan
+					</p>
+					<Button
+						onClick={() => router.push("/quizz")}
+						size="lg"
+						className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
+					>
+						Bắt đầu ôn thi
+					</Button>
+				</div>
 
-// const Homepage = () => {
-// 	const [searchId, setSearchId] = useState<string>("");
-// 	const debouncedSearchTerm = useDebounce(searchId, 500);
-// 	const { isPending, error, data, isFetching, refetch } = useQuery({
-// 		queryKey: ["post", debouncedSearchTerm],
-// 		queryFn: async () => {
-// 			if (!debouncedSearchTerm) {
-// 				const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-// 				return await response.json();
-// 			}
-// 			const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${debouncedSearchTerm}`);
-// 			const data = await response.json();
-// 			return [data];
-// 		},
-// 	});
+				{/* Features Grid */}
+				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+					<Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+						<CardContent className="p-6 text-center">
+							<div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+								<BookOpen className="h-7 w-7 text-blue-600" />
+							</div>
+							<h3 className="font-bold text-lg mb-2">Ngân hàng câu hỏi</h3>
+							<p className="text-slate-600 text-sm">
+								Hàng trăm câu hỏi từ các văn bản pháp luật hải quan
+							</p>
+						</CardContent>
+					</Card>
 
-// 	if (error) return "An error has occurred: " + error.message;
+					<Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+						<CardContent className="p-6 text-center">
+							<div className="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+								<Award className="h-7 w-7 text-green-600" />
+							</div>
+							<h3 className="font-bold text-lg mb-2">Chấm điểm tự động</h3>
+							<p className="text-slate-600 text-sm">
+								Kiểm tra kết quả ngay lập tức và xem đáp án chi tiết
+							</p>
+						</CardContent>
+					</Card>
 
-// 	return (
-// 		<div className="m-4">
-// 			<div className="grid w-full max-w-sm items-center gap-3 mb-4">
-// 				<Label htmlFor="picture">Post Id: </Label>
-// 				<div className="flex gap-1">
-// 					<Input
-// 						id="picture"
-// 						type="text"
-// 						value={searchId}
-// 						onChange={(e) => setSearchId(e.target.value)}
-// 					/>
-// 				</div>
-// 			</div>
-// 			<PostList data={data} isLoading={isFetching} />
-// 		</div>
-// 	);
-// };
+					<Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+						<CardContent className="p-6 text-center">
+							<div className="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+								<Clock className="h-7 w-7 text-amber-600" />
+							</div>
+							<h3 className="font-bold text-lg mb-2">Tính giờ làm bài</h3>
+							<p className="text-slate-600 text-sm">
+								Rèn luyện khả năng quản lý thời gian hiệu quả
+							</p>
+						</CardContent>
+					</Card>
 
-// export default Homepage;
+					<Card className="border-2 hover:border-primary transition-all hover:shadow-lg">
+						<CardContent className="p-6 text-center">
+							<div className="bg-purple-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+								<TrendingUp className="h-7 w-7 text-purple-600" />
+							</div>
+							<h3 className="font-bold text-lg mb-2">Theo dõi tiến độ</h3>
+							<p className="text-slate-600 text-sm">
+								Xem lại đáp án sai và cải thiện kết quả
+							</p>
+						</CardContent>
+					</Card>
+				</div>
 
-export default function Page() {
-	return <QuizApp />;
+				{/* Stats Section */}
+				<div className="mt-16 max-w-4xl mx-auto">
+					<div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-slate-100">
+						<div className="grid grid-cols-3 gap-8 text-center">
+							<div>
+								<div className="text-4xl font-black text-primary mb-2">160+</div>
+								<div className="text-slate-600">Câu hỏi</div>
+							</div>
+							<div>
+								<div className="text-4xl font-black text-primary mb-2">2</div>
+								<div className="text-slate-600">Bộ đề thi</div>
+							</div>
+							<div>
+								<div className="text-4xl font-black text-primary mb-2">100%</div>
+								<div className="text-slate-600">Miễn phí</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }

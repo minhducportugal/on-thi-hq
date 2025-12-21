@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -43,33 +44,41 @@ function shuffleQuiz(quiz: QuizData): QuizData {
 	const shuffledQuestions = shuffleArray(quiz.questions).map((q) => {
 		const indexMapping = q.options.map((_, i) => i);
 		const shuffledMapping = shuffleArray(indexMapping);
-	
-		const shuffledOptions = shuffledMapping.map(i => q.options[i]);
-		
+
+		const shuffledOptions = shuffledMapping.map((i) => q.options[i]);
+
 		const newAnswerIndex = shuffledMapping.indexOf(q.answer);
-		
+
 		return {
 			...q,
 			options: shuffledOptions,
-			answer: newAnswerIndex
+			answer: newAnswerIndex,
 		};
 	});
-	
+
 	return {
 		...quiz,
-		questions: shuffledQuestions
+		questions: shuffledQuestions,
 	};
 }
 
 export default function QuizApp() {
+	const router = useRouter();
 	const [selectedKey, setSelectedKey] = useState<string | null>(null);
 	const [currentIdx, setCurrentIdx] = useState(0);
 	const [answers, setAnswers] = useState<Record<number, number>>({});
 	const [isFinished, setIsFinished] = useState(false);
 	const [isReviewMode, setIsReviewMode] = useState(false);
 	const [shuffledQuiz, setShuffledQuiz] = useState<QuizData | null>(null);
-	const [showAnswerMode, setShowAnswerMode] = useState<'instant' | 'end'>('end'); // 'instant' = hiện ngay, 'end' = hiện cuối
-	const [showSettings, setShowSettings] = useState(false);
+	const [showAnswerMode, setShowAnswerMode] = useState<"instant" | "end">("end");
+
+	useEffect(() => {
+		// Load settings from localStorage
+		const savedMode = localStorage.getItem("quiz_showAnswerMode");
+		if (savedMode === "instant" || savedMode === "end") {
+			setShowAnswerMode(savedMode);
+		}
+	}, []);
 
 	const currentQuiz = shuffledQuiz;
 	const progress = currentQuiz ? ((currentIdx + 1) / currentQuiz.questions.length) * 100 : 0;
@@ -77,7 +86,7 @@ export default function QuizApp() {
 	const startQuiz = (key: string) => {
 		setSelectedKey(key);
 		const originalQuiz = QUIZZES[key];
-		setShuffledQuiz(shuffleQuiz(originalQuiz)); // Đảo câu hỏi và đáp án
+		setShuffledQuiz(shuffleQuiz(originalQuiz));
 		setCurrentIdx(0);
 		setAnswers({});
 		setIsFinished(false);
@@ -90,49 +99,18 @@ export default function QuizApp() {
 	if (!selectedKey) {
 		return (
 			<div className="flex flex-col items-center justify-center min-h-screen p-4 bg-slate-50">
-				<div className="w-full max-w-2xl mb-4">
+				<div className="w-full max-w-2xl mb-4 flex justify-end">
 					<Button
 						variant="outline"
 						size="sm"
-						onClick={() => setShowSettings(!showSettings)}
-						className="ml-auto flex items-center gap-2"
+						onClick={() => router.push("/settings")}
+						className="flex items-center gap-2"
 					>
 						<Settings className="h-4 w-4" />
 						Cài đặt
 					</Button>
 				</div>
-				
-				{showSettings && (
-					<Card className="w-full max-w-2xl mb-6">
-						<CardHeader>
-							<CardTitle className="text-lg">Cài đặt</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<div className="space-y-4">
-								<div>
-									<Label className="text-base font-semibold mb-3 block">Chế độ hiển thị đáp án</Label>
-									<RadioGroup value={showAnswerMode} onValueChange={(val) => setShowAnswerMode(val as 'instant' | 'end')}>
-										<div className="flex items-center space-x-3 p-3 rounded-lg border-2 cursor-pointer hover:bg-slate-50 transition-colors" onClick={() => setShowAnswerMode('end')}>
-											<RadioGroupItem value="end" id="end" />
-											<Label htmlFor="end" className="flex-1 cursor-pointer">
-												<div className="font-medium">Hiện đáp án sau khi hoàn thành</div>
-												<div className="text-sm text-muted-foreground">Chỉ xem kết quả sau khi làm xong toàn bộ bài</div>
-											</Label>
-										</div>
-										<div className="flex items-center space-x-3 p-3 rounded-lg border-2 cursor-pointer hover:bg-slate-50 transition-colors" onClick={() => setShowAnswerMode('instant')}>
-											<RadioGroupItem value="instant" id="instant" />
-											<Label htmlFor="instant" className="flex-1 cursor-pointer">
-												<div className="font-medium">Hiện đáp án ngay lập tức</div>
-												<div className="text-sm text-muted-foreground">Hiển thị đúng/sai ngay khi chọn đáp án</div>
-											</Label>
-										</div>
-									</RadioGroup>
-								</div>
-							</div>
-						</CardContent>
-					</Card>
-				)}
-				
+
 				<h1 className="text-3xl font-bold mb-8 text-slate-800">Hệ Thống Ôn Thi Hải Quan</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
 					{Object.entries(QUIZZES).map(([key, quiz]) => (
@@ -279,16 +257,17 @@ export default function QuizApp() {
 							{q.options.map((opt, i) => {
 								const isSelected = answers[currentIdx] === i;
 								const isCorrect = i === q.answer;
-								const showFeedback = showAnswerMode === 'instant' && answers[currentIdx] !== undefined;
-								
+								const showFeedback = showAnswerMode === "instant" && answers[currentIdx] !== undefined;
+
 								let borderColor = "border-slate-100 hover:border-slate-300";
 								let bgColor = "";
-								
+
 								if (showFeedback) {
-									if (isCorrect) {
+									if (isCorrect && isSelected) {
 										borderColor = "border-green-500";
 										bgColor = "bg-green-50";
-									} else if (isSelected) {
+									}
+									else if (isSelected && !isCorrect) {
 										borderColor = "border-red-500";
 										bgColor = "bg-red-50";
 									}
@@ -296,27 +275,24 @@ export default function QuizApp() {
 									borderColor = "border-primary";
 									bgColor = "bg-primary/5";
 								}
-								
+
 								return (
 									<div
 										key={i}
+										onClick={() => setAnswers({ ...answers, [currentIdx]: i })}
 										className={`group flex items-center space-x-3 p-4 rounded-xl border-2 transition-all cursor-pointer ${borderColor} ${bgColor}`}
 									>
 										<RadioGroupItem value={i.toString()} id={`r-${i}`} className="sr-only" />
 										<Label
 											htmlFor={`r-${i}`}
-											className="flex-1 cursor-pointer font-medium text-base leading-6"
+											className="flex-1 cursor-pointer font-medium text-base leading-6 justify-between"
 										>
-											<span className="inline-block w-8 h-8 rounded-full text-center leading-8 mr-3 transition-colors">
-												{String.fromCharCode(65 + i)}
-											</span>
-											{opt}
-											{showFeedback && isCorrect && (
-												<CheckCircle2 className="inline-block ml-2 h-5 w-5 text-green-600" />
-											)}
-											{showFeedback && isSelected && !isCorrect && (
-												<XCircle className="inline-block ml-2 h-5 w-5 text-red-600" />
-											)}
+											<div>
+												<span className="inline-block w-8 h-8 rounded-full text-center leading-8 mr-3 transition-colors">
+													{String.fromCharCode(65 + i) + "."}
+												</span>
+												{opt}
+											</div>
 										</Label>
 									</div>
 								);

@@ -1,0 +1,570 @@
+{
+  "title": "Luật Hải quan 2014 (50 câu)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Cơ chế một cửa quốc gia là ?",
+      "options": [
+        "Việc cho phép người khai hải quan gửi thông tin, chứng từ để thực hiện thủ tục hải quan và thủ tục của cơ quan quản lý nhà nước liên quan đến hàng hóa xuất khẩu, nhập khẩu thông qua một hệ thống thông tin tích hợp",
+        "Việc cho phép người khai hải quan gửi thông tin, chứng từ điện tử để thực hiện thủ tục hải quan hoặc thủ tục của cơ quan quản lý nhà nước liên quan đến hàng hóa xuất khẩu, nhập khẩu thông qua một hệ thống thông tin tích hợp",
+        "Việc cho phép người khai hải quan gửi thông tin, chứng từ điện tử để thực hiện thủ tục hải quan và thủ tục của cơ quan quản lý nhà nước liên quan đến hàng hóa xuất khẩu, nhập khẩu thông qua một hệ thống thông tin tích hợp"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "Cơ quan nào quyết định cho phép hàng hóa được xuất khẩu, nhập khẩu, quá cảnh?",
+      "options": [
+        "Cơ quan quản lý nhà nước",
+        "Cơ quan hải quan",
+        "Cơ quan nhà nước",
+        "Tất cả cơ quan trên"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "question": "Cơ quan nào quyết định thông quan, giải phóng hàng hóa trên hệ thống thông tin tích hợp?",
+      "options": [
+        "Cơ quan quản lý nhà nước",
+        "Cơ quan hải quan",
+        "Cơ quan nhà nước",
+        "Tất cả cơ quan trên"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "Giám sát hải quan là ?",
+      "options": [
+        "Biện pháp do cơ quan hải quan áp dụng để bảo đảm sự nguyên trạng của hàng hóa, sự tuân thủ quy định của pháp luật trong việc bảo quản, lưu giữ, xếp dỡ, vận chuyển, sử dụng hàng hóa, xuất cảnh, nhập cảnh, quá cảnh phương tiện vận tải đang thuộc đối tượng quản lý hải quan",
+        "Biện pháp nghiệp vụ do cơ quan quản lý nhà nước áp dụng để bảo đảm sự nguyên trạng của hàng hóa, sự tuân thủ quy định của pháp luật trong việc bảo quản, lưu giữ, xếp dỡ, vận chuyển, sử dụng hàng hóa, xuất cảnh, nhập cảnh, quá cảnh phương tiện vận tải đang thuộc đối tượng quản lý hải quan",
+        "Biện pháp nghiệp vụ do cơ quan hải quan áp dụng để bảo đảm sự nguyên trạng của hàng hóa, sự tuân thủ quy định của pháp luật trong việc bảo quản, lưu giữ, xếp dỡ, vận chuyển, sử dụng hàng hóa, xuất cảnh, nhập cảnh, quá cảnh phương tiện vận tải đang thuộc đối tượng quản lý hải quan"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "Kho bảo thuế là ?",
+      "options": [
+        "Kho dùng để chứa nguyên liệu, vật tư nhập khẩu chưa được thông quan nhưng đã nộp thuế để sản xuất hàng hóa xuất khẩu của chủ kho bảo thuế.",
+        "Kho dùng để chứa nguyên liệu, vật tư nhập khẩu đã được thông quan nhưng chưa nộp thuế để sản xuất hàng hóa xuất khẩu của chủ kho bảo thuế.",
+        "Kho dùng để chứa nguyên liệu, vật tư nhập khẩu đã được thông quan và đã nộp thuế để sản xuất hàng hóa xuất khẩu của chủ kho bảo thuế."
+      ],
+      "answer": 1
+    },
+    {
+      "id": 6,
+      "question": "Kho ngoại quan là ?",
+      "options": [
+        "Khu vực kho, bãi lưu giữ hàng hóa đã làm thủ tục hải quan được gửi để chờ xuất khẩu; hàng hóa từ nước ngoài đưa vào gửi để chờ xuất khẩu ra nước ngoài hoặc nhập khẩu vào Việt Nam",
+        "Khu vực kho, bãi lưu giữ hàng hóa chưa làm thủ tục hải quan được gửi để chờ xuất khẩu; hàng hóa từ nước ngoài đưa vào gửi để chờ xuất khẩu ra nước ngoài hoặc nhập khẩu vào Việt Nam",
+        "Khu vực kho, bãi lưu giữ hàng hóa đã làm thủ tục hải quan được gửi để xuất khẩu; hàng hóa từ nước ngoài đưa vào gửi để xuất khẩu ra nước ngoài hoặc nhập khẩu vào Việt Nam"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 7,
+      "question": "Kiểm soát hải quan là ?",
+      "options": [
+        "Biện pháp tuần tra, điều tra, xác minh hoặc biện pháp nghiệp vụ khác do cơ quan hải quan áp dụng để phòng, chống buôn lậu, vận chuyển trái phép hàng hóa qua biên giới và hành vi khác vi phạm pháp luật về hải quan.",
+        "Việc cơ quan hải quan kiểm tra hồ sơ hải quan, các chứng từ, tài liệu liên quan và kiểm tra thực tế hàng hóa, phương tiện vận tải",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "question": "Kiểm tra hải quan là?",
+      "options": [
+        "Biện pháp tuần tra, điều tra, xác minh hoặc biện pháp nghiệp vụ khác do cơ quan hải quan áp dụng để phòng, chống buôn lậu, vận chuyển trái phép hàng hóa qua biên giới và hành vi khác vi phạm pháp luật về hải quan.",
+        "Việc cơ quan hải quan kiểm tra hồ sơ hải quan, các chứng từ, tài liệu liên quan và kiểm tra thực tế hàng hóa, phương tiện vận tải",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 9,
+      "question": "Lãnh thổ hải quan gồm",
+      "options": [
+        "Những khu vực trong lãnh thổ, vùng đặc quyền kinh tế của nước Cộng hòa xã hội chủ nghĩa Việt Nam nơi Luật hải quan được áp dụng",
+        "Những khu vực trong lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam nơi Luật hải quan được áp dụng",
+        "Những khu vực trong lãnh thổ, vùng đặc quyền kinh tế, thềm lục địa của nước Cộng hòa xã hội chủ nghĩa Việt Nam nơi Luật hải quan được áp dụng",
+        "Những khu vực trong lãnh thổ, vùng đặc quyền kinh tế, thềm lục địa của nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 10,
+      "question": "Người khai hải quan bao gồm?",
+      "options": [
+        "Chủ hàng hóa; chủ phương tiện vận tải; người điều khiển phương tiện vận tải;",
+        "Đại lý làm thủ tục hải quan",
+        "Người khác được chủ hàng hóa, chủ phương tiện vận tải ủy quyền thực hiện thủ tục hải quan",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 11,
+      "question": "Thông quan là?",
+      "options": [
+        "Việc hoàn thành các thủ tục hải quan để hàng hóa được nhập khẩu, xuất khẩu",
+        "Việc hoàn thành các thủ tục hải quan để hàng hóa được nhập khẩu, xuất khẩu và đặt dưới chế độ quản lý nghiệp vụ hải quan khác.",
+        "Việc hoàn thành các thủ tục hải quan để hàng hóa được nhập khẩu, xuất khẩu hoặc đặt dưới chế độ quản lý nghiệp vụ hải quan khác."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 12,
+      "question": "Trong trường hợp điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác với quy định của Luật Hải quan thì?",
+      "options": [
+        "Áp dụng quy định của điều ước quốc tế đó.",
+        "Áp dụng Luật Hải quan",
+        "Do người có thẩm quyền áp dụng quyết định",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 13,
+      "question": "Đối với công chức hải quan thì hành vi nào dưới đây bị nghiêm cấm?",
+      "options": [
+        "Gây phiền hà, khó khăn trong việc làm thủ tục hải quan;",
+        "Bao che, thông đồng để buôn lậu, vận chuyển trái phép hàng hóa qua biên giới, gian lận thương mại, gian lận thuế;",
+        "Nhận hối lộ, chiếm dụng, biển thủ hàng hóa tạm giữ hoặc thực hiện hành vi khác nhằm mục đích vụ lợi;",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 14,
+      "question": "Hải quan Việt Nam có nhiệm vụ?",
+      "options": [
+        "Thực hiện kiểm tra, giám sát hàng hóa, phương tiện vận tải; phòng, chống buôn lậu, vận chuyển trái phép hàng hóa qua biên giới; tổ chức thực hiện pháp luật về thuế đối với hàng hóa xuất khẩu, nhập khẩu;",
+        "Thống kê hàng hóa xuất khẩu, nhập khẩu theo quy định của Luật này và quy định khác của pháp luật có liên quan;",
+        "Kiến nghị chủ trương, biện pháp quản lý nhà nước về hải quan đối với hoạt động xuất khẩu, nhập khẩu, xuất cảnh, nhập cảnh, quá cảnh và chính sách thuế đối với hàng hóa xuất khẩu, nhập khẩu.",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 15,
+      "question": "Hải quan Việt Nam được tổ chức và hoạt động theo nguyên tắc nào dưới đây?",
+      "options": [
+        "Tập trung, thống nhất.",
+        "Tập trung dân chủ",
+        "Tập thể lãnh đạo, cá nhân phụ trách"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 16,
+      "question": "Hệ thống tổ chức của Hải quan Việt Nam theo mô hình 3 cấp (áp dụng từ 01/3/2025) gồm:",
+      "options": [
+        "Cục Hải quan (Trung ương); 20 Chi cục Hải quan khu vực; các Hải quan cửa khẩu/ngoài cửa khẩu trực thuộc Chi cục khu vực.",
+        "Tổng cục Hải quan; Cục Hải quan tỉnh, thành phố; Chi cục Hải quan và Hải quan cửa khẩu.",
+        "Tổng cục Hải quan; Cục Hải quan vùng; Chi cục Hải quan cửa khẩu/ngoài cửa khẩu.",
+        "Cục Hải quan (Trung ương); Cục Hải quan vùng; các Hải quan cửa khẩu và đội kiểm soát chuyên ngành."
+      ],
+      "answer": 0
+    },
+    {
+      "id": 17,
+      "question": "Đâu không phải là Nguyên tắc tiến hành thủ tục hải quan, kiểm tra, giám sát hải quan?",
+      "options": [
+        "Hàng hóa, phương tiện vận tải phải được làm thủ tục hải quan, chịu sự kiểm tra, giám sát hải quan; vận chuyển đúng tuyến đường, đúng thời gian qua cửa khẩu hoặc các địa điểm khác theo quy định của pháp luật.",
+        "Kiểm tra, giám sát hải quan được thực hiện trên cơ sở áp dụng quản lý rủi ro nhằm bảo đảm hiệu quả, hiệu lực quản lý nhà nước về hải quan và tạo thuận lợi cho hoạt động xuất khẩu, nhập khẩu, xuất cảnh, nhập cảnh, quá cảnh.",
+        "Hàng hóa được thông quan, phương tiện vận tải được xuất cảnh, nhập cảnh trước khi đã hoàn thành thủ tục hải quan.",
+        "Thủ tục hải quan phải được thực hiện công khai, nhanh chóng, thuận tiện và theo đúng quy định của pháp luật."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 18,
+      "question": "Kiểm tra, giám sát hải quan được thực hiện như thế nào?",
+      "options": [
+        "Trên cơ sở áp dụng quản lý rủi ro nhằm bảo đảm hiệu quả, hiệu lực quản lý nhà nước về hải quan và tạo thuận lợi cho hoạt động xuất khẩu, nhập khẩu",
+        "Trên cơ sở áp dụng quản lý rủi ro nhằm bảo đảm hiệu quả, hiệu lực quản lý nhà nước về hải quan và tạo thuận lợi cho hoạt động xuất khẩu, nhập khẩu, xuất cảnh, nhập cảnh",
+        "Trên cơ sở áp dụng quản lý rủi ro nhằm bảo đảm hiệu quả, hiệu lực quản lý nhà nước về hải quan và tạo thuận lợi cho hoạt động xuất khẩu, nhập khẩu, xuất cảnh, nhập cảnh, quá cảnh."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 19,
+      "question": "Cơ quan hải quan áp dụng quản lý rủi ro để ?",
+      "options": [
+        "Quyết định việc thanh tra, giám sát hải quan đối với hàng hóa, phương tiện vận tải; hỗ trợ hoạt động phòng, chống buôn lậu và vận chuyển trái phép hàng hóa qua biên giới.",
+        "Quyết định việc kiểm tra, giám sát hải quan đối với hàng hóa, phương tiện vận tải; hỗ trợ hoạt động phòng, chống buôn lậu và vận chuyển trái phép hàng hóa qua biên giới.",
+        "Quyết định việc thanh tra, kiểm tra hải quan đối với hàng hóa, phương tiện vận tải; hỗ trợ hoạt động phòng, chống buôn lậu và vận chuyển trái phép hàng hóa qua biên giới."
+      ],
+      "answer": 1
+    },
+    {
+      "id": 20,
+      "question": "Người khai hải quan là chủ hàng hóa, chủ phương tiện vận tải có nghĩa vụ Lưu giữ hồ sơ hải quan đối với hàng hóa đã được thông quan trong thời hạn mấy năm kể từ ngày đăng ký tờ khai hải quan, trừ trường hợp pháp luật có quy định khác?",
+      "options": [
+        "02 năm",
+        "03 năm",
+        "04 năm",
+        "05 năm"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 21,
+      "question": "Điều kiện là đại lý làm thủ tục hải quan là?",
+      "options": [
+        "Có Giấy chứng nhận đăng ký kinh doanh hoặc Giấy chứng nhận đăng ký doanh nghiệp có ngành, nghề kinh doanh dịch vụ giao nhận hàng hóa hoặc đại lý làm thủ tục hải quan;",
+        "Có nhân viên đại lý làm thủ tục hải quan;",
+        "Có hạ tầng công nghệ thông tin đáp ứng điều kiện để thực hiện khai hải quan điện tử và các điều kiện khác theo quy định.",
+        "Tất cả điều kiện trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 22,
+      "question": "Nhân viên đại lý làm thủ tục hải quan là công dân Việt Nam đáp ứng đủ các điều kiện nào dưới đây",
+      "options": [
+        "Có trình độ trung cấp kinh tế, luật, kỹ thuật trở lên; Có chứng chỉ nghiệp vụ khai hải quan; Được cơ quan hải quan cấp mã số nhân viên đại lý làm thủ tục hải quan.",
+        "Có trình độ cao đẳng kinh tế, luật, kỹ thuật trở lên; Có chứng chỉ nghiệp vụ khai hải quan; Được cơ quan hải quan cấp mã số nhân viên đại lý làm thủ tục hải quan.",
+        "Có trình độ đại học kinh tế, luật, kỹ thuật trở lên; Có chứng chỉ nghiệp vụ khai hải quan; Được cơ quan hải quan cấp mã số nhân viên đại lý làm thủ tục hải quan."
+      ],
+      "answer": 1
+    },
+    {
+      "id": 23,
+      "question": "Thẩm quyền quyết định việc công nhận, tạm dừng, chấm dứt hoạt động đại lý làm thủ tục hải quan; cấp chứng chỉ nghiệp vụ khai hải quan; cấp và thu hồi mã số nhân viên đại lý làm thủ tục hải quan?",
+      "options": [
+        "Cục trưởng Cục Hải quan",
+        "Tổng cục Hải quan",
+        "Chi Cục trưởng Cục Hải quan cấp tỉnh",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 24,
+      "question": "Thẩm quyền quy định chi tiết trình tự, thủ tục công nhận và hoạt động của đại lý làm thủ tục hải quan; thủ tục cấp chứng chỉ nghiệp vụ khai hải quan, cấp và thu hồi mã số nhân viên đại lý làm thủ tục hải quan?",
+      "options": [
+        "Tổng cục trưởng Tổng cục Hải quan",
+        "Bộ trưởng Bộ Tài chính",
+        "Bộ trưởng Bộ Kế hoạch và đầu tư"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 25,
+      "question": "Theo mô hình tổ chức Hải quan mới từ 01/3/2025, địa điểm tiếp nhận, đăng ký và kiểm tra hồ sơ hải quan là?",
+      "options": [
+        "Trụ sở Cục Hải quan (Trung ương).",
+        "Trụ sở Chi cục Hải quan khu vực.",
+        "Hải quan cửa khẩu/ngoài cửa khẩu trực thuộc Chi cục khu vực.",
+        "Cả B và C."
+      ],
+      "answer": 3
+    },
+    {
+      "id": 26,
+      "question": "Sau khi người khai hải quan thực hiện đầy đủ các yêu cầu để làm thủ tục hải, công chức hải quan Hoàn thành việc kiểm tra hồ sơ chậm nhất là bao nhiêu giờ làm việc kể từ thời điểm cơ quan hải quan tiếp nhận đầy đủ hồ sơ hải quan?",
+      "options": [
+        "01 giờ",
+        "02 giờ",
+        "03 giờ",
+        "04 giờ"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 27,
+      "question": "Sau khi người khai hải quan thực hiện đầy đủ các yêu cầu để làm thủ tục hải, công chức hải quan Hoàn thành việc kiểm tra thực tế hàng hóa chậm nhất là bao nhiêu giờ làm việc kể từ thời điểm người khai hải quan xuất trình đầy đủ hàng hóa cho cơ quan hải quan.",
+      "options": [
+        "5 giờ",
+        "6 giờ",
+        "7 giờ",
+        "8 giờ"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 28,
+      "question": "Trường hợp lô hàng có số lượng lớn, nhiều chủng loại hoặc việc kiểm tra phức tạp thì Thủ trưởng cơ quan hải quan nơi làm thủ tục hải quan quyết định việc gia hạn thời gian kiểm tra thực tế hàng hóa, nhưng thời gian gia hạn tối đa không quá bao nhiêu ngày?",
+      "options": [
+        "01 ngày",
+        "02 ngày",
+        "03 ngày",
+        "04 ngày"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 29,
+      "question": "Chứng từ thuộc hồ sơ hải quan là ?",
+      "options": [
+        "Chứng từ giấy",
+        "Chứng từ điện tử",
+        "Chứng từ giấy hoặc chứng từ điện tử",
+        "Chứng từ giấy và chứng từ điện tử"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 30,
+      "question": "Thời hạn nộp tờ khai hải quan Đối với hàng hóa xuất khẩu?",
+      "options": [
+        "Nộp sau khi đã tập kết hàng hóa tại địa điểm người khai hải quan thông báo và chậm nhất là 02 giờ trước khi phương tiện vận tải xuất cảnh",
+        "Nộp sau khi đã tập kết hàng hóa tại địa điểm người khai hải quan thông báo và chậm nhất là 03 giờ trước khi phương tiện vận tải xuất cảnh",
+        "Nộp sau khi đã tập kết hàng hóa tại địa điểm người khai hải quan thông báo và chậm nhất là 04 giờ trước khi phương tiện vận tải xuất cảnh",
+        "Nộp sau khi đã tập kết hàng hóa tại địa điểm người khai hải quan thông báo và chậm nhất là 05 giờ trước khi phương tiện vận tải xuất cảnh"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 31,
+      "question": "Thời hạn nộp tờ khai hải quan đối với hàng hóa xuất khẩu gửi bằng dịch vụ chuyển phát nhanh thì?",
+      "options": [
+        "Chậm nhất là 01 giờ trước khi phương tiện vận tải xuất cảnh;",
+        "Chậm nhất là 02 giờ trước khi phương tiện vận tải xuất cảnh;",
+        "Chậm nhất là 03 giờ trước khi phương tiện vận tải xuất cảnh;",
+        "Chậm nhất là 04 giờ trước khi phương tiện vận tải xuất cảnh;"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 32,
+      "question": "Thời hạn nộp tờ khai hải quan Đối với hàng hóa nhập khẩu?",
+      "options": [
+        "Nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 30 ngày kể từ ngày hàng hóa đến cửa khẩu",
+        "Nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 45 ngày kể từ ngày hàng hóa đến cửa khẩu",
+        "Nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 50 ngày kể từ ngày hàng hóa đến cửa khẩu",
+        "Nộp trước ngày hàng hóa đến cửa khẩu hoặc trong thời hạn 60 ngày kể từ ngày hàng hóa đến cửa khẩu"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 33,
+      "question": "Tờ khai hải quan có giá trị làm thủ tục hải quan trong thời hạn bao nhiêu ngày kể từ ngày đăng ký?",
+      "options": [
+        "10 ngày",
+        "15 ngày",
+        "20 ngày",
+        "30 ngày"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 34,
+      "question": "Đối với hàng hóa xuất khẩu Cơ quan hải quan xác định xuất xứ hàng hóa xuất khẩu trên cơ sở nào?",
+      "options": [
+        "Kiểm tra nội dung khai của người khai hải quan, chứng từ thuộc hồ sơ hải quan và kết quả kiểm tra thực tế hàng hóa",
+        "Kiểm tra nội dung khai của người khai hải quan, chứng từ thuộc hồ sơ hải quan hoặc kết quả kiểm tra thực tế hàng hóa",
+        "Kiểm tra nội dung khai của người khai hải quan, chứng từ thuộc hồ sơ hải quan"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 35,
+      "question": "Phương thức đăng ký tờ khai hải quan gồm?",
+      "options": [
+        "Tờ khai hải quan điện tử",
+        "Tờ khai hải quan giấy",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 36,
+      "question": "Hàng hóa nào dưới đây được miễn kiểm tra thực tế?",
+      "options": [
+        "Hàng hóa phục vụ yêu cầu khẩn cấp;",
+        "Hàng hóa chuyên dùng phục vụ quốc phòng, an ninh;",
+        "Hàng hóa thuộc trường hợp đặc biệt khác theo quyết định của Thủ tướng Chính phủ.",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 37,
+      "question": "Quá thời hạn bao nhiêu ngày kể từ ngày hàng hóa nhập khẩu đến cửa khẩu mà người khai hải quan không đến làm thủ tục hải quan thì thủ trưởng cơ quan hải quan nơi lưu giữ hàng hóa quyết định Việc kiểm tra thực tế hàng hóa vắng mặt người khai hải quan ?",
+      "options": [
+        "30 ngày",
+        "45 ngày",
+        "50 ngày",
+        "60 ngày"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 38,
+      "question": "Giám sát hải quan được thực hiện bằng các phương thức nào dưới đây?",
+      "options": [
+        "Niêm phong hải quan;",
+        "Giám sát trực tiếp do công chức hải quan thực hiện;",
+        "Sử dụng phương tiện, thiết bị kỹ thuật.",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 39,
+      "question": "Đối tượng giám sát hải quan gồm?",
+      "options": [
+        "Hàng hóa, phương tiện vận tải, phương tiện vận tải nội địa vận chuyển hàng hóa đang chịu sự giám sát hải quan.",
+        "Hàng hóa, phương tiện vận tải, phương tiện vận tải quốc tế vận chuyển hàng hóa đang chịu sự giám sát hải quan.",
+        "Hàng hóa, phương tiện vận tải, phương tiện vận tải nội địa, quốc tế vận chuyển hàng hóa đang chịu sự giám sát hải quan."
+      ],
+      "answer": 0
+    },
+    {
+      "id": 40,
+      "question": "Hàng hóa nhập khẩu chịu sự giám sát hải quan từ khi nào?",
+      "options": [
+        "Từ khi tới địa bàn hoạt động hải quan đến khi được thông quan đến khi ra khỏi địa bàn hoạt động hải quan",
+        "Từ khi tới địa bàn hoạt động hải quan đến khi được thông quan, giải phóng hàng hóa và đưa ra khỏi địa bàn hoạt động hải quan",
+        "Từ khi được thông quan, giải phóng hàng hóa và đưa ra khỏi địa bàn hoạt động hải quan"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 41,
+      "question": "Hàng hóa xuất khẩu miễn kiểm tra thực tế hàng hóa chịu sự giám sát hải quan từ khi?",
+      "options": [
+        "Từ khi tới địa bàn hoạt động hải quan đến khi được thông quan đến khi ra khỏi địa bàn hoạt động hải quan",
+        "Từ khi tới địa bàn hoạt động hải quan đến khi được thông quan, giải phóng hàng hóa và đưa ra khỏi địa bàn hoạt động hải quan",
+        "Từ khi thông quan đến khi ra khỏi địa bàn hoạt động hải quan"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 42,
+      "question": "Thời hạn lưu giữ hàng hóa bán tại cửa hàng miễn thuế không quá bao nhiêu tháng kể từ ngày hoàn thành thủ tục hải quan?",
+      "options": [
+        "06 tháng",
+        "09 tháng",
+        "12 tháng",
+        "18 tháng"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 43,
+      "question": "Hàng hóa gửi kho ngoại quan được lưu giữ trong thời gian không quá bao nhiêu tháng kể từ ngày được gửi vào kho",
+      "options": [
+        "06 tháng",
+        "09 tháng",
+        "12 tháng",
+        "18 tháng"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 44,
+      "question": "Nguyên liệu, vật tư được lưu giữ tại kho bảo thuế để sản xuất hàng hóa xuất khẩu trong thời gian không quá bao nhiêu tháng kể từ ngày được gửi vào kho?",
+      "options": [
+        "06 tháng",
+        "09 tháng",
+        "12 tháng",
+        "18 tháng"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 45,
+      "question": "Hàng hóa được lưu giữ tại địa điểm thu gom hàng lẻ trong thời gian không quá bao nhiêu ngày kể từ ngày được đưa vào địa điểm thu gom hàng lẻ?",
+      "options": [
+        "60 ngày",
+        "90 ngày",
+        "120 ngày",
+        "180 ngày"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 46,
+      "question": "Thời hạn áp dụng biện pháp kiểm tra, giám sát hải quan đối với hàng hóa có yêu cầu bảo vệ quyền sở hữu trí tuệ là mấy năm kể từ ngày cơ quan hải quan chấp nhận yêu cầu của chủ thể quyền sở hữu trí tuệ?",
+      "options": [
+        "01 năm",
+        "02 năm",
+        "03 năm",
+        "05 năm"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 47,
+      "question": "Kiểm tra sau thông quan là hoạt động kiểm tra của cơ quan hải quan đối với?",
+      "options": [
+        "Hồ sơ hải quan, sổ kế toán, chứng từ kế toán và các chứng từ khác, tài liệu, dữ liệu có liên quan đến hàng hóa; kiểm tra hàng hóa trong trường hợp cần thiết và còn điều kiện sau khi hàng hóa đã được thông quan.",
+        "Hồ sơ hải quan, sổ kế toán, chứng từ kế toán và các chứng từ khác, tài liệu, dữ liệu có liên quan đến hàng hóa; kiểm tra thực tế hàng hóa trong trường hợp cần thiết và còn điều kiện sau khi hàng hóa đã được thông quan.",
+        "Hồ sơ hải quan, sổ kế toán, chứng từ kế toán và các chứng từ khác, tài liệu, dữ liệu có liên quan đến hàng hóa; kiểm tra thực tế hàng hóa trong trường hợp cần thiết"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 48,
+      "question": "Thời hạn kiểm tra sau thông quan là bao nhiêu năm kể từ ngày đăng ký tờ khai hải quan.",
+      "options": [
+        "01 năm",
+        "02 năm",
+        "03 năm",
+        "05 năm"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 49,
+      "question": "Thẩm quyền Kiểm tra sau thông quan tại trụ sở cơ quan hải quan?",
+      "options": [
+        "Cục trưởng Cục Hải quan, Chi cục trưởng Chi cục Hải quan",
+        "Cục trưởng Cục Hải quan",
+        "Cục trưởng Cục Kiểm tra sau thông quan",
+        "Tất cả đáp án trên"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 50,
+      "question": "Thời gian kiểm tra sau thông quan tại trụ sở cơ quan hải quan được xác định trong quyết định kiểm tra, nhưng tối đa là bao nhiêu ngày làm việc?",
+      "options": [
+        "03 ngày làm việc",
+        "04 ngày làm việc",
+        "05 ngày làm việc",
+        "10 ngày làm việc"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 51,
+      "question": "Thẩm quyền quyết định kiểm tra sau thông quan tại trụ sở người khai hải quan theo mô hình tổ chức Hải quan mới?",
+      "options": [
+        "Cục trưởng Cục Hải quan (Trung ương) và Cục trưởng Chi cục Kiểm tra sau thông quan quyết định kiểm tra sau thông quan trong phạm vi toàn quốc.",
+        "Cục trưởng Chi cục Hải quan khu vực quyết định kiểm tra sau thông quan trong địa bàn quản lý.",
+        "Tất cả các đáp án trên.",
+        "Chỉ Cục Hải quan (Trung ương) có thẩm quyền."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 52,
+      "question": "Thời hạn kiểm tra sau thông quan quan tại trụ sở người khai hải quan được xác định trong quyết định kiểm tra, nhưng tối đa là bao nhiêu ngày làm việc.",
+      "options": [
+        "03 ngày làm việc",
+        "04 ngày làm việc",
+        "05 ngày làm việc",
+        "10 ngày làm việc"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 53,
+      "question": "Luật Hải quan năm 2014 có hiệu lực khi nào?",
+      "options": [
+        "01/7/2014",
+        "01/01/2015",
+        "01/3/2015",
+        "01/5/2015"
+      ],
+      "answer": 1
+    }
+  ]
+}

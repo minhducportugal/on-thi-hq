@@ -1,5 +1,5 @@
 import { supabase } from './supabase'
-import type { Quiz, Question, QuizAttempt, UserSettings } from './supabase'
+import type { Quiz, Question, QuizAttempt, UserSettings, Option } from './supabase'
 
 // ============================================
 // QUIZ OPERATIONS
@@ -42,7 +42,7 @@ export async function getQuestions(quizId: string) {
   // Sort options by order_index
   return data.map(q => ({
     ...q,
-    options: q.options.sort((a: any, b: any) => a.order_index - b.order_index)
+    options: q.options.sort((a: Option, b: Option) => a.order_index - b.order_index)
   })) as Question[]
 }
 
@@ -55,7 +55,7 @@ export async function saveQuizAttempt(
   score: number,
   totalQuestions: number,
   timeTaken?: number,
-  settings?: any,
+  settings?: Record<string, unknown>,
   userId?: string
 ) {
   const percentage = (score / totalQuestions) * 100

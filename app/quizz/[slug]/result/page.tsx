@@ -5,7 +5,6 @@ import { useRouter, useParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
-import { QuizData } from "@/lib/quizData";
 
 export default function QuizResult() {
 	const router = useRouter();
@@ -36,7 +35,7 @@ export default function QuizResult() {
 			}
 
 			const calculatedScore = shuffledQuestions.reduce(
-				(acc: number, q: any, idx: number) => acc + (answers[idx] === q.correct_option ? 1 : 0),
+				(acc: number, q: { correct_option: number }, idx: number) => acc + (answers[idx] === q.correct_option ? 1 : 0),
 				0
 			);
 

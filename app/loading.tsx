@@ -1,22 +1,15 @@
-import { LoaderIcon } from "lucide-react"
-
-import { cn } from "@/lib/utils"
-
-function Spinner({ className, ...props }: React.ComponentProps<"svg">) {
-  return (
-    <LoaderIcon
-      role="status"
-      aria-label="Loading"
-      className={cn("size-4 animate-spin", className)}
-      {...props}
-    />
-  )
+function Spinner({ className }: { className?: string }) {
+	return (
+		<div className="flex items-center justify-center py-8">
+			<div className={`animate-spin rounded-full h-8 w-8 border-b-2 border-primary ${className || ''}`}></div>
+		</div>
+	);
 }
 
 export default function SpinnerCustom() {
-  return (
-    <div className="flex items-center gap-4">
-      <Spinner />
-    </div>
-  )
+	return (
+		<div className="flex items-center justify-center min-h-screen">
+			<Spinner className="size-8" />
+		</div>
+	);
 }

@@ -7,9 +7,22 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { CheckCircle2, XCircle, Home, RotateCcw } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
+interface Option {
+	id: string;
+	option_text: string;
+	is_correct: boolean;
+}
+
+interface QuestionWithOptions {
+	id: string;
+	question_text: string;
+	explanation?: string;
+	options: Option[];
+}
+
 interface ShuffledQuestion {
 	id: string;
-	question: string;
+	question_text: string;
 	shuffled_options: string[];
 	correct_option: number;
 	explanation?: string;
@@ -24,7 +37,6 @@ export default function QuizReview() {
 
 	const [answers, setAnswers] = useState<Record<number, number>>({});
 	const [questions, setQuestions] = useState<ShuffledQuestion[]>([]);
-	const [quizTitle, setQuizTitle] = useState("");
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -47,17 +59,17 @@ export default function QuizReview() {
 					const loadedQuestions: ShuffledQuestion[] = [];
 					const loadedAnswers: Record<number, number> = {};
 
-					userAnswers.forEach((ua: any, idx: number) => {
-						const q = ua.questions;
-						const options = q.options.sort((a: any, b: any) => a.option_text.localeCompare(b.option_text));
-						const correctIdx = options.findIndex((opt: any) => opt.is_correct);
-						const selectedIdx = options.findIndex((opt: any) => opt.id === ua.selected_option_id);
+				userAnswers.forEach((ua, idx) => {
+					const q = ua.questions as unknown as QuestionWithOptions;
+					const options = q.options.sort((a, b) => a.option_text.localeCompare(b.option_text));
+					const correctIdx = options.findIndex(opt => opt.is_correct);
+					const selectedIdx = options.findIndex(opt => opt.id === ua.selected_option_id);
 
-						loadedQuestions.push({
-							id: q.id,
-							question: q.question_text,
-							shuffled_options: options.map((opt: any) => opt.option_text),
-							correct_option: correctIdx,
+					loadedQuestions.push({
+						id: q.id,
+						question_text: q.question_text,
+						shuffled_options: options.map(opt => opt.option_text),
+						correct_option: correctIdx,
 							explanation: q.explanation
 						});
 
@@ -66,7 +78,6 @@ export default function QuizReview() {
 
 					setQuestions(loadedQuestions);
 					setAnswers(loadedAnswers);
-					setQuizTitle("Xem lại lịch sử");
 					setLoading(false);
 				} catch (error) {
 					console.error("Error loading attempt:", error);
@@ -76,7 +87,6 @@ export default function QuizReview() {
 				// Load from sessionStorage (just completed quiz)
 				const answersData = sessionStorage.getItem(`quiz_${slug}_answers`);
 				const quizData = sessionStorage.getItem(`quiz_${slug}_shuffled`);
-				const titleData = sessionStorage.getItem(`quiz_${slug}_title`);
 
 				if (!answersData || !quizData) {
 					router.push("/quizz");
@@ -86,7 +96,6 @@ export default function QuizReview() {
 				try {
 					setAnswers(JSON.parse(answersData));
 					setQuestions(JSON.parse(quizData));
-					setQuizTitle(titleData || "");
 					setLoading(false);
 				} catch (error) {
 					console.error("Error loading quiz review:", error);
@@ -142,7 +151,7 @@ export default function QuizReview() {
 										<XCircle className="text-red-500 mt-1" />
 									)}
 									<p className="font-medium">
-										Câu {idx + 1}: {q.question}
+										Câu {idx + 1}: {q.question_text}
 									</p>
 								</div>
 								<div className="ml-9 space-y-2">
@@ -169,7 +178,7 @@ export default function QuizReview() {
 										<div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
 											<div className="flex items-start gap-2">
 												<span className="font-semibold text-blue-700">💡 Giải thích:</span>
-												<p className="text-slate-700 text-sm leading-relaxed flex-1">
+												<p className="text-slate-700 text-sm leading-relaxed flex-1 pt-0.5">
 													{q.explanation}
 												</p>
 											</div>

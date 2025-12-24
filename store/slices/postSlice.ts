@@ -40,7 +40,7 @@ const postSlice = createSlice({
 			state.loading = false;
 			state.error = action.payload;
 		},
-		fetchPostRequest: (state, action: PayloadAction<number>) => {
+		fetchPostRequest: (state) => {
 			state.loading = true;
 			state.error = null;
 		},

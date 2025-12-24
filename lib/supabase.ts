@@ -40,7 +40,7 @@ export interface QuizAttempt {
   total_questions: number
   percentage: number
   time_taken?: number
-  settings?: any
+  settings?: Record<string, unknown>
   completed_at: string
 }
 

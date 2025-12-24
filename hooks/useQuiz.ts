@@ -73,6 +73,7 @@ export function useQuizHistory(quizSlug: string, userId: string | undefined) {
 
   useEffect(() => {
     fetchHistory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quizSlug, userId]);
 
   return { attempts, loading, refetch: fetchHistory };

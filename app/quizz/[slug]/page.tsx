@@ -189,18 +189,24 @@ export default function QuizConfig() {
 					<CardContent className="space-y-4">
 						<div className="space-y-2">
 							<Label htmlFor="questionCount">Số câu hỏi muốn thi</Label>
-							<Input
-								id="questionCount"
-								type="number"
-								min={1}
-								max={maxQuestions}
-								value={questionCount}
-								onChange={(e) =>
-									setQuestionCount(
-										Math.min(maxQuestions, Math.max(1, Number(e.target.value)))
-									)
-								}
-							/>
+							<div className="flex items-center gap-2">
+								<Input
+									id="questionCount"
+									type="text"
+									inputMode="numeric"
+									pattern="[0-9]*"
+									value={questionCount}
+									onChange={(e) => {
+										const value = e.target.value.replace(/[^0-9]/g, '');
+										setQuestionCount(value === '' ? 0 : Number(value));
+									}}
+									onBlur={(e) => {
+										const value = e.target.value.replace(/[^0-9]/g, '');
+										const num = value === '' ? 1 : Number(value);
+										setQuestionCount(Math.min(maxQuestions, Math.max(1, num)));
+									}}
+								/>
+							</div>
 							<p className="text-xs text-muted-foreground">Tối đa: {maxQuestions} câu</p>
 						</div>
 						<Button
@@ -221,7 +227,7 @@ export default function QuizConfig() {
 
 				<Card>
 					<CardHeader>
-						<div className="flex items-center justify-between">
+						<div className="flex items-center justify-between max-sm:flex-col max-sm:gap-4">
 							<div className="flex items-center gap-2">
 								<History className="h-5 w-5" />
 								<CardTitle className="text-lg">Lịch sử làm bài</CardTitle>
@@ -333,7 +339,7 @@ export default function QuizConfig() {
 								})}
 							</div>
 						) : (
-							<Empty className="from-muted/50 to-background h-full bg-gradient-to-b from-30%">
+							<Empty className="from-muted/50 to-background h-full bg-linear-to-b from-30%">
 								<EmptyHeader>
 									<EmptyDescription>Bạn chưa thực hiện bài thi nào!</EmptyDescription>
 								</EmptyHeader>

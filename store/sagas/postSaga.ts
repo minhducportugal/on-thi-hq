@@ -10,21 +10,30 @@ import {
 } from "../slices/postSlice";
 import { PayloadAction } from "@reduxjs/toolkit/react";
 
-function* handleFetchPosts(): Generator<any, void, any> {
+interface Post {
+	userId: number;
+	id: number;
+	title: string;
+	body: string;
+}
+
+function* handleFetchPosts() {
 	try {
-		const response = yield call(fetchPosts);
+		const response: { data: Post[] } = yield call(fetchPosts);
 		yield put(fetchPostsSuccess(response.data));
-	} catch (error: any) {
-		yield put(fetchPostsFailure(error.message));
+	} catch (error) {
+		const message = error instanceof Error ? error.message : "Unknown error";
+		yield put(fetchPostsFailure(message));
 	}
 }
 
-function* handleFetchPost(action: PayloadAction<number>): Generator<any, void, any> {
+function* handleFetchPost(action: PayloadAction<number>) {
 	try {
-		const response = yield call(fetchPost, action.payload);
+		const response: { data: Post } = yield call(fetchPost, action.payload);
 		yield put(fetchPostSuccess(response.data));
-	} catch (error: any) {
-		yield put(fetchPostFailure(error.message));
+	} catch (error) {
+		const message = error instanceof Error ? error.message : "Unknown error";
+		yield put(fetchPostFailure(message));
 	}
 }
 

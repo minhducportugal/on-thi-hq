@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { ChevronLeft, ChevronRight, CheckCircle2, Timer, AlertTriangle, Flag } from "lucide-react";
 import { shuffleArray } from "@/lib/quizData";
 import { useQuestions, useQuizSubmit } from "@/hooks/useQuiz";
-import { Question as DBQuestion, Option } from "@/lib/supabase";
+import { Question as DBQuestion } from "@/lib/supabase";
 import { useAuth } from "@/contexts/AuthContext";
 
 // Extended type for shuffled question
@@ -72,7 +72,6 @@ export default function QuizTest() {
 		// Shuffle questions and their options
 		const shuffled = shuffleArray(questionsToUse).map((q) => {
 			// Get correct option text
-			const correctOption = q.options.find(opt => opt.is_correct);
 			const optionTexts = q.options.map(opt => opt.option_text);
 			
 			// Shuffle option texts
@@ -130,7 +129,7 @@ export default function QuizTest() {
 		// Push a state to history when component mounts
 		window.history.pushState(null, "", window.location.href);
 
-		const handlePopState = (e: PopStateEvent) => {
+		const handlePopState = () => {
 			// Push the state again to prevent going back
 			window.history.pushState(null, "", window.location.href);
 			// Show exit dialog instead
@@ -160,6 +159,7 @@ export default function QuizTest() {
 		}, 1000);
 
 		return () => clearInterval(interval);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [timerEnabled, timeLeft]);
 
 	const handleSubmit = async () => {
@@ -274,7 +274,7 @@ export default function QuizTest() {
 						<Button variant="ghost" size="sm" onClick={handleExit} className="text-slate-600 hover:text-slate-900">
 							← Thoát
 						</Button>
-						<h2 className="font-bold text-lg pr-4 max-md:w-[200px] md:w-[400px] truncate">{quizTitle}</h2>
+						<h2 className="font-bold text-lg pr-4 max-sm:w-[150px] sm:w-[200px] md:w-[400px] truncate">{quizTitle}</h2>
 					</div>
 					<div className="flex items-center gap-3">
 						{timerEnabled && timeLeft > 0 && (

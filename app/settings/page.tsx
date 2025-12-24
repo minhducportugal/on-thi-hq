@@ -7,9 +7,11 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { ArrowLeft, Save, ChevronDown, ChevronUp, Eye, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useSettings } from "@/hooks/useQuiz";
 
 export default function SettingsPage() {
 	const router = useRouter();
+	const { settings, loading, saveSettings, saving } = useSettings();
 	const [showAnswerMode, setShowAnswerMode] = useState<"instant" | "end">("end");
 	const [timerEnabled, setTimerEnabled] = useState(false);
 	const [timerMinutes, setTimerMinutes] = useState(30);
@@ -17,27 +19,21 @@ export default function SettingsPage() {
 	const [expandedSection, setExpandedSection] = useState<string | null>("display");
 
 	useEffect(() => {
-		// Load settings from localStorage
-		const savedMode = localStorage.getItem("quiz_showAnswerMode");
-		if (savedMode === "instant" || savedMode === "end") {
-			setShowAnswerMode(savedMode);
+		if (settings) {
+			setShowAnswerMode(settings.show_answer_mode);
+			setTimerEnabled(settings.timer_enabled);
+			setTimerMinutes(settings.timer_minutes);
 		}
-
-		const savedTimerEnabled = localStorage.getItem("quiz_timerEnabled");
-		if (savedTimerEnabled === "true") {
-			setTimerEnabled(true);
-		}
-
-		const savedTimerMinutes = localStorage.getItem("quiz_timerMinutes");
-		if (savedTimerMinutes) {
-			setTimerMinutes(parseInt(savedTimerMinutes));
-		}
-	}, []);
+	}, [settings]);
 
 	const handleSave = async () => {
-		localStorage.setItem("quiz_showAnswerMode", showAnswerMode);
-		localStorage.setItem("quiz_timerEnabled", timerEnabled.toString());
-		localStorage.setItem("quiz_timerMinutes", timerMinutes.toString());
+		// Save to database and localStorage
+		await saveSettings({
+			show_answer_mode: showAnswerMode,
+			timer_enabled: timerEnabled,
+			timer_minutes: timerMinutes,
+		});
+		
 		setSaved(true);
 		await new Promise((resolve) => setTimeout(resolve, 1000));
 		router.push("/quizz");
@@ -188,9 +184,14 @@ export default function SettingsPage() {
 					{/* Save Button */}
 					<Card className="shadow-lg">
 						<CardContent className="pt-6">
-							<Button onClick={handleSave} className="w-full" size="lg">
+							<Button 
+								onClick={handleSave} 
+								className="w-full" 
+								size="lg"
+								disabled={saving || loading}
+							>
 								<Save className="mr-2 h-4 w-4" />
-								{saved ? "Đã lưu!" : "Lưu cài đặt"}
+								{saving ? "Đang lưu..." : saved ? "Đã lưu!" : "Lưu cài đặt"}
 							</Button>
 							{saved && (
 								<p className="text-center text-sm text-green-600 mt-2">

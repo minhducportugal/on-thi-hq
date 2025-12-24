@@ -1,1215 +1,1265 @@
 {
-  "title": "110 Câu hỏi trắc nghiệm Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức Chi cục Hải quan khu vực",
-  "questions": [
-    {
-      "id": 1,
-      "question": "Theo QĐ 819/QĐ-BTC & QĐ 1942/QĐ-CHQ, Chi cục Hải quan khu vực là đơn vị kế thừa và thực hiện chức năng quản lý nhà nước về hải quan thay cho cơ quan nào trước đây?",
-      "options": [
-        "Tổng cục Hải quan các khu vực",
-        "Các Cục Hải quan cấp tỉnh, thành phố trước đây",
-        "Chi cục Hải quan cửa khẩu",
-        "Các Đội Kiểm soát Hải quan địa phương"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 2,
-      "question": "Chi cục Hải quan khu vực được xác định là đơn vị như thế nào trong hệ thống tổ chức của ngành Hải quan?",
-      "options": [
-        "Đơn vị thuộc Tổng cục Hải quan",
-        "Đơn vị thuộc Bộ Tài chính",
-        "Đơn vị thuộc Cục Hải quan",
-        "Đơn vị độc lập trực thuộc Chính phủ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 3,
-      "question": "Về mặt pháp lý, Chi cục Hải quan khu vực có những yếu tố nào sau đây?",
-      "options": [
-        "Không có tư cách pháp nhân, không có con dấu",
-        "Chỉ có tư cách pháp nhân, không có con dấu",
-        "Có tư cách pháp nhân nhưng không được mở tài khoản",
-        "Có tư cách pháp nhân, có con dấu và được mở tài khoản tại Kho bạc Nhà nước"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 4,
-      "question": "Nhiệm vụ trọng tâm của Chi cục Hải quan khu vực là tổ chức thực hiện thủ tục, kiểm tra, giám sát đối với đối tượng nào?",
-      "options": [
-        "Chỉ hàng hóa nhập khẩu và phương tiện vận tải nhập cảnh",
-        "Chỉ hàng hóa xuất khẩu, nhập khẩu",
-        "Chỉ hành lý của người xuất cảnh, nhập cảnh",
-        "Hàng hóa xuất khẩu, nhập khẩu, chuyển khẩu, chuyển cửa khẩu, quá cảnh, trung chuyển; hành lý; phương tiện vận tải xuất, nhập cảnh, quá cảnh"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 5,
-      "question": "Chi cục Hải quan khu vực thực hiện pháp luật về thuế và các khoản thu khác đối với các đối tượng nào?",
-      "options": [
-        "Chỉ hàng hóa nhập khẩu",
-        "Chỉ hàng hóa xuất khẩu",
-        "Hàng hóa xuất khẩu, nhập khẩu, quá cảnh; phương tiện vận tải xuất, nhập cảnh, quá cảnh",
-        "Chỉ doanh nghiệp ưu tiên"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 6,
-      "question": "Chi cục Hải quan khu vực có nhiệm vụ quản lý hải quan đối với hàng hóa xuất khẩu, nhập khẩu dưới hình thức nào?",
-      "options": [
-        "Giao dịch qua thương mại điện tử",
-        "Giao dịch nội địa",
-        "Giao dịch ủy thác",
-        "Giao dịch tạm nhập tái xuất"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 7,
-      "question": "Việc áp dụng các biện pháp nghiệp vụ kiểm soát hải quan của Chi cục nhằm mục đích gì?",
-      "options": [
-        "Chỉ để tăng tốc thông quan",
-        "Để phòng, chống buôn lậu, gian lận thương mại, vận chuyển trái phép hàng hóa, tiền tệ, hàng giả, ma túy, khủng bố, rửa tiền và các hành vi vi phạm khác",
-        "Chỉ nhằm bảo vệ quyền sở hữu trí tuệ",
-        "Chỉ phục vụ công tác thu thuế"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 8,
-      "question": "Chi cục Hải quan khu vực có được giao nhiệm vụ tổ chức thực hiện kiểm tra sau thông quan không?",
-      "options": [
-        "Không, chỉ Cục Hải quan thực hiện",
-        "Có, theo quy định của pháp luật và thẩm quyền được giao",
-        "Có, nhưng chỉ với hàng xuất khẩu",
-        "Có, nhưng phải được Tổng cục Hải quan ủy quyền"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 9,
-      "question": "Chi cục Hải quan khu vực có quyền tiếp nhận, điều tra, khởi tố vụ án hình sự trong phạm vi nào?",
-      "options": [
-        "Không có thẩm quyền",
-        "Theo thẩm quyền của Chi cục trưởng",
-        "Chỉ khi Cục Hải quan phê duyệt",
-        "Chỉ khi Bộ Tài chính giao"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 10,
-      "question": "Chi cục Hải quan khu vực có nhiệm vụ tổng hợp, cung cấp dữ liệu về hàng hóa XNK và phương tiện vận tải trong phạm vi nào?",
-      "options": [
-        "Chỉ khi Tổng cục yêu cầu",
-        "Theo quy định pháp luật trong phạm vi địa bàn quản lý",
-        "Không thuộc thẩm quyền",
-        "Khi Bộ Tài chính chỉ định"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 11,
-      "question": "Nội dung nào sau đây mô tả đúng nhiệm vụ quản lý nhân sự và tài sản của Chi cục?",
-      "options": [
-        "Chỉ quản lý công chức",
-        "Chỉ quản lý tài sản",
-        "Quản lý, sử dụng công chức, người lao động; quản lý hồ sơ, tài sản, phương tiện, trang thiết bị, vũ khí, công cụ hỗ trợ",
-        "Chỉ quản lý kinh phí hoạt động"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 12,
-      "question": "Chi cục Hải quan khu vực giúp Cục trưởng Cục Hải quan (...) về hải quan và thực thi pháp luật trên địa bàn?",
-      "options": [
-        "Chỉ đạo nghiệp vụ",
-        "Kiểm soát nội bộ",
-        "Quản lý nhà nước",
-        "Thanh tra hành chính"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 13,
-      "question": "Chi cục Hải quan khu vực có (...), có con dấu, và được mở tài khoản tại (...) theo quy định?",
-      "options": [
-        "Tư cách pháp nhân – Kho bạc Nhà nước",
-        "Con dấu riêng – Ngân hàng Nhà nước",
-        "Tài khoản riêng – Kho bạc Bộ Tài chính",
-        "Pháp nhân – Ngân hàng thương mại"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 14,
-      "question": "Chi cục tổ chức thực hiện (...), kiểm tra, giám sát hải quan đối với hàng hóa XNK và phương tiện vận tải?",
-      "options": [
-        "Thanh tra",
-        "Kiểm soát",
-        "Thủ tục hải quan",
-        "Cưỡng chế"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 15,
-      "question": "Chi cục tổ chức thực hiện pháp luật về (...) và các khoản thu khác đối với hàng hóa XNK, quá cảnh?",
-      "options": [
-        "Phí hải quan",
-        "Thuế",
-        "Lệ phí cảng",
-        "Chi phí kiểm tra"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 16,
-      "question": "Chi cục tổ chức thực hiện các biện pháp kỹ thuật nghiệp vụ (...) trong hoạt động nghiệp vụ hải quan?",
-      "options": [
-        "Phân tích dữ liệu",
-        "Quản lý rủi ro",
-        "Thu thập chứng cứ",
-        "Kiểm định hàng hóa"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 17,
-      "question": "Chi cục áp dụng biện pháp nghiệp vụ kiểm soát hải quan để phòng, chống (...), gian lận thương mại, ma túy?",
-      "options": [
-        "Vận chuyển nội địa",
-        "Buôn lậu",
-        "Khai sai mã HS",
-        "Sai sót hành chính"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 18,
-      "question": "Chi cục Hải quan khu vực tổ chức thực hiện (...) đối với doanh nghiệp đáp ứng tiêu chí?",
-      "options": [
-        "Giám sát đặc biệt",
-        "Thanh tra định kỳ",
-        "Chế độ ưu tiên",
-        "Kiểm tra 100%"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 19,
-      "question": "Chi cục có nhiệm vụ (...), kiểm tra, tiếp công dân, giải quyết khiếu nại, tố cáo?",
-      "options": [
-        "Điều tra",
-        "Thanh tra",
-        "Phối hợp",
-        "Kiến nghị"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 20,
-      "question": "Chi cục thực hiện tổng hợp và (...) dữ liệu về hàng hóa XNK và phương tiện vận tải trong phạm vi quản lý?",
-      "options": [
-        "Xác minh",
-        "Công bố",
-        "Cung cấp",
-        "Lưu trữ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 21,
-      "question": "Chi cục triển khai các giải pháp kỹ thuật, công nghệ nhằm đáp ứng yêu cầu (...) trong lĩnh vực hải quan?",
-      "options": [
-        "Số hóa hồ sơ",
-        "Chuyển đổi số",
-        "Hiện đại hóa tổ chức",
-        "Giám sát tự động"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 22,
-      "question": "Chi cục có nhiệm vụ (...), chỉ đạo và kiểm tra các đơn vị thuộc và trực thuộc?",
-      "options": [
-        "Phê duyệt",
-        "Bổ nhiệm",
-        "Hướng dẫn",
-        "Báo cáo"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 23,
-      "question": "Chi cục có nhiệm vụ (...), thụ lý, giải quyết nguồn tin về tội phạm, (...) và khởi tố vụ án hình sự?",
-      "options": [
-        "Tiếp nhận – Điều tra",
-        "Xác minh – Lập biên bản",
-        "Tiếp nhận – Điều tra (theo thẩm quyền Chi cục trưởng)",
-        "Điều tra – Truy tố"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 24,
-      "question": "Chi cục tổ chức triển khai công tác cải cách, (...) hải quan?",
-      "options": [
-        "Tin học hóa",
-        "Hiện đại hóa",
-        "Chuyển đổi số",
-        "Tự động hóa"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 25,
-      "question": "Chi cục thực hiện quản lý (...), tài sản, vũ khí, công cụ hỗ trợ và kinh phí hoạt động?",
-      "options": [
-        "Công chức",
-        "Hồ sơ, tài sản",
-        "Trang thiết bị",
-        "Ngân sách"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 26,
-      "question": "Nội dung nào không thuộc nhiệm vụ và quyền hạn của Chi cục Hải quan khu vực?",
-      "options": [
-        "Áp dụng biện pháp kiểm soát hải quan phòng chống buôn lậu",
-        "Thực hiện kiểm tra sau thông quan theo thẩm quyền",
-        "Ban hành quy định nội bộ về thủ tục hải quan áp dụng toàn quốc",
-        "Tổ chức thực hiện pháp luật về thuế đối với hàng hóa XNK"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 27,
-      "question": "Chi cục được phối hợp với các cơ quan nào khác trên địa bàn?",
-      "options": [
-        "Công an, Biên phòng",
-        "Các tổ chức quốc tế về hải quan",
-        "Cơ quan thuế nội địa",
-        "Tất cả các phương án trên"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 28,
-      "question": "Hoạt động nào được thực hiện trực tiếp bởi Chi cục (có thể theo ủy quyền), không phải Cục thực hiện thay?",
-      "options": [
-        "Hợp tác quốc tế về hải quan theo ủy quyền của Cục trưởng",
-        "Ban hành quyết định về cơ cấu tổ chức Chi cục",
-        "Thành lập phòng nghiệp vụ thuộc Chi cục",
-        "Quyết định điều động, bổ nhiệm công chức cấp phó Chi cục"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 29,
-      "question": "Chuỗi hoạt động đúng về quy trình quản lý rủi ro của Chi cục là?",
-      "options": [
-        "Thu thập – Phân tích – Đánh giá – Kiểm tra sau thông quan",
-        "Thu thập – Phân tích – Đánh giá – Áp dụng biện pháp kỹ thuật – Theo dõi kết quả",
-        "Tiếp nhận báo cáo – Ban hành quy trình – Phân tích – Lưu trữ",
-        "Đánh giá hồ sơ – Kiểm tra lại – Báo cáo Cục"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 30,
-      "question": "Nhóm nhiệm vụ nào thể hiện rõ tính 'hai chiều' của công tác quản lý nhà nước tại Chi cục?",
-      "options": [
-        "Kiểm tra – Giám sát – Cưỡng chế",
-        "Hướng dẫn – Kiểm tra – Giải quyết khiếu nại",
-        "Tuyên truyền, hướng dẫn pháp luật – Tiếp nhận, xử lý vi phạm",
-        "Quản lý hồ sơ – Lưu trữ – Báo cáo"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 31,
-      "question": "Nhiệm vụ nào sau đây đều thuộc thẩm quyền của Chi cục Hải quan khu vực?",
-      "options": [
-        "Tổ chức kiểm tra sau thông quan",
-        "Tổ chức thực hiện chế độ ưu tiên doanh nghiệp",
-        "Quyết định thành lập phòng nghiệp vụ",
-        "A và B đúng"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 32,
-      "question": "Nhận định nào sau đây chưa phản ánh đầy đủ hoặc sai về nhiệm vụ của Chi cục?",
-      "options": [
-        "Tổng hợp, cung cấp dữ liệu hàng hóa XNK",
-        "Thanh tra, kiểm tra và giải quyết khiếu nại",
-        "Hợp tác quốc tế về hải quan không cần ủy quyền của Cục trưởng",
-        "Tuyên truyền, phổ biến chính sách pháp luật hải quan"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 33,
-      "question": "Vai trò của Chi cục trong phòng chống buôn lậu và gian lận thương mại bao gồm?",
-      "options": [
-        "Áp dụng biện pháp nghiệp vụ kiểm soát hải quan",
-        "Chủ trì phối hợp với công an, biên phòng trên địa bàn",
-        "Cả A và B đều đúng",
-        "Cả A và B đều sai"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 34,
-      "question": "Nhận định nào sau đây sai về chức năng của Chi cục Hải quan khu vực?",
-      "options": [
-        "Là đơn vị thuộc Cục, giúp Cục trưởng quản lý nhà nước",
-        "Có tư cách pháp nhân, con dấu, tài khoản Kho bạc",
-        "Là cơ quan hành chính cấp tỉnh, có quyền độc lập ban hành quy định nội bộ quản lý thuế",
-        "Thực hiện pháp luật hải quan trong phạm vi địa bàn giao"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 35,
-      "question": "Nhận định nào sau đây sai về nhiệm vụ của Chi cục?",
-      "options": [
-        "Có quyền ban hành chế độ ưu tiên cho doanh nghiệp",
-        "Tự quyết định thành lập Đội kiểm soát mới",
-        "Ban hành hướng dẫn nghiệp vụ toàn quốc",
-        "Cả A, B, C đều sai"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 36,
-      "question": "Chi cục Hải quan khu vực được tổ chức gồm những đơn vị nào?",
-      "options": [
-        "Văn phòng, Phòng, Đội thuộc Hải quan khu vực và Hải quan cửa khẩu/ngoài cửa khẩu",
-        "Chỉ các Phòng nghiệp vụ và các Đội kiểm soát",
-        "Các Phòng trực thuộc Tổng cục Hải quan",
-        "Chỉ Văn phòng và Hải quan cửa khẩu"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 37,
-      "question": "Đơn vị nào không bắt buộc phải có mà 'có thể thành lập nếu cần thiết' (ghi chú 'nếu có')?",
-      "options": [
-        "Phòng Nghiệp vụ hải quan",
-        "Phòng CNTT, Phòng QLRR, Phòng QLRR & CNTT, Đội Thông quan",
-        "Văn phòng Chi cục",
-        "Đội Kiểm soát hải quan"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 38,
-      "question": "Đơn vị nào thuộc nhóm Hải quan cửa khẩu/ngoài cửa khẩu và có tư cách pháp nhân riêng?",
-      "options": [
-        "Văn phòng Chi cục",
-        "Phòng Quản lý rủi ro",
-        "Hải quan cửa khẩu/ngoài cửa khẩu",
-        "Phòng Tổ chức cán bộ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 39,
-      "question": "Biên chế của Chi cục Hải quan khu vực do ai quyết định?",
-      "options": [
-        "Bộ trưởng Bộ Tài chính",
-        "Tổng cục trưởng Tổng cục Hải quan",
-        "Cục trưởng Cục Hải quan",
-        "Chi cục trưởng Chi cục Hải quan khu vực"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 40,
-      "question": "Cục trưởng Cục Hải quan có trách nhiệm nào sau đây đối với Hải quan cửa khẩu thuộc Chi cục?",
-      "options": [
-        "Bố trí biên chế và nhân sự",
-        "Quyết định tên gọi, trụ sở, địa bàn quản lý",
-        "Ban hành quy chế hoạt động chuyên môn",
-        "Tất cả phương án trên"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 41,
-      "question": "Số lượng các đơn vị thuộc Chi cục (Văn phòng, Phòng, Đội...) được xác định theo đâu?",
-      "options": [
-        "Quyết định của Chi cục trưởng",
-        "Quyết định của Tổng cục Hải quan",
-        "Phụ lục kèm theo Quyết định (ví dụ QĐ 966/QĐ-BTC hoặc QĐ 819)",
-        "Hướng dẫn của Bộ Nội vụ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 42,
-      "question": "Đơn vị nào có thể kiêm nhiệm chức năng giữa hai lĩnh vực chuyên môn khác nhau?",
-      "options": [
-        "Phòng Quản lý rủi ro và Công nghệ thông tin (nếu có)",
-        "Đội Phúc tập và Kiểm tra sau thông quan",
-        "Phòng Nghiệp vụ hải quan",
-        "Phòng Tổ chức cán bộ"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 43,
-      "question": "Đội Phúc tập và Kiểm tra sau thông quan có nhiệm vụ chính nào?",
-      "options": [
-        "Kiểm tra chứng từ kế toán doanh nghiệp",
-        "Thực hiện kiểm tra hồ sơ hải quan và kiểm tra sau thông quan",
-        "Kiểm soát phương tiện qua lại biên giới",
-        "Kiểm tra nội bộ công chức"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 44,
-      "question": "Quyền quyết định tên gọi, trụ sở, địa bàn quản lý của Hải quan cửa khẩu thuộc về ai?",
-      "options": [
-        "Bộ trưởng Bộ Tài chính",
-        "Cục trưởng Cục Hải quan",
-        "Chi cục trưởng Chi cục Hải quan khu vực",
-        "Tổng cục trưởng Tổng cục Hải quan"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 45,
-      "question": "Số lượng đơn vị trực thuộc Chi cục Hải quan khu vực được quy định như thế nào?",
-      "options": [
-        "Do Chi cục trưởng tự quy định",
-        "Ấn định trong Phụ lục Quyết định, không được vượt quá số lượng quy định",
-        "Do Bộ Nội vụ thẩm định",
-        "Tùy theo số lượng tờ khai hàng năm"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 46,
-      "question": "Cơ cấu Chi cục gồm: (...), Phòng, Đội thuộc Hải quan khu vực và (...)?",
-      "options": [
-        "Văn phòng – Hải quan cửa khẩu/ngoài cửa khẩu",
-        "Ban điều hành – Hải quan tỉnh",
-        "Phòng kiểm soát – Tổng cục Hải quan",
-        "Văn phòng – Bộ Tài chính"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 47,
-      "question": "Đơn vị nào được ghi chú 'nếu có' trong cơ cấu tổ chức Chi cục Hải quan khu vực?",
-      "options": [
-        "Phòng CNTT – Phòng QLRR",
-        "Phòng QLRR – Đội Thông quan",
-        "Phòng CNTT – Đội Thông quan",
-        "Phòng Nghiệp vụ hải quan – Đội Phúc tập"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 48,
-      "question": "Đơn vị nào có tư cách pháp nhân, con dấu và được mở tài khoản tại Kho bạc Nhà nước?",
-      "options": [
-        "Cục Hải quan – Đội Kiểm soát",
-        "Các Đội và Hải quan cửa khẩu/ngoài cửa khẩu",
-        "Chi cục Hải quan khu vực (nói chung)",
-        "Tổng cục Hải quan"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 49,
-      "question": "Số lượng Văn phòng, Phòng, Đội của Chi cục được quy định cụ thể tại?",
-      "options": [
-        "Quy chế hoạt động",
-        "Phụ lục kèm theo Quyết định của Bộ Tài chính",
-        "Hướng dẫn của Tổng cục",
-        "Văn bản liên ngành"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 50,
-      "question": "Biên chế của từng Chi cục do ai quyết định căn cứ tổng số được giao?",
-      "options": [
-        "Bộ trưởng",
-        "Tổng cục trưởng",
-        "Cục trưởng Cục Hải quan",
-        "Chi cục trưởng"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 51,
-      "question": "Cục trưởng Cục Hải quan có trách nhiệm bố trí đầy đủ (...) tại các Chi cục?",
-      "options": [
-        "Phòng – Đội – Tổ",
-        "Văn phòng – Phòng – Đội",
-        "Đội – Tổ – Ban",
-        "Phòng – Tổ – Bộ phận"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 52,
-      "question": "Đơn vị nào chịu trách nhiệm quản lý, sử dụng công chức và tài sản được phân cấp?",
-      "options": [
-        "Văn phòng Cục",
-        "Chi cục Hải quan khu vực",
-        "Vụ Tổ chức cán bộ",
-        "Trung tâm dữ liệu"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 53,
-      "question": "Chi cục thực hiện nhiệm vụ kiểm tra sau thông quan đối với hàng hóa đã thông quan tại địa bàn nào?",
-      "options": [
-        "Toàn quốc",
-        "Trong phạm vi địa bàn quản lý",
-        "Chỉ tại các khu công nghiệp",
-        "Chỉ đối với doanh nghiệp có trụ sở tại tỉnh"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 54,
-      "question": "Có thể tổ chức Phòng (...) kiêm cả chức năng (...) nếu điều kiện chưa đủ tách riêng?",
-      "options": [
-        "Quản lý rủi ro – Công nghệ thông tin",
-        "Kiểm soát – Thuế",
-        "Nghiệp vụ – Kiểm tra sau thông quan",
-        "Tổ chức cán bộ – Thanh tra"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 55,
-      "question": "Việc tổ chức các đơn vị thuộc Chi cục phải (...) với số lượng tại Phụ lục và bảo đảm hiệu quả?",
-      "options": [
-        "Đúng",
-        "Hợp lý",
-        "Phù hợp",
-        "Linh hoạt"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 56,
-      "question": "Số lượng đơn vị trực thuộc Chi cục Hải quan khu vực có được tùy ý thay đổi không?",
-      "options": [
-        "Có, do Chi cục trưởng quyết định",
-        "Không, phải theo Phụ lục Quyết định",
-        "Có, nếu khối lượng công việc tăng",
-        "Chỉ được tăng, không được giảm"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 57,
-      "question": "Trong danh mục cơ cấu tổ chức theo mẫu, có bao nhiêu loại đơn vị được ghi chú '(nếu có)'?",
-      "options": [
-        "2 đơn vị",
-        "3 đơn vị",
-        "4 đơn vị (Phòng CNTT, Phòng QLRR, Phòng QLRR & CNTT, Đội Thông quan)",
-        "5 đơn vị"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 58,
-      "question": "Cục trưởng quyết định biên chế Chi cục dựa trên cơ sở nào?",
-      "options": [
-        "Đề nghị của Chi cục trưởng",
-        "Phạm vi tổng số biên chế được cấp trên giao",
-        "Số lượng doanh nghiệp trên địa bàn",
-        "Nhu cầu đột xuất"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 59,
-      "question": "Hải quan cửa khẩu/ngoài cửa khẩu trực thuộc đơn vị nào trong mô hình mới?",
-      "options": [
-        "Trực thuộc Cục Hải quan",
-        "Trực thuộc Chi cục Hải quan khu vực",
-        "Trực thuộc Tổng cục Hải quan",
-        "Trực thuộc Bộ Tài chính"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 60,
-      "question": "Đơn vị nào dưới đây có tư cách pháp nhân và tài khoản tại Kho bạc Nhà nước?",
-      "options": [
-        "Chỉ Chi cục Hải quan khu vực",
-        "Các Đội và Hải quan cửa khẩu/ngoài cửa khẩu",
-        "Chỉ Hải quan cửa khẩu",
-        "Tất cả các Phòng chuyên môn"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 61,
-      "question": "Phòng nào là đơn vị 'ghép chức năng' duy nhất được quy định?",
-      "options": [
-        "Phòng Nghiệp vụ - Thuế",
-        "Phòng Kiểm soát - QLRR",
-        "Phòng Quản lý rủi ro và Công nghệ thông tin (nếu có)",
-        "Phòng Tổ chức - Hành chính"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 62,
-      "question": "Có bao nhiêu 'Phòng' (bao gồm đơn vị tương đương cấp Phòng) được liệt kê cụ thể trong cơ cấu?",
-      "options": [
-        "4",
-        "5",
-        "6 (Tổ chức cán bộ, CNTT, QLRR, QLRR & CNTT, Nghiệp vụ, Văn phòng)",
-        "7"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 63,
-      "question": "Đơn vị nào không có tư cách pháp nhân độc lập?",
-      "options": [
-        "Hải quan cửa khẩu",
-        "Đội Kiểm soát hải quan",
-        "Phòng Nghiệp vụ hải quan",
-        "Đội Thông quan"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 64,
-      "question": "Trách nhiệm quản lý, lưu giữ hồ sơ, ấn chỉ thuộc về?",
-      "options": [
-        "Văn phòng Cục",
-        "Chi cục Hải quan khu vực",
-        "Trung tâm Lưu trữ",
-        "Cơ quan Công an"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 65,
-      "question": "Mối quan hệ đúng giữa Chi cục trưởng và Cục trưởng là gì?",
-      "options": [
-        "Cục trưởng chỉ đạo trực tiếp, Chi cục trưởng tổ chức thực hiện",
-        "Cục trưởng giao quyền toàn phần về nhân sự cho Chi cục trưởng",
-        "Chi cục trưởng có quyền ban hành quy định toàn quốc",
-        "A đúng, B và C sai"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 66,
-      "question": "Vị trí, chức năng của Chi cục Hải quan khu vực bao gồm?",
-      "options": [
-        "Đơn vị thuộc Cục, giúp Cục trưởng quản lý nhà nước",
-        "Có tư cách pháp nhân, con dấu, tài khoản riêng",
-        "Có quyền ban hành văn bản quy phạm pháp luật",
-        "Chỉ A và B đúng"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 67,
-      "question": "Nhiệm vụ nào thuộc thẩm quyền của Cục trưởng (không phải Chi cục trưởng)?",
-      "options": [
-        "Quyết định biên chế Chi cục",
-        "Quyết định tên gọi, trụ sở Hải quan cửa khẩu",
-        "Quy định chức năng nhiệm vụ các đơn vị thuộc Chi cục",
-        "Tất cả các phương án trên"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 68,
-      "question": "Nhận định nào đúng về các đơn vị trong cơ cấu Chi cục?",
-      "options": [
-        "Đội và Hải quan cửa khẩu có pháp nhân riêng",
-        "Phòng chuyên môn không có pháp nhân riêng",
-        "Một số đơn vị linh hoạt theo ghi chú '(nếu có)'",
-        "Cả A, B và C đều đúng"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 69,
-      "question": "Đơn vị nào không thuộc danh mục các Phòng được phép thành lập trong Chi cục?",
-      "options": [
-        "Phòng Nghiệp vụ hải quan",
-        "Phòng Quản lý rủi ro",
-        "Phòng Quản lý rủi ro và CNTT",
-        "Phòng Thanh tra - Pháp chế"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 70,
-      "question": "Mệnh đề nào sau đây SAI về tổ chức Chi cục?",
-      "options": [
-        "Cục trưởng có thể tự ý tăng số lượng Đội khi việc tăng",
-        "Số lượng đơn vị xác định theo Phụ lục",
-        "Bố trí đơn vị phải đảm bảo đúng số lượng quy định",
-        "Đội và Cửa khẩu có pháp nhân riêng"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 71,
-      "question": "Chi cục Hải quan khu vực có các chức danh lãnh đạo nào?",
-      "options": [
-        "Chi cục trưởng, Phó Chi cục trưởng và Trưởng phòng",
-        "Chi cục trưởng và một số Phó Chi cục trưởng",
-        "Cục trưởng, Phó Cục trưởng",
-        "Trưởng Chi cục và Cố vấn pháp lý"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 72,
-      "question": "Số lượng Phó Chi cục trưởng được quy định như thế nào?",
-      "options": [
-        "Tối đa 2 người",
-        "Tối đa 3 người",
-        "Do Tổng cục quy định riêng",
-        "Thực hiện theo quy định của pháp luật hiện hành"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 73,
-      "question": "Chi cục trưởng là người như thế nào trong cơ cấu tổ chức?",
-      "options": [
-        "Người đứng đầu Cục",
-        "Người đứng đầu Chi cục, chịu trách nhiệm toàn bộ hoạt động đơn vị",
-        "Cán bộ phụ trách nghiệp vụ kiểm soát",
-        "Đại diện pháp lý của Tổng cục"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 74,
-      "question": "Chi cục trưởng chịu trách nhiệm trước ai?",
-      "options": [
-        "Tổng cục trưởng",
-        "Cục trưởng Cục Hải quan và trước pháp luật",
-        "Bộ trưởng Bộ Tài chính",
-        "UBND địa phương"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 75,
-      "question": "Phó Chi cục trưởng chịu trách nhiệm trước ai?",
-      "options": [
-        "Tổng cục trưởng",
-        "Cục trưởng",
-        "Chi cục trưởng và pháp luật",
-        "Phòng Tổ chức cán bộ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 76,
-      "question": "Trong giai đoạn chuyển tiếp, Chi cục có trách nhiệm gì?",
-      "options": [
-        "Tiếp nhận toàn bộ nhiệm vụ, quyền hạn, nghĩa vụ của Cục Hải quan địa phương cũ",
-        "Chỉ tiếp nhận quản lý nhân sự",
-        "Chỉ tiếp nhận vụ việc đang xử lý",
-        "Không có nhiệm vụ chuyển tiếp"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 77,
-      "question": "Các quy định, hướng dẫn hiện hành được áp dụng đến khi nào?",
-      "options": [
-        "Đến khi có văn bản mới của Bộ Tài chính",
-        "Đến khi Tổng cục ban hành hướng dẫn khác",
-        "Cho đến khi cấp có thẩm quyền sửa đổi, bổ sung hoặc thay thế",
-        "Khi Chi cục ban hành quy định mới"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 78,
-      "question": "Thời điểm Chi cục Hải quan khu vực phải đi vào hoạt động là trước ngày?",
-      "options": [
-        "01/05/2025",
-        "01/06/2025",
-        "15/06/2025",
-        "01/07/2025"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 79,
-      "question": "Trách nhiệm đưa Chi cục và các đơn vị trực thuộc đi vào hoạt động thuộc về?",
-      "options": [
-        "Tổng cục trưởng",
-        "Bộ trưởng",
-        "Cục trưởng Cục Hải quan",
-        "Chi cục trưởng"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 80,
-      "question": "Mô hình quản lý 3 cấp mới được hiểu đúng là?",
-      "options": [
-        "Bộ – Chi cục",
-        "Tổng cục – Cục",
-        "Cục Hải quan – Chi cục khu vực – Hải quan cửa khẩu",
-        "Tất cả ngang quyền"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 81,
-      "question": "Lãnh đạo Chi cục gồm Chi cục trưởng và một số (...) theo quy định pháp luật?",
-      "options": [
-        "Trưởng phòng",
-        "Phó Chi cục trưởng",
-        "Cục phó",
-        "Giám đốc"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 82,
-      "question": "Chi cục trưởng là người (...) chịu trách nhiệm trước (...) và pháp luật?",
-      "options": [
-        "Chỉ đạo – Tổng cục trưởng",
-        "Phụ trách – Bộ trưởng",
-        "Đứng đầu – Cục trưởng Cục Hải quan",
-        "Điều hành – Chính phủ"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 83,
-      "question": "Phó Chi cục trưởng giúp việc cho Chi cục trưởng và chịu trách nhiệm trước (...) và pháp luật?",
-      "options": [
-        "Tổng cục trưởng",
-        "Cục trưởng",
-        "Chi cục trưởng",
-        "Bộ trưởng"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 84,
-      "question": "Chi cục Hải quan khu vực tiếp nhận toàn bộ nhiệm vụ của cơ quan nào tại địa phương?",
-      "options": [
-        "Cục Hải quan liên tỉnh",
-        "Cục Hải quan tỉnh, liên tỉnh, thành phố trực thuộc trung ương",
-        "Tổng cục Hải quan",
-        "Cục Thuế"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 85,
-      "question": "Mốc thời gian quan trọng 01/06/2025 liên quan đến việc?",
-      "options": [
-        "Đưa Chi cục Hải quan khu vực đi vào hoạt động",
-        "Kết thúc kỳ thi công chức",
-        "Ban hành Luật Hải quan mới",
-        "Thanh lý tài sản cũ"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 86,
-      "question": "Nhận định nào đúng về trách nhiệm pháp lý của lãnh đạo Chi cục?",
-      "options": [
-        "Trưởng chịu trước Cục trưởng và pháp luật",
-        "Phó chịu trước Trưởng và pháp luật",
-        "Phó chịu trực tiếp trước Tổng cục trưởng",
-        "Chỉ A và B đúng"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 87,
-      "question": "Nhận định nào SAI về giai đoạn chuyển tiếp?",
-      "options": [
-        "Tiếp nhận toàn bộ nhiệm vụ Cục địa phương cũ",
-        "Cục trưởng tổ chức sắp xếp hoạt động trước 01/6/2025",
-        "Văn bản hướng dẫn hiện hành hết hiệu lực NGAY khi QĐ có hiệu lực",
-        "Các văn bản cũ vẫn còn hiệu lực cho đến khi bị thay thế"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 88,
-      "question": "Cấp nào chịu trách nhiệm trực tiếp tổ chức, sắp xếp mô hình mới đúng tiến độ?",
-      "options": [
-        "Tổng cục trưởng",
-        "Bộ trưởng",
-        "Cục trưởng Cục Hải quan",
-        "Chi cục trưởng"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 89,
-      "question": "Hiện nay trên phạm vi cả nước được tổ chức bao nhiêu Chi cục Hải quan khu vực?",
-      "options": [
-        "18",
-        "20",
-        "22",
-        "25"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 90,
-      "question": "Khác biệt cơ bản giữa Chi cục khu vực và Hải quan cửa khẩu là gì?",
-      "options": [
-        "Khu vực trực tiếp làm thủ tục, cửa khẩu chỉ giám sát",
-        "Khu vực là cấp quản lý trung gian quản lý nhiều cửa khẩu",
-        "Cả hai có quyền như nhau",
-        "Cả hai trực thuộc Tổng cục"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 91,
-      "question": "Cục trưởng Cục Hải quan quyết định nội dung nào đối với đơn vị thuộc Chi cục?",
-      "options": [
-        "Biên chế",
-        "Tên gọi, trụ sở, địa bàn quản lý",
-        "Chức năng nhiệm vụ cụ thể",
-        "Tất cả các phương án trên"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 92,
-      "question": "Điểm giống nhau giữa Cục Hải quan và Chi cục Hải quan khu vực là?",
-      "options": [
-        "Đều có tư cách pháp nhân, con dấu và tài khoản Kho bạc",
-        "Đều trực thuộc Tổng cục Hải quan",
-        "Đều có quyền ban hành văn bản quy phạm pháp luật",
-        "Đều tự quyết định bộ máy"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 93,
-      "question": "Nhận định nào SAI khi so sánh Cục và Chi cục khu vực?",
-      "options": [
-        "Cục thuộc Tổng cục, Chi cục khu vực thuộc Cục",
-        "Chi cục khu vực có quyền ban hành quy trình áp dụng toàn ngành",
-        "Chi cục khu vực quản lý phạm vi nhiều tỉnh",
-        "Chỉ B sai"
-      ],
-      "answer": 3
-    },
-    {
-      "id": 94,
-      "question": "Thứ tự quản lý trong mô hình 3 cấp mới là?",
-      "options": [
-        "Tổng cục -> Cục -> Đội",
-        "Cục -> Chi cục khu vực -> Hải quan cửa khẩu",
-        "Bộ -> Tổng cục -> Cục -> Chi cục",
-        "Cục -> Đội -> Tổ"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 95,
-      "question": "Tổng quy mô toàn hệ thống 20 Chi cục khu vực hiện có bao nhiêu Phòng/Đội và Cửa khẩu?",
-      "options": [
-        "147 phòng/đội – 157 cửa khẩu",
-        "150 phòng/đội – 159 cửa khẩu",
-        "155 phòng/đội – 157 cửa khẩu",
-        "150 phòng/đội – 157 cửa khẩu"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 96,
-      "question": "Chi cục Hải quan khu vực nào có quy mô lớn nhất hệ thống?",
-      "options": [
-        "KV I - Hà Nội, Phú Thọ",
-        "KV II - TP. Hồ Chí Minh",
-        "KV XVIII – Đồng Nai",
-        "KV XX – Đồng Tháp, An Giang"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 97,
-      "question": "Chi cục Hải quan khu vực nào nhỏ nhất hệ thống?",
-      "options": [
-        "KV XIV - Gia Lai, Đắk Lắk",
-        "KV XV – Sân bay Tân Sơn Nhất, Long Thành",
-        "KV X - Thanh Hóa, Sơn La",
-        "KV IV - Hưng Yên, Ninh Bình"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 98,
-      "question": "Nhóm Chi cục có ít cửa khẩu nhất (<=5) gồm khu vực nào?",
-      "options": [
-        "KV IV, VI, X, XIV",
-        "KV III, V, VII, XI",
-        "KV II, XVIII, XX, I",
-        "KV XIII, XIX, XII, XVII"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 99,
-      "question": "Khu vực nào quản lý đồng thời 3 tỉnh, đại diện vùng Tây Bắc và Tây Nam Bộ?",
-      "options": [
-        "KV VII (Tây Bắc) và KV XIX (Tây Nam Bộ)",
-        "KV IV và KV XIV",
-        "KV II và KV XX",
-        "KV I và KV V"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 100,
-      "question": "Chi cục Hải quan khu vực nào có nhiều cửa khẩu đứng thứ hai (12 cửa khẩu)?",
-      "options": [
-        "KV I",
-        "KV XVIII",
-        "KV XX (Đồng Tháp, An Giang)",
-        "KV VII"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 101,
-      "question": "Chi cục Hải quan KV V quản lý địa bàn các tỉnh nào?",
-      "options": [
-        "Hưng Yên, Ninh Bình",
-        "Bắc Ninh, Thái Nguyên",
-        "Thanh Hóa, Sơn La",
-        "Cao Bằng, Tuyên Quang"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 102,
-      "question": "Khu vực IX quản lý địa bàn Huế và Quảng Trị, trụ sở đặt tại đâu?",
-      "options": [
-        "Huế",
-        "Quảng Trị",
-        "Đà Nẵng",
-        "Quảng Bình"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 103,
-      "question": "Nhóm khu vực nào đều có quy mô 9 cửa khẩu/ngoài cửa khẩu?",
-      "options": [
-        "KV IX, XII, XVI, XVII, XIX",
-        "KV I, III, V, VIII, XIV",
-        "KV IV, VI, X, XIII, XV",
-        "KV II, XVIII, XX, XI, VII"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 104,
-      "question": "Khu vực nào thuộc vùng địa bàn Tây Nguyên?",
-      "options": [
-        "KV XIII và KV XIV",
-        "KV XVI và KV XVII",
-        "KV XI và KV XII",
-        "KV VIII và KV IX"
-      ],
-      "answer": 0
-    },
-    {
-      "id": 105,
-      "question": "Chi cục Hải quan khu vực XV được thành lập để quản lý?",
-      "options": [
-        "TP. Hồ Chí Minh và Bình Dương",
-        "Sân bay Tân Sơn Nhất (TP.HCM) và Sân bay Long Thành (Đồng Nai)",
-        "TP. Hồ Chí Minh và Đồng Nai",
-        "Sân bay Nội Bài và Sân bay Phú Bài"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 106,
-      "question": "Đặc điểm nổi bật nhất của Chi cục Hải quan khu vực XV là?",
-      "options": [
-        "Nhiều cửa khẩu nhất",
-        "Duy nhất chỉ quản lý sân bay, không quản lý cửa khẩu đất liền hay cảng biển",
-        "Nhiều phòng/đội nhất",
-        "Địa bàn trải dài 3 tỉnh"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 107,
-      "question": "Chi cục nào có 10 Phòng/Đội và 21 cửa khẩu (lớn nhất)?",
-      "options": [
-        "KV I",
-        "KV II (TP. Hồ Chí Minh)",
-        "KV XV",
-        "KV XVIII"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 108,
-      "question": "Quy mô của Chi cục Hải quan khu vực XV là?",
-      "options": [
-        "05 Phòng – 03 Cửa khẩu",
-        "04 Phòng – 04 Cửa khẩu",
-        "03 Phòng – 02 Cửa khẩu (nhỏ nhất hệ thống)",
-        "06 Phòng – 04 Cửa khẩu"
-      ],
-      "answer": 2
-    },
-    {
-      "id": 109,
-      "question": "Quy mô của KV I (Hà Nội, Phú Thọ) so với KV XV như thế nào?",
-      "options": [
-        "Bằng nhau",
-        "KV I lớn hơn (9 Phòng/Đội so với 3 của KV XV)",
-        "KV XV lớn hơn",
-        "Không so sánh được"
-      ],
-      "answer": 1
-    },
-    {
-      "id": 110,
-      "question": "Chi cục Hải quan khu vực nào được bổ sung mới theo QĐ 1942/QĐ-CHQ ngày 04/12/2025?",
-      "options": [
-        "KV XIV",
-        "KV XV (Sân bay Tân Sơn Nhất, Long Thành)",
-        "KV XVI",
-        "KV XVII"
-      ],
-      "answer": 1
-    }
-  ]
+	"title": "105 Câu hỏi trắc nghiệm Chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức Chi cục Hải quan khu vực (Cập nhật 2025)",
+	"questions": [
+		{
+			"id": 1,
+			"question": "Theo QĐ 819/QĐ-BTC và QĐ 1942/QĐ-CHQ, Chi cục Hải quan khu vực kế thừa chức năng quản lý nhà nước từ cơ quan nào?",
+			"options": [
+				"Tổng cục Hải quan các khu vực",
+				"Các Cục Hải quan tỉnh, liên tỉnh, thành phố trực thuộc trung ương trước đây",
+				"Chi cục Hải quan cửa khẩu trực thuộc Tổng cục",
+				"Các Đội Kiểm soát Hải quan độc lập"
+			],
+			"answer": 1,
+			"explanation": "Chi cục Hải quan khu vực thực hiện quản lý thay cho Cục Hải quan cấp tỉnh cũ để tinh gọn bộ máy theo mô hình 3 cấp. Ví dụ: Trước đây mỗi tỉnh có một Cục, nay gộp lại thành các khu vực lớn hơn để dễ quản lý."
+		},
+		{
+			"id": 2,
+			"question": "Chi cục Hải quan khu vực được xác định là đơn vị như thế nào trong hệ thống tổ chức của ngành Hải quan?",
+			"options": [
+				"Đơn vị thuộc Tổng cục Hải quan",
+				"Đơn vị thuộc Bộ Tài chính",
+				"Đơn vị thuộc Cục Hải quan",
+				"Đơn vị độc lập trực thuộc Chính phủ"
+			],
+			"answer": 2,
+			"explanation": "Chi cục khu vực là đơn vị cấp dưới trực tiếp của Cục Hải quan. Ví dụ: Chi cục Hải quan khu vực I sẽ báo cáo công việc trực tiếp cho Cục trưởng Cục Hải quan địa phương."
+		},
+		{
+			"id": 3,
+			"question": "Về mặt pháp lý, Chi cục Hải quan khu vực có những yếu tố nào sau đây?",
+			"options": [
+				"Không có tư cách pháp nhân, không có con dấu",
+				"Chỉ có tư cách pháp nhân, không có con dấu",
+				"Có tư cách pháp nhân nhưng không được mở tài khoản",
+				"Có tư cách pháp nhân, có con dấu và được mở tài khoản tại Kho bạc Nhà nước"
+			],
+			"answer": 3,
+			"explanation": "Chi cục có đầy đủ quyền tự chủ về pháp lý, dấu ấn và tài chính. Ví dụ: Khi Long nộp lệ phí hải quan, số tiền này được ghi nhận vào tài khoản riêng của Chi cục tại Kho bạc."
+		},
+		{
+			"id": 4,
+			"question": "Chi cục Hải quan khu vực thực hiện thủ tục hải quan, kiểm tra, giám sát đối với những đối tượng nào?",
+			"options": [
+				"Chỉ hàng hóa nhập khẩu và phương tiện vận tải nhập cảnh",
+				"Chỉ hàng hóa xuất khẩu, nhập khẩu",
+				"Chỉ hành lý của người xuất cánh, nhập cảnh",
+				"Hàng hóa XNK, chuyển khẩu, quá cảnh, trung chuyển; hành lý; phương tiện vận tải XNC, quá cảnh"
+			],
+			"answer": 3,
+			"explanation": "Nhiệm vụ bao quát tất cả các loại hình lưu thông qua biên giới. Ví dụ: Một chiếc xe tải chở hàng từ Lào quá cảnh qua Việt Nam sang Trung Quốc sẽ chịu sự giám sát của Chi cục."
+		},
+		{
+			"id": 5,
+			"question": "Chi cục Hải quan khu vực tổ chức thực hiện pháp luật về thuế đối với đối tượng nào?",
+			"options": [
+				"Chỉ hàng hóa nhập khẩu",
+				"Chỉ hàng hóa xuất khẩu",
+				"Hàng hóa xuất khẩu, nhập khẩu, quá cảnh; phương tiện vận tải xuất, nhập cảnh, quá cảnh",
+				"Chỉ doanh nghiệp ưu tiên"
+			],
+			"answer": 2,
+			"explanation": "Chi cục thu thuế và các khoản thu khác đối với cả hàng hóa và phương tiện. Ví dụ: Khi Long nhập khẩu lô hàng linh kiện máy tính, Chi cục sẽ tính và thu thuế nhập khẩu cho lô hàng đó."
+		},
+		{
+			"id": 6,
+			"question": "Chi cục Hải quan khu vực quản lý hải quan đối với hàng hóa XNK dưới hình thức nào?",
+			"options": [
+				"Giao dịch qua thương mại điện tử",
+				"Giao dịch nội địa",
+				"Giao dịch ủy thác",
+				"Giao dịch tạm nhập tái xuất"
+			],
+			"answer": 0,
+			"explanation": "Quản lý cả hàng hóa mua bán qua mạng quốc tế. Ví dụ: Các kiện hàng lẻ Long đặt từ nước ngoài qua Amazon hay Shopee quốc tế đều phải qua sự kiểm soát của Chi cục."
+		},
+		{
+			"id": 7,
+			"question": "Mục đích của việc áp dụng các biện pháp nghiệp vụ kiểm soát hải quan là gì?",
+			"options": [
+				"Chỉ để tăng tốc thông quan",
+				"Phòng, chống buôn lậu, gian lận thương mại, ma túy, khủng bố, rửa tiền...",
+				"Chỉ nhằm bảo vệ quyền sở hữu trí tuệ",
+				"Chỉ phục vụ công tác thu thuế"
+			],
+			"answer": 1,
+			"explanation": "Kiểm soát để đảm bảo an ninh và chống tội phạm kinh tế. Ví dụ: Chi cục sử dụng máy soi để phát hiện ma túy giấu trong các kiện hàng thực phẩm xuất khẩu."
+		},
+		{
+			"id": 8,
+			"question": "Chi cục Hải quan khu vực có được giao nhiệm vụ tổ chức thực hiện kiểm tra sau thông quan không?",
+			"options": [
+				"Không, chỉ Cục Hải quan thực hiện",
+				"Có, theo quy định của pháp luật và thẩm quyền được giao",
+				"Có, nhưng chỉ với hàng xuất khẩu",
+				"Có, nhưng phải được Tổng cục Hải quan ủy quyền"
+			],
+			"answer": 1,
+			"explanation": "Chi cục vẫn có quyền hậu kiểm sau khi hàng đã đi. Ví dụ: Sau khi Long nhập hàng xong 2 tháng, Chi cục có thể kiểm tra lại sổ sách để xác định Long có khai đúng giá trị hàng không."
+		},
+		{
+			"id": 9,
+			"question": "Chi cục Hải quan khu vực có quyền khởi tố vụ án hình sự trong phạm vi nào?",
+			"options": [
+				"Không có thẩm quyền",
+				"Theo thẩm quyền của Chi cục trưởng",
+				"Chỉ khi Cục Hải quan phê duyệt",
+				"Chỉ khi Bộ Tài chính giao"
+			],
+			"answer": 1,
+			"explanation": "Chi cục trưởng có quyền ra quyết định khởi tố nếu phát hiện hành vi vi phạm đủ yếu tố cấu thành tội phạm. Ví dụ: Phát hiện buôn lậu số lượng lớn hàng cấm, Chi cục trưởng có quyền khởi tố vụ án."
+		},
+		{
+			"id": 10,
+			"question": "Chi cục Hải quan khu vực có nhiệm vụ cung cấp dữ liệu về hàng hóa XNK trong phạm vi nào?",
+			"options": [
+				"Chỉ khi Tổng cục yêu cầu",
+				"Theo quy định pháp luật trong phạm vi địa bàn quản lý",
+				"Không thuộc thẩm quyền",
+				"Khi Bộ Tài chính chỉ định"
+			],
+			"answer": 1,
+			"explanation": "Trách nhiệm báo cáo và cung cấp số liệu tại địa phương. Ví dụ: Cung cấp số liệu kim ngạch xuất khẩu gỗ của các doanh nghiệp trên địa bàn cho UBND tỉnh để phục vụ thống kê."
+		},
+		{
+			"id": 11,
+			"question": "Chi cục Hải quan khu vực thực hiện quản lý những nội dung nào dưới đây?",
+			"options": [
+				"Chỉ quản lý tài chính",
+				"Chỉ quản lý công chức",
+				"Chỉ quản lý tài sản",
+				"Quản lý công chức, người lao động; hồ sơ, tài sản, vũ khí, công cụ hỗ trợ"
+			],
+			"answer": 3,
+			"explanation": "Quản lý toàn diện từ con người đến trang thiết bị kỹ thuật. Ví dụ: Chi cục chịu trách nhiệm bảo quản máy soi, xe tuần tra và các loại vũ khí quân dụng được cấp."
+		},
+		{
+			"id": 12,
+			"question": "Chi cục Hải quan khu vực giúp Cục trưởng Cục Hải quan thực hiện chức năng gì?",
+			"options": [
+				"Chỉ đạo nghiệp vụ",
+				"Kiểm soát nội bộ",
+				"Quản lý nhà nước về hải quan",
+				"Thanh tra hành chính"
+			],
+			"answer": 2,
+			"explanation": "Đây là chức năng cốt lõi của Chi cục tại địa bàn hoạt động. Ví dụ: Đảm bảo mọi hoạt động mua bán quốc tế tại khu vực đó đều tuân thủ đúng pháp luật Hải quan."
+		},
+		{
+			"id": 13,
+			"question": "Chi cục Hải quan khu vực được mở tài khoản tại đâu theo quy định?",
+			"options": [
+				"Kho bạc Nhà nước",
+				"Ngân hàng Nhà nước",
+				"Ngân hàng thương mại",
+				"Sở Tài chính"
+			],
+			"answer": 0,
+			"explanation": "Tất cả các cơ quan nhà nước đều phải giao dịch qua hệ thống Kho bạc. Ví dụ: Tiền phạt vi phạm hành chính của doanh nghiệp sẽ được nộp thẳng vào tài khoản của Chi cục tại Kho bạc."
+		},
+		{
+			"id": 14,
+			"question": "Chuỗi nghiệp vụ cốt lõi mà Chi cục Hải quan khu vực thực hiện đối với hàng hóa là gì?",
+			"options": [
+				"Thanh tra - Kiểm tra",
+				"Kiểm soát - Cưỡng chế",
+				"Thủ tục hải quan, kiểm tra, giám sát hải quan",
+				"Đấu tranh chống buôn lậu"
+			],
+			"answer": 2,
+			"explanation": "Ba bước này tạo thành quy trình quản lý một lô hàng từ khi đến đến khi đi. Ví dụ: Lô hàng của Long phải làm thủ tục (khai báo), kiểm tra (soi chiếu) và giám sát (đến khi ra khỏi cảng)."
+		},
+		{
+			"id": 15,
+			"question": "Nhiệm vụ thu nộp nào sau đây là của Chi cục Hải quan khu vực?",
+			"options": [
+				"Lệ phí cảng",
+				"Thuế và các khoản thu khác",
+				"Phí kiểm định",
+				"Chi phí bốc xếp"
+			],
+			"answer": 1,
+			"explanation": "Đảm bảo thu đúng, thu đủ cho ngân sách nhà nước từ hoạt động XNK. Ví dụ: Chi cục có nhiệm vụ thu thuế VAT và thuế nhập khẩu từ các đơn vị kinh doanh."
+		},
+		{
+			"id": 16,
+			"question": "Biện pháp kỹ thuật nghiệp vụ nào được áp dụng để xác định trọng điểm kiểm tra?",
+			"options": [
+				"Phân tích dữ liệu",
+				"Quản lý rủi ro",
+				"Thu thập chứng cứ",
+				"Kiểm định hàng hóa"
+			],
+			"answer": 1,
+			"explanation": "Sử dụng phần mềm để lọc ra các lô hàng có nguy cơ vi phạm cao. Ví dụ: Doanh nghiệp mới thành lập nhập hàng nhạy cảm sẽ bị hệ thống quản lý rủi ro xếp vào luồng đỏ."
+		},
+		{
+			"id": 17,
+			"question": "Chi cục Hải quan khu vực áp dụng biện pháp nghiệp vụ kiểm soát hải quan để phòng chống gì?",
+			"options": [
+				"Vận chuyển nội địa",
+				"Buôn lậu, gian lận thương mại",
+				"Khai sai mã HS",
+				"Sai sót hành chính"
+			],
+			"answer": 1,
+			"explanation": "Đấu tranh với các hành vi cố tình trốn thuế hoặc đưa hàng cấm vào nội địa. Ví dụ: Theo dõi các container khai báo là 'hàng gia dụng' nhưng thực chất chứa máy móc cũ bị cấm."
+		},
+		{
+			"id": 18,
+			"question": "Chế độ nào được Chi cục Hải quan khu vực tổ chức thực hiện đối với doanh nghiệp đáp ứng tiêu chí?",
+			"options": [
+				"Giám sát đặc biệt",
+				"Chế độ ưu tiên",
+				"Kiểm tra 100%",
+				"Tạm dừng thông quan"
+			],
+			"answer": 1,
+			"explanation": "Dành cho doanh nghiệp uy tín để rút ngắn thời gian thông quan. Ví dụ: Doanh nghiệp ưu tiên có thể được thông quan hàng trước, nộp chứng từ sau và hầu như không bị kiểm tra thực tế."
+		},
+		{
+			"id": 19,
+			"question": "Trong công tác tiếp công dân, Chi cục Hải quan khu vực có nhiệm vụ gì?",
+			"options": [
+				"Điều tra",
+				"Thanh tra, kiểm tra, giải quyết khiếu nại, tố cáo",
+				"Phối hợp",
+				"Kiến nghị"
+			],
+			"answer": 1,
+			"explanation": "Giải quyết các vướng mắc hoặc phản ánh của người dân và doanh nghiệp. Ví dụ: Khi Long không đồng ý với mức thuế bị áp, Long có quyền nộp đơn khiếu nại để Chi cục thụ lý giải quyết."
+		},
+		{
+			"id": 20,
+			"question": "Việc tổng hợp và cung cấp dữ liệu hàng hóa XNK được thực hiện bởi?",
+			"options": [
+				"Sở Công thương",
+				"Phòng Thương mại",
+				"Chi cục Hải quan khu vực",
+				"Cục Thuế"
+			],
+			"answer": 2,
+			"explanation": "Hải quan là cơ quan nắm dữ liệu chính xác nhất về lưu lượng hàng hóa qua biên giới. Ví dụ: Tổng hợp báo cáo hàng quý về lượng xăng dầu nhập khẩu phục vụ nhu cầu trong nước."
+		},
+		{
+			"id": 21,
+			"question": "Yêu cầu nào được đặt ra khi triển khai các giải pháp kỹ thuật, công nghệ tại Chi cục?",
+			"options": [
+				"Số hóa hồ sơ",
+				"Chuyển đổi số",
+				"Hiện đại hóa tổ chức",
+				"Giám sát tự động"
+			],
+			"answer": 1,
+			"explanation": "Ứng dụng CNTT để thay thế các quy trình thủ công bằng giấy tờ. Ví dụ: Triển khai hệ thống VNACCS/VCIS giúp doanh nghiệp khai báo hải quan trực tuyến 24/7."
+		},
+		{
+			"id": 22,
+			"question": "Mối quan hệ của Chi cục đối với các đơn vị trực thuộc là gì?",
+			"options": [
+				"Phối hợp - Trao đổi",
+				"Giám sát - Báo cáo",
+				"Hướng dẫn, chỉ đạo và kiểm tra",
+				"Kiểm tra - Báo cáo"
+			],
+			"answer": 2,
+			"explanation": "Chi cục là cấp trên trực tiếp quản lý các Đội và Hải quan cửa khẩu. Ví dụ: Chi cục trưởng ra văn bản chỉ đạo các Đội nghiệp vụ tăng cường kiểm tra hàng quà biếu dịp cuối năm."
+		},
+		{
+			"id": 23,
+			"question": "Trong tố tụng hình sự, Chi cục có nhiệm vụ nào sau đây?",
+			"options": [
+				"Xét xử",
+				"Bào chữa",
+				"Tiếp nhận, thụ lý nguồn tin về tội phạm và điều tra",
+				"Truy tố"
+			],
+			"answer": 2,
+			"explanation": "Chi cục thực hiện các bước đầu tiên của quá trình phá án hình sự về kinh tế. Ví dụ: Khi nhận được tin báo về đường dây buôn lậu thuốc lá, Chi cục sẽ tiếp nhận và tiến hành xác minh sơ bộ."
+		},
+		{
+			"id": 24,
+			"question": "Phương châm đổi mới toàn ngành Hải quan gắn liền với hoạt động nào tại Chi cục?",
+			"options": [
+				"Thực hiện - Tin học hóa",
+				"Cải cách, hiện đại hóa hải quan",
+				"Hướng dẫn - Chuyển đổi số",
+				"Phối hợp - Tự động hóa"
+			],
+			"answer": 1,
+			"explanation": "Đưa máy móc hiện đại và quy trình quản lý tiên tiến vào hoạt động hằng ngày. Ví dụ: Sử dụng niêm phong điện tử để theo dõi hành trình của các xe chở hàng quá cảnh."
+		},
+		{
+			"id": 25,
+			"question": "Nội dung nào thuộc nhóm quản lý cơ sở vật chất của Chi cục?",
+			"options": [
+				"Quản lý hồ sơ, tài sản",
+				"Quản lý hồ sơ, tài sản, vũ khí, công cụ hỗ trợ và kinh phí",
+				"Lưu trữ nhân sự",
+				"Sử dụng ngân sách"
+			],
+			"answer": 1,
+			"explanation": "Đảm bảo mọi nguồn lực vật chất đều được sử dụng đúng mục đích. Ví dụ: Chi cục phải định kỳ kiểm kê số lượng súng và dùi điện được cấp cho lực lượng chống buôn lậu."
+		},
+		{
+			"id": 26,
+			"question": "Nội dung nào sau đây KHÔNG thuộc nhiệm vụ và quyền hạn của Chi cục Hải quan khu vực?",
+			"options": [
+				"Áp dụng các biện pháp nghiệp vụ kiểm soát hải quan để phòng, chống buôn lậu.",
+				"Thực hiện kiểm tra sau thông quan theo thẩm quyền được giao.",
+				"Ban hành quy định nội bộ về thủ tục hải quan áp dụng thống nhất trong toàn quốc.",
+				"Tổ chức thực hiện pháp luật về thuế đối với hàng hóa xuất nhập khẩu."
+			],
+			"answer": 2,
+			"explanation": "Chi cục chỉ là đơn vị thực thi, không có thẩm quyền ban hành quy định áp dụng toàn quốc (thẩm quyền này của Tổng cục hoặc Bộ). Ví dụ: Chi cục Hải quan cửa khẩu Lào Cai không thể tự ra văn bản bắt buộc tất cả các cửa khẩu khác ở Việt Nam phải làm theo quy trình riêng của mình."
+		},
+		{
+			"id": 27,
+			"question": "Chi cục Hải quan khu vực phối hợp với các cơ quan nào trên địa bàn?",
+			"options": [
+				"Công an, biên phòng trong phòng, chống buôn lậu, ma túy.",
+				"Các tổ chức quốc tế về lĩnh vực hải quan.",
+				"Cơ quan thuế nội địa trong quản lý thuế doanh nghiệp.",
+				"Tất cả các phương án trên."
+			],
+			"answer": 3,
+			"explanation": "Chi cục có quyền phối hợp rộng rãi với cả cơ quan trong nước và tổ chức quốc tế để thực thi nhiệm vụ. Ví dụ: Khi phát hiện lô hàng có dấu hiệu nghi vấn ma túy, Chi cục sẽ chủ trì phối hợp với lực lượng Biên phòng và Công an tỉnh để cùng phá án."
+		},
+		{
+			"id": 28,
+			"question": "Nội dung nào được thực hiện trực tiếp bởi Chi cục, không phải do Cục Hải quan thực hiện thay?",
+			"options": [
+				"Hợp tác quốc tế về hải quan theo ủy quyền của Cục trưởng.",
+				"Ban hành quyết định về cơ cấu tổ chức Chi cục.",
+				"Thành lập phòng nghiệp vụ thuộc Chi cục.",
+				"Quyết định điều động, bổ nhiệm công chức cấp phó của Chi cục."
+			],
+			"answer": 0,
+			"explanation": "Chi cục có thể trực tiếp tham gia hợp tác quốc tế nếu được ủy quyền, còn các việc về tổ chức bộ máy, nhân sự cao cấp do Cục quyết định. Ví dụ: Một đoàn hải quan từ Campuchia sang làm việc tại cửa khẩu, Chi cục có thể trực tiếp tiếp đón và làm việc chuyên môn theo phân cấp."
+		},
+		{
+			"id": 29,
+			"question": "Quy trình quản lý rủi ro đúng và đầy đủ nhất của Chi cục gồm các bước nào?",
+			"options": [
+				"Thu thập thông tin - Phân tích - Đánh giá - Kiểm tra sau thông quan.",
+				"Thu thập - Phân tích - Đánh giá - Áp dụng biện pháp kỹ thuật - Theo dõi kết quả.",
+				"Tiếp nhận báo cáo - Ban hành quy trình - Phân tích hồ sơ - Lưu trữ.",
+				"Đánh giá hồ sơ - Kiểm tra lại - Báo cáo Cục Hải quan."
+			],
+			"answer": 1,
+			"explanation": "Đây là 5 bước khép kín giúp tối ưu hóa việc kiểm soát. Ví dụ: Hệ thống thu thập thông tin lô hàng của Long, phân tích xem có rủi ro không, nếu thấp thì cho vào luồng Xanh (thông quan ngay), sau đó vẫn theo dõi xem kết quả thực tế thế nào."
+		},
+		{
+			"id": 30,
+			"question": "Hoạt động nào thể hiện rõ nhất tính “hai chiều” trong quản lý nhà nước của Chi cục?",
+			"options": [
+				"Kiểm tra - giám sát - cưỡng chế thi hành.",
+				"Hướng dẫn - kiểm tra - giải quyết khiếu nại, tố cáo.",
+				"Tuyên truyền, phổ biến pháp luật - Tiếp nhận, xử lý, giải quyết vi phạm.",
+				"Quản lý hồ sơ - lưu trữ tài sản - báo cáo định kỳ."
+			],
+			"answer": 2,
+			"explanation": "Chiều đi là phổ biến luật đến doanh nghiệp, chiều về là xử lý các phản hồi và vi phạm từ thực tế. Ví dụ: Chi cục tổ chức hội nghị đối thoại để Long hiểu luật thuế mới (chiều đi), đồng thời tiếp nhận đơn phản ánh về khó khăn khi làm thủ tục của Long (chiều về)."
+		},
+		{
+			"id": 31,
+			"question": "Nhiệm vụ nào sau đây đều thuộc thẩm quyền của Chi cục Hải quan khu vực?",
+			"options": [
+				"Tổ chức thực hiện kiểm tra sau thông quan.",
+				"Tổ chức thực hiện chế độ ưu tiên đối với doanh nghiệp.",
+				"Quyết định thành lập phòng nghiệp vụ trong Chi cục.",
+				"Cả A và B đều đúng."
+			],
+			"answer": 3,
+			"explanation": "Chi cục thực hiện hậu kiểm và áp dụng ưu tiên, nhưng không có quyền tự đẻ ra các phòng mới trong cơ cấu. Ví dụ: Chi cục có thể đề xuất doanh nghiệp của Long vào danh sách ưu tiên nếu Long làm ăn uy tín, nhưng không được tự lập thêm một 'Phòng Chăm sóc khách hàng' nếu Cục không cho phép."
+		},
+		{
+			"id": 32,
+			"question": "Nhận định nào sau đây là SAI về nhiệm vụ hợp tác quốc tế của Chi cục?",
+			"options": [
+				"Tổng hợp, cung cấp dữ liệu hàng hóa XNK theo quy định.",
+				"Thanh tra, kiểm tra và giải quyết khiếu nại.",
+				"Hợp tác quốc tế về hải quan mà không cần ủy quyền của Cục trưởng.",
+				"Tuyên truyền, phổ biến chính sách pháp luật về hải quan."
+			],
+			"answer": 2,
+			"explanation": "Mọi hoạt động đối ngoại của Chi cục đều phải có sự ủy quyền hoặc phân công từ cấp trên. Ví dụ: Nếu một tổ chức quốc tế muốn khảo sát cửa khẩu, Chi cục phải xin ý kiến Cục trưởng trước khi tiếp đoàn."
+		},
+		{
+			"id": 33,
+			"question": "Vai trò của Chi cục trong công tác phòng chống buôn lậu là gì?",
+			"options": [
+				"Áp dụng biện pháp nghiệp vụ kiểm soát hải quan.",
+				"Chủ trì phối hợp với công an, biên phòng trên địa bàn.",
+				"Cả A và B đều đúng.",
+				"Cả A và B đều sai."
+			],
+			"answer": 2,
+			"explanation": "Chi cục vừa có nghiệp vụ riêng, vừa là đầu mối chủ trì phối hợp tại cửa khẩu. Ví dụ: Trong phạm vi địa bàn hoạt động hải quan, nếu phát hiện xe hàng lậu, Chi cục sẽ ra lệnh dừng xe và gọi điện phối hợp với CSGT để hỗ trợ vây bắt."
+		},
+		{
+			"id": 34,
+			"question": "Nhận định nào KHÔNG đúng về chức năng của Chi cục Hải quan khu vực?",
+			"options": [
+				"Giúp Cục trưởng quản lý nhà nước về hải quan.",
+				"Có tư cách pháp nhân, con dấu, tài khoản tại Kho bạc Nhà nước.",
+				"Là cơ quan hành chính cấp tỉnh, có quyền độc lập ban hành quy định quản lý thuế.",
+				"Thực hiện pháp luật hải quan trong phạm vi địa bàn được giao."
+			],
+			"answer": 2,
+			"explanation": "Chi cục không phải cấp tỉnh và không được tự ban hành luật thuế. Ví dụ: Chi cục chỉ được áp dụng mức thuế do Bộ Tài chính quy định vào lô hàng của Long, không được tự ý giảm thuế vì 'quen biết'."
+		},
+		{
+			"id": 35,
+			"question": "Chi cục Hải quan khu vực KHÔNG có thẩm quyền nào sau đây?",
+			"options": [
+				"Ban hành chế độ ưu tiên đối với doanh nghiệp.",
+				"Tự quyết định thành lập các Đội Kiểm soát mới.",
+				"Ban hành hướng dẫn nghiệp vụ áp dụng toàn quốc.",
+				"Cả A, B, C đều đúng."
+			],
+			"answer": 3,
+			"explanation": "Cả ba việc trên đều vượt quá thẩm quyền của một Chi cục. Ví dụ: Muốn lập thêm một Đội kiểm tra tại cảng mới, Chi cục phải làm tờ trình xin Cục, Cục xin Tổng cục mới được phê duyệt."
+		},
+		{
+			"id": 36,
+			"question": "Cơ cấu tổ chức Chi cục Hải quan khu vực gồm những gì?",
+			"options": [
+				"Văn phòng, Phòng, Đội và Hải quan cửa khẩu/ngoài cửa khẩu.",
+				"Chỉ các Phòng nghiệp vụ và các Đội kiểm soát.",
+				"Các Phòng trực thuộc Tổng cục Hải quan.",
+				"Chỉ Văn phòng và Hải quan cửa khẩu."
+			],
+			"answer": 0,
+			"explanation": "Cấu trúc gồm đơn vị nội bộ và các đơn vị trực thuộc bám trụ tại địa bàn. Ví dụ: Chi cục khu vực I (Hà Nội) có Văn phòng nằm tại trung tâm và các Chi cục cửa khẩu trực thuộc nằm tại các kho ICD bên ngoài."
+		},
+		{
+			"id": 37,
+			"question": "Đơn vị nào KHÔNG bắt buộc phải có (ghi chú 'nếu có') tại Chi cục Hải quan khu vực?",
+			"options": [
+				"Phòng Nghiệp vụ hải quan.",
+				"Phòng CNTT, Phòng QLRR, Đội Thông quan.",
+				"Văn phòng Chi cục.",
+				"Đội Kiểm soát hải quan."
+			],
+			"answer": 1,
+			"explanation": "Tùy quy mô địa bàn mà Cục trưởng sẽ quyết định có thành lập các đơn vị này hay không. Ví dụ: Một chi cục nhỏ, ít hàng hóa thì không cần riêng một Phòng Quản lý rủi ro mà có thể ghép vào phòng khác."
+		},
+		{
+			"id": 38,
+			"question": "Đơn vị nào dưới đây có tư cách pháp nhân riêng?",
+			"options": [
+				"Văn phòng Chi cục.",
+				"Phòng Quản lý rủi ro.",
+				"Hải quan cửa khẩu/ngoài cửa khẩu.",
+				"Phòng Tổ chức cán bộ."
+			],
+			"answer": 2,
+			"explanation": "Chỉ các đơn vị cấp cửa khẩu mới được trao tư cách pháp nhân độc lập để giao dịch. Ví dụ: Long làm thủ tục tại Hải quan cửa khẩu cảng Hải Phòng, đơn vị này có con dấu riêng để đóng vào tờ khai của Long."
+		},
+		{
+			"id": 39,
+			"question": "Biên chế của Chi cục Hải quan khu vực do ai quyết định?",
+			"options": [
+				"Bộ trưởng Bộ Tài chính.",
+				"Tổng cục trưởng Tổng cục Hải quan.",
+				"Cục trưởng Cục Hải quan.",
+				"Chi cục trưởng Chi cục Hải quan khu vực."
+			],
+			"answer": 2,
+			"explanation": "Cục trưởng là người điều phối quân số giữa các Chi cục trong cùng một Cục. Ví dụ: Cục trưởng Cục Hải quan Hà Nội thấy Chi cục khu vực I quá tải sẽ điều động thêm 10 công chức từ các chi cục khác sang hỗ trợ."
+		},
+		{
+			"id": 40,
+			"question": "Cục trưởng Cục Hải quan có trách nhiệm nào với Hải quan cửa khẩu thuộc Chi cục?",
+			"options": [
+				"Bố trí biên chế và nhân sự trực tiếp cho cửa khẩu.",
+				"Quyết định tên gọi, trụ sở, địa bàn quản lý của cửa khẩu.",
+				"Ban hành quy chế hoạt động chuyên môn riêng cho từng cửa khẩu.",
+				"Tất cả các phương án trên."
+			],
+			"answer": 1,
+			"explanation": "Cục trưởng quyết định 'Tên - Chỗ - Vùng' của các đơn vị trực thuộc Chi cục. Ví dụ: Cục trưởng ra quyết định đổi tên Hải quan cửa khẩu A thành Hải quan cửa khẩu B và dời trụ sở sang vị trí mới thuận tiện hơn."
+		},
+		{
+			"id": 41,
+			"question": "Số lượng các đơn vị (Phòng, Đội, Cửa khẩu) của Chi cục xác định theo đâu?",
+			"options": [
+				"Quyết định của Chi cục trưởng.",
+				"Quyết định của Tổng cục Hải quan.",
+				"Phụ lục kèm theo Quyết định 819/QĐ-BTC.",
+				"Hướng dẫn của Bộ Nội vụ."
+			],
+			"answer": 2,
+			"explanation": "Số lượng này đã được 'chốt' cứng trong văn bản pháp lý của Bộ Tài chính. Ví dụ: Muốn xem Chi cục khu vực II có bao nhiêu phòng, Long chỉ cần tra Phụ lục của QĐ 819 là ra con số chính xác."
+		},
+		{
+			"id": 42,
+			"question": "Đơn vị nào có thể được tổ chức kiêm nhiệm giữa hai lĩnh vực chuyên môn?",
+			"options": [
+				"Phòng Quản lý rủi ro và Công nghệ thông tin.",
+				"Đội Phúc tập và Kiểm tra sau thông quan.",
+				"Phòng Nghiệp vụ hải quan.",
+				"Phòng Tổ chức cán bộ."
+			],
+			"answer": 0,
+			"explanation": "Đây là trường hợp 'ghép phòng' duy nhất được quy định để tiết kiệm nhân lực. Ví dụ: Tại các chi cục có khối lượng dữ liệu chưa quá lớn, một trưởng phòng sẽ quản lý cả mảng máy tính (CNTT) và mảng soi xét hồ sơ (QLRR)."
+		},
+		{
+			"id": 43,
+			"question": "Nhiệm vụ chính của Đội Phúc tập và Kiểm tra sau thông quan là gì?",
+			"options": [
+				"Kiểm tra chứng từ kế toán doanh nghiệp.",
+				"Thực hiện kiểm tra hồ sơ hải quan và kiểm tra sau thông quan.",
+				"Kiểm soát phương tiện qua lại biên giới.",
+				"Kiểm tra nội bộ công chức."
+			],
+			"answer": 1,
+			"explanation": "Nhiệm vụ là kiểm tra lại hồ sơ đã thông quan để đảm bảo không có sai sót. Ví dụ: Sau khi Long xuất khẩu xong lô hàng gỗ, Đội này sẽ xem lại hồ sơ xem Long có áp đúng mã thuế xuất khẩu cho loại gỗ đó chưa."
+		},
+		{
+			"id": 44,
+			"question": "Thẩm quyền quyết định trụ sở và địa bàn quản lý của Hải quan cửa khẩu thuộc về?",
+			"options": [
+				"Bộ trưởng Bộ Tài chính.",
+				"Cục trưởng Cục Hải quan.",
+				"Chi cục trưởng Chi cục Hải quan khu vực.",
+				"Tổng cục trưởng Tổng cục Hải quan."
+			],
+			"answer": 1,
+			"explanation": "Cấp Cục quản lý trực tiếp ranh giới hoạt động của cấp dưới. Ví dụ: Cục trưởng Cục Hải quan Lạng Sơn quyết định địa bàn quản lý của Hải quan cửa khẩu Hữu Nghị kéo dài từ cột mốc nào đến cột mốc nào."
+		},
+		{
+			"id": 45,
+			"question": "Cấu trúc '2 khối' của Chi cục Hải quan khu vực bao gồm?",
+			"options": [
+				"Văn phòng, Phòng, Đội và Hải quan cửa khẩu/ngoài cửa khẩu.",
+				"Ban điều hành và Hải quan tỉnh.",
+				"Phòng kiểm soát và Tổng cục Hải quan.",
+				"Văn phòng và Bộ Tài chính."
+			],
+			"answer": 0,
+			"explanation": "Gồm khối hành chính nghiệp vụ bên trong và khối cửa khẩu thực địa bên ngoài. Ví dụ: Long đến trụ sở Chi cục để xin giải quyết vướng mắc (khối trong) nhưng khi hàng đến cảng thì sẽ làm việc với Hải quan cửa khẩu (khối ngoài)."
+		},
+		{
+			"id": 46,
+			"question": "Hai đơn vị nào được thành lập linh hoạt tùy theo quy mô Chi cục?",
+			"options": [
+				"Phòng CNTT và Phòng Quản lý rủi ro.",
+				"Phòng Quản lý rủi ro và Đội Thông quan.",
+				"Phòng Công nghệ thông tin và Đội Thông quan.",
+				"Phòng Nghiệp vụ hải quan và Đội Phúc tập."
+			],
+			"answer": 2,
+			"explanation": "Đây là những đơn vị không bắt buộc có ở mọi Chi cục. Ví dụ: Chi cục khu vực XV chỉ quản lý sân bay nên chắc chắn sẽ có Đội Thông quan cực mạnh, nhưng có thể không cần riêng một phòng CNTT cồng kềnh."
+		},
+		{
+			"id": 47,
+			"question": "Nhóm đơn vị nào có tư cách pháp nhân, con dấu và được mở tài khoản tại Kho bạc?",
+			"options": [
+				"Cục Hải quan, Đội Kiểm soát.",
+				"Các Đội và Hải quan cửa khẩu/ngoài cửa khẩu.",
+				"Chi cục Hải quan khu vực, Kho bạc Bộ Tài chính.",
+				"Tổng cục Hải quan, Ngân hàng Nhà nước."
+			],
+			"answer": 1,
+			"explanation": "Quyền này giúp các đơn vị trực thuộc có thể tự thực hiện các thủ tục tài chính tại địa bàn. Ví dụ: Long nộp phạt vi phạm hải quan tại Hải quan cửa khẩu Móng Cái, biên lai sẽ do chính đơn vị này xuất."
+		},
+		{
+			"id": 48,
+			"question": "Muốn biết số lượng cụ thể các Đội của một Chi cục, cần tra cứu tại đâu?",
+			"options": [
+				"Quyết định của Chi cục trưởng.",
+				"Phụ lục kèm theo Quyết định 819/QĐ-BTC.",
+				"Hướng dẫn của Tổng cục Hải quan.",
+				"Văn bản liên ngành."
+			],
+			"answer": 1,
+			"explanation": "Văn bản gốc của Bộ Tài chính quy định chi tiết số lượng cho từng khu vực. Ví dụ: Long muốn viết tool tra cứu quy mô các Chi cục, Long chỉ cần bóc tách dữ liệu từ Phụ lục QĐ 819 này là xong."
+		},
+		{
+			"id": 49,
+			"question": "Biên chế cụ thể của từng Chi cục Hải quan khu vực do ai quyết định?",
+			"options": [
+				"Bộ trưởng Bộ Tài chính.",
+				"Tổng cục trưởng Tổng cục Hải quan.",
+				"Cục trưởng Cục Hải quan.",
+				"Chi cục trưởng Chi cục Hải quan khu vực."
+			],
+			"answer": 2,
+			"explanation": "Cấp Cục điều phối nhân sự căn cứ trên tổng chỉ tiêu được Tổng cục giao. Ví dụ: Tổng cục giao cho Cục Hải quan Đồng Nai 500 người, Cục trưởng sẽ chia 50 người về Chi cục khu vực A, 100 người về Chi cục khu vực B."
+		},
+		{
+			"id": 50,
+			"question": "Theo QĐ 819/QĐ-CHQ, Cục trưởng Cục Hải quan có trách nhiệm bố trí những đơn vị nào tại Chi cục Hải quan khu vực?",
+			"options": [
+				"Văn phòng - Tổ - Ban",
+				"Văn phòng - Phòng - Đội",
+				"Đội - Tổ - Ban",
+				"Phòng - Tổ - Bộ phận"
+			],
+			"answer": 1,
+			"explanation": "Cục trưởng phải đảm bảo bố trí đủ 3 loại hình đơn vị cốt lõi này. Ví dụ: Tại Chi cục khu vực I, Cục trưởng sẽ ra quyết định cụ thể về việc đặt 1 Văn phòng, 2 Phòng chuyên môn và 3 Đội nghiệp vụ."
+		},
+		{
+			"id": 51,
+			"question": "Trong cùng một Chi cục Hải quan khu vực, có thể tổ chức Phòng nào kiêm nhiệm chức năng nếu điều kiện chưa đủ tách riêng?",
+			"options": [
+				"Quản lý rủi ro - Công nghệ thông tin",
+				"Kiểm soát - Thuế",
+				"Nghiệp vụ - Kiểm tra sau thông quan",
+				"Tổ chức cán bộ - Thanh tra"
+			],
+			"answer": 0,
+			"explanation": "Đây là trường hợp 'phòng kép' để tinh gọn bộ máy. Ví dụ: Một trưởng phòng sẽ vừa quản lý hạ tầng mạng (IT) vừa chỉ đạo việc phân tích hồ sơ rủi ro của doanh nghiệp thay vì phải có 2 người ở 2 phòng riêng biệt."
+		},
+		{
+			"id": 52,
+			"question": "Việc tổ chức các đơn vị thuộc Chi cục Hải quan khu vực phải bảo đảm yếu tố nào?",
+			"options": [
+				"Đúng số lượng phụ lục và hiệu quả tổ chức",
+				"Đúng số lượng và hợp lý",
+				"Phù hợp và tiết kiệm",
+				"Linh hoạt và đầy đủ"
+			],
+			"answer": 0,
+			"explanation": "Không được tự ý lập thêm đơn vị ngoài danh sách và phải làm việc có hiệu quả. Ví dụ: Phụ lục cho phép có 5 Đội thì Cục trưởng không được lập Đội thứ 6 dù khối lượng hàng hóa tăng cao."
+		},
+		{
+			"id": 53,
+			"question": "Số lượng các đơn vị (Văn phòng, Phòng, Đội, Cửa khẩu) thuộc Chi cục được quy định như thế nào?",
+			"options": [
+				"Tùy Chi cục trưởng quyết định căn cứ nhu cầu thực tế",
+				"Theo Phụ lục kèm theo Quyết định 819/QĐ-BTC",
+				"Do Tổng cục Hải quan phê duyệt hàng năm",
+				"Tự điều chỉnh khi khối lượng công việc tăng"
+			],
+			"answer": 1,
+			"explanation": "Mọi con số về bộ máy đều được 'chốt' cứng trong Phụ lục văn bản. Ví dụ: Long muốn biết Chi cục khu vực II có bao nhiêu Đội nghiệp vụ thì chỉ cần tra bảng Phụ lục kèm theo Quyết định này là thấy ngay."
+		},
+		{
+			"id": 54,
+			"question": "Trong danh mục cơ cấu tổ chức, có bao nhiêu đơn vị được ghi chú '(nếu có)'?",
+			"options": [
+				"2 đơn vị",
+				"3 đơn vị",
+				"4 đơn vị",
+				"5 đơn vị"
+			],
+			"answer": 2,
+			"explanation": "Có 4 đơn vị linh hoạt: Phòng CNTT, Phòng QLRR, Phòng QLRR & CNTT và Đội Thông quan. Ví dụ: Một chi cục nhỏ có thể không cần riêng một Phòng CNTT mà sẽ ghép vào phòng khác để tiết kiệm nhân sự."
+		},
+		{
+			"id": 55,
+			"question": "Biên chế của Chi cục Hải quan khu vực do ai quyết định trong phạm vi tổng biên chế được giao?",
+			"options": [
+				"Bộ trưởng Bộ Tài chính",
+				"Tổng cục trưởng Tổng cục Hải quan",
+				"Cục trưởng Cục Hải quan",
+				"Chi cục trưởng Chi cục Hải quan khu vực"
+			],
+			"answer": 2,
+			"explanation": "Cục trưởng là người điều phối quân số giữa các Chi cục. Ví dụ: Cục trưởng thấy Chi cục A quá tải sẽ điều 10 công chức từ Chi cục B sang hỗ trợ dựa trên tổng số người mà Tổng cục đã cấp cho Cục."
+		},
+		{
+			"id": 56,
+			"question": "Nhóm đơn vị nào có tư cách pháp nhân, con dấu và tài khoản tại Kho bạc Nhà nước?",
+			"options": [
+				"Chỉ Chi cục Hải quan khu vực",
+				"Các Đội và Hải quan cửa khẩu/ngoài cửa khẩu",
+				"Chỉ Hải quan cửa khẩu",
+				"Tất cả các Phòng trong Chi cục"
+			],
+			"answer": 1,
+			"explanation": "Quy định này giúp các đơn vị thực địa tự chủ thực hiện thủ tục. Ví dụ: Giống như một công ty con có con dấu riêng, các Đội này có quyền xác nhận các biên bản vi phạm mà không cần đợi dấu của Chi cục khu vực."
+		},
+		{
+			"id": 57,
+			"question": "Theo QĐ 819, nhận định nào đúng về các đơn vị có thể được tổ chức 'ghép chức năng'?",
+			"options": [
+				"Phòng Quản lý rủi ro và Kiểm soát hải quan",
+				"Phòng Công nghệ thông tin và Quản lý rủi ro",
+				"Phòng Quản lý rủi ro và Công nghệ thông tin (nếu có)",
+				"Phòng Nghiệp vụ hải quan và Phòng Tổ chức cán bộ"
+			],
+			"answer": 2,
+			"explanation": "Đây là phòng ghép duy nhất được văn bản nêu rõ tên. Ví dụ: Một cán bộ vừa phụ trách bảo trì hệ thống server hải quan, vừa thực hiện soi chiếu các lô hàng có rủi ro cao trên phần mềm."
+		},
+		{
+			"id": 58,
+			"question": "Trong danh mục tổ chức của Chi cục Hải quan khu vực có bao nhiêu Phòng được liệt kê cụ thể theo tên gọi?",
+			"options": [
+				"4 Phòng",
+				"5 Phòng",
+				"6 Phòng",
+				"7 Phòng"
+			],
+			"answer": 2,
+			"explanation": "Có 6 đơn vị cấp Phòng: Tổ chức cán bộ, CNTT, QLRR, QLRR&CNTT, Nghiệp vụ và Văn phòng. Ví dụ: Mỗi đơn vị này đóng vai trò là 'bộ não' giúp việc cho lãnh đạo Chi cục về từng mảng chuyên sâu."
+		},
+		{
+			"id": 59,
+			"question": "Đơn vị nào sau đây KHÔNG có tư cách pháp nhân độc lập?",
+			"options": [
+				"Hải quan cửa khẩu/ngoài cửa khẩu",
+				"Đội Kiểm soát hải quan",
+				"Phòng Nghiệp vụ hải quan",
+				"Đội Thông quan"
+			],
+			"answer": 2,
+			"explanation": "Phòng là bộ phận nội bộ, không có tư cách pháp lý riêng bên ngoài. Ví dụ: Khi Phòng Nghiệp vụ ra văn bản hướng dẫn cho doanh nghiệp, họ phải dùng con dấu của Chi cục chứ không có con dấu mang tên 'Phòng Nghiệp vụ'."
+		},
+		{
+			"id": 60,
+			"question": "Mối quan hệ đúng giữa Chi cục trưởng và Cục trưởng Cục Hải quan là gì?",
+			"options": [
+				"Cục trưởng trực tiếp chỉ đạo, Chi cục trưởng tổ chức thực hiện",
+				"Cục trưởng giao quyền toàn phần về biên chế cho Chi cục trưởng",
+				"Chi cục trưởng có quyền ban hành quy định áp dụng toàn quốc",
+				"A đúng, B và C sai"
+			],
+			"answer": 3,
+			"explanation": "Quan hệ chỉ đạo - thực thi theo cấp bậc hành chính. Ví dụ: Cục trưởng giao chỉ tiêu thu thuế năm nay là 1000 tỷ, Chi cục trưởng có nhiệm vụ lên kế hoạch và phân bổ công việc cho các Đội để đạt số đó."
+		},
+		{
+			"id": 61,
+			"question": "Nội dung nào thể hiện đúng vị trí, chức năng của Chi cục Hải quan khu vực?",
+			"options": [
+				"Là đơn vị thuộc Cục Hải quan, giúp Cục trưởng quản lý nhà nước",
+				"Có tư cách pháp nhân, con dấu, tài khoản tại Kho bạc Nhà nước",
+				"Có thẩm quyền ban hành văn bản quy phạm pháp luật",
+				"Chỉ A và B đúng"
+			],
+			"answer": 3,
+			"explanation": "Chi cục có quyền pháp lý nhưng không có quyền lập pháp (ban hành luật). Ví dụ: Chi cục có tài khoản tại Kho bạc để Long nộp thuế vào, nhưng không được tự ý viết ra một luật thuế mới."
+		},
+		{
+			"id": 62,
+			"question": "Nhiệm vụ nào thuộc thẩm quyền của Cục trưởng Cục Hải quan (không phải Chi cục trưởng)?",
+			"options": [
+				"Quyết định biên chế của Chi cục Hải quan khu vực",
+				"Quyết định tên gọi, trụ sở, địa bàn quản lý của Hải quan cửa khẩu",
+				"Quy định chức năng, nhiệm vụ của các đơn vị thuộc Chi cục",
+				"Tất cả phương án trên"
+			],
+			"answer": 3,
+			"explanation": "Cục trưởng nắm quyền tổ chức bộ máy cao nhất tại địa phương. Ví dụ: Cục trưởng quyết định chuyển trụ sở của một Đội nghiệp vụ từ vị trí A sang vị trí B thuận tiện hơn cho việc kiểm soát cảng."
+		},
+		{
+			"id": 63,
+			"question": "Nhận định nào sau đây đúng về các đơn vị trong cơ cấu Chi cục Hải quan khu vực?",
+			"options": [
+				"Đội và Hải quan cửa khẩu có tư cách pháp nhân, con dấu riêng",
+				"Các Phòng nội bộ không có tư cách pháp nhân riêng",
+				"Một số Phòng được ghi chú '(nếu có)' để linh hoạt",
+				"Cả A, B và C đều đúng"
+			],
+			"answer": 3,
+			"explanation": "Đây là sự phân tầng rõ ràng giữa khối trực tiếp thực địa và khối gián tiếp nội bộ. Ví dụ: Long đi làm thủ tục tại cửa khẩu (khối trực tiếp) sẽ thấy con dấu riêng của đơn vị đó, khác với khi làm việc tại các phòng ở trụ sở Chi cục."
+		},
+		{
+			"id": 64,
+			"question": "Đơn vị nào không thuộc danh mục các Phòng được phép thành lập trong Chi cục Hải quan khu vực?",
+			"options": [
+				"Phòng Nghiệp vụ hải quan",
+				"Phòng Quản lý rủi ro",
+				"Phòng Quản lý rủi ro và CNTT",
+				"Phòng Thanh tra - Pháp chế"
+			],
+			"answer": 3,
+			"explanation": "Thanh tra chỉ có ở cấp Cục hoặc Tổng cục, không có ở cấp Chi cục. Ví dụ: Nếu công chức bị tố cáo vi phạm, bộ phận Thanh tra từ Cục Hải quan tỉnh sẽ xuống kiểm tra chứ không phải một phòng tại Chi cục."
+		},
+		{
+			"id": 65,
+			"question": "Mệnh đề nào SAI về tổ chức, bố trí đơn vị thuộc Chi cục Hải quan khu vực?",
+			"options": [
+				"Cục trưởng có thể tăng số lượng Đội nếu khối lượng công việc tăng",
+				"Số lượng Văn phòng, Phòng, Đội xác định theo Phụ lục",
+				"Việc bố trí phải đảm bảo theo đúng số lượng quy định",
+				"Các Đội và Hải quan cửa khẩu có tư cách pháp nhân riêng"
+			],
+			"answer": 0,
+			"explanation": "Cục trưởng không được tự ý tăng số lượng đơn vị vượt ngoài Phụ lục. Ví dụ: Dù lượng container về cảng tăng gấp đôi, Cục trưởng chỉ có thể tăng người (biên chế) chứ không được tự lập thêm một Đội mới nếu không xin phép Bộ."
+		},
+		{
+			"id": 66,
+			"question": "Chi cục Hải quan khu vực có các chức danh lãnh đạo nào?",
+			"options": [
+				"Chi cục trưởng, Phó Chi cục trưởng và Trưởng phòng",
+				"Chi cục trưởng và một số Phó Chi cục trưởng",
+				"Cục trưởng, Phó Cục trưởng",
+				"Trưởng Chi cục và Cố vấn pháp lý"
+			],
+			"answer": 1,
+			"explanation": "Lãnh đạo Chi cục chỉ gồm cấp Trưởng và cấp Phó. Ví dụ: Một Chi cục thường có 1 Chi cục trưởng điều hành chung và từ 2-3 Phó Chi cục trưởng phụ trách các mảng nghiệp vụ hoặc hậu cần."
+		},
+		{
+			"id": 67,
+			"question": "Số lượng Phó Chi cục trưởng Chi cục Hải quan khu vực được quy định như thế nào?",
+			"options": [
+				"Tối đa 2 người",
+				"Tối đa 3 người",
+				"Do Tổng cục Hải quan quy định riêng",
+				"Thực hiện theo quy định của pháp luật"
+			],
+			"answer": 3,
+			"explanation": "Không ấn định con số cố định mà tuân theo các quy định chung về cán bộ công chức. Ví dụ: Tùy vào quy mô của Chi cục (loại I, II hay III), số lượng cấp phó sẽ được bố trí đúng theo tiêu chuẩn nhà nước."
+		},
+		{
+			"id": 68,
+			"question": "Chi cục trưởng là người giữ vai trò gì trong cơ cấu tổ chức Chi cục Hải quan khu vực?",
+			"options": [
+				"Người đứng đầu Cục Hải quan",
+				"Người đứng đầu Chi cục, chịu trách nhiệm toàn bộ hoạt động",
+				"Cán bộ phụ trách nghiệp vụ kiểm soát",
+				"Đại diện pháp lý của Tổng cục Hải quan"
+			],
+			"answer": 1,
+			"explanation": "Chi cục trưởng là người chịu trách nhiệm cao nhất tại đơn vị. Ví dụ: Khi có một lô hàng bị tắc nghẽn hoặc sai phạm lớn tại địa bàn, Chi cục trưởng là người cuối cùng phải đứng ra giải quyết và báo cáo Cục."
+		},
+		{
+			"id": 69,
+			"question": "Chi cục trưởng chịu trách nhiệm trước ai về hoạt động của Chi cục?",
+			"options": [
+				"Tổng cục trưởng Tổng cục Hải quan",
+				"Cục trưởng Cục Hải quan và trước pháp luật",
+				"Bộ trưởng Bộ Tài chính",
+				"UBND địa phương"
+			],
+			"answer": 1,
+			"explanation": "Trách nhiệm kép đối với cấp trên trực tiếp và đối với Nhà nước. Ví dụ: Nếu để xảy ra thất thoát thuế do quản lý lỏng lẻo, Chi cục trưởng phải giải trình với Cục trưởng và có thể bị xử lý theo pháp luật."
+		},
+		{
+			"id": 70,
+			"question": "Phó Chi cục trưởng chịu trách nhiệm trước ai?",
+			"options": [
+				"Tổng cục trưởng Tổng cục Hải quan",
+				"Cục trưởng Cục Hải quan",
+				"Chi cục trưởng và pháp luật",
+				"Phòng Tổ chức cán bộ"
+			],
+			"answer": 2,
+			"explanation": "Phó là người giúp việc cho Trưởng nên phải chịu trách nhiệm trước Trưởng. Ví dụ: Anh Long là Phó Chi cục trưởng phụ trách mảng chống buôn lậu, anh phải báo cáo mọi diễn biến cho Chi cục trưởng và chịu trách nhiệm nếu mảng đó xảy ra sai sót."
+		},
+		{
+			"id": 71,
+			"question": "Trong giai đoạn chuyển tiếp, Chi cục Hải quan khu vực có trách nhiệm gì?",
+			"options": [
+				"Tiếp nhận toàn bộ nhiệm vụ, quyền hạn của Cục Hải quan địa phương cũ",
+				"Chỉ tiếp nhận công tác quản lý nhân sự",
+				"Chỉ tiếp nhận các vụ việc đang xử lý",
+				"Không có nhiệm vụ chuyển tiếp"
+			],
+			"answer": 0,
+			"explanation": "Đảm bảo tính liên tục của quản lý nhà nước khi đổi mô hình. Ví dụ: Các hồ sơ xin hoàn thuế doanh nghiệp đang nộp tại Cục Hải quan tỉnh X sẽ được Chi cục khu vực tiếp nhận và xử lý tiếp mà không bắt doanh nghiệp làm lại từ đầu."
+		},
+		{
+			"id": 72,
+			"question": "Quy định, hướng dẫn của Bộ Tài chính, Tổng cục hiện hành được tiếp tục áp dụng đến khi nào?",
+			"options": [
+				"Khi có văn bản mới của Bộ Tài chính",
+				"Khi Tổng cục Hải quan ban hành hướng dẫn khác",
+				"Cho đến khi cấp có thẩm quyền sửa đổi, bổ sung hoặc thay thế",
+				"Khi Chi cục Hải quan khu vực ban hành quy định mới"
+			],
+			"answer": 2,
+			"explanation": "Văn bản cũ vẫn có giá trị cho đến khi bị thay thế để tránh 'khoảng trống pháp lý'. Ví dụ: Quy trình soi chiếu container từ năm 2020 vẫn dùng bình thường cho đến khi có một thông tư mới thay thế nó vào năm 2026."
+		},
+		{
+			"id": 73,
+			"question": "Cục trưởng có trách nhiệm tổ chức sắp xếp để Chi cục đi vào hoạt động trước thời điểm nào?",
+			"options": [
+				"01/5/2025",
+				"01/6/2025",
+				"15/6/2025",
+				"01/7/2025"
+			],
+			"answer": 1,
+			"explanation": "Mốc thời gian bắt buộc để vận hành mô hình mới. Ví dụ: Mọi việc chuẩn bị về con người, trụ sở phải hoàn tất trong tháng 5 để sáng ngày 1/6 các công chức bắt đầu làm việc tại Chi cục mới."
+		},
+		{
+			"id": 74,
+			"question": "Trách nhiệm đưa Chi cục và các đơn vị trực thuộc đi vào hoạt động thuộc về ai?",
+			"options": [
+				"Tổng cục trưởng Tổng cục Hải quan",
+				"Bộ trưởng Bộ Tài chính",
+				"Cục trưởng Cục Hải quan",
+				"Chi cục trưởng Chi cục Hải quan khu vực"
+			],
+			"answer": 2,
+			"explanation": "Cục trưởng là người 'tổng tư lệnh' việc sắp xếp bộ máy tại địa phương. Ví dụ: Cục trưởng Cục Hải quan Hà Nội sẽ ký lệnh điều động công chức và bàn giao trụ sở để Chi cục khu vực I hoạt động đúng hạn."
+		},
+		{
+			"id": 75,
+			"question": "Mối quan hệ trách nhiệm giữa các cấp trong mô hình 3 cấp mới là:",
+			"options": [
+				"Bộ Tài chính chỉ đạo trực tiếp Chi cục khu vực",
+				"Tổng cục quản lý trực tiếp Cục, Cục quản lý Chi cục khu vực",
+				"Cục chỉ đạo trực tiếp Chi cục khu vực, Chi cục chịu trách nhiệm toàn bộ phạm vi giao",
+				"Cả ba cấp đều ngang quyền trong phạm vi tỉnh"
+			],
+			"answer": 2,
+			"explanation": "Đây là sơ đồ quản lý hình tháp: Cục -> Chi cục -> Cửa khẩu. Ví dụ: Khi Long làm thủ tục tại cửa khẩu, cán bộ cửa khẩu báo cáo Chi cục, Chi cục báo cáo lên Cục trưởng."
+		},
+		{
+			"id": 76,
+			"question": "Lãnh đạo Chi cục Hải quan khu vực bao gồm những chức danh nào?",
+			"options": [
+				"Trưởng phòng và các Phó Trưởng phòng",
+				"Chi cục trưởng và một số Phó Chi cục trưởng",
+				"Cục trưởng và các Phó Cục trưởng",
+				"Giám đốc và các Phó Giám đốc"
+			],
+			"answer": 1,
+			"explanation": "Cơ cấu lãnh đạo Chi cục gồm cấp Trưởng điều hành chung và các cấp Phó giúp việc. Ví dụ: Tại Chi cục khu vực I, ông Chi cục trưởng sẽ quản lý tổng thể, còn các Phó Chi cục trưởng sẽ được phân công phụ trách mảng chống buôn lậu hoặc mảng thuế."
+		},
+		{
+			"id": 77,
+			"question": "Chi cục trưởng là người đứng đầu Chi cục và chịu trách nhiệm trước ai?",
+			"options": [
+				"Tổng cục trưởng Tổng cục Hải quan",
+				"Bộ trưởng Bộ Tài chính",
+				"Cục trưởng Cục Hải quan và trước pháp luật",
+				"Chính phủ"
+			],
+			"answer": 2,
+			"explanation": "Người đứng đầu Chi cục chịu trách nhiệm trước cấp quản lý trực tiếp và pháp luật. Ví dụ: Nếu đơn vị để xảy ra sai phạm nghiêm trọng trong thông quan, Chi cục trưởng phải trực tiếp giải trình và chịu trách nhiệm kỷ luật trước Cục trưởng Cục Hải quan."
+		},
+		{
+			"id": 78,
+			"question": "Phó Chi cục trưởng chịu trách nhiệm trước ai về nhiệm vụ được phân công?",
+			"options": [
+				"Tổng cục trưởng",
+				"Cục trưởng",
+				"Chi cục trưởng và pháp luật",
+				"Bộ trưởng"
+			],
+			"answer": 2,
+			"explanation": "Cấp Phó giúp việc cho cấp Trưởng nên chịu trách nhiệm trước Trưởng về mảng việc mình làm. Ví dụ: Phó Chi cục trưởng phụ trách mảng kiểm soát sẽ chịu trách nhiệm trước Chi cục trưởng nếu các Đội nghiệp vụ dưới quyền để xảy ra tình trạng lọt hàng lậu."
+		},
+		{
+			"id": 79,
+			"question": "Trong giai đoạn chuyển tiếp, Chi cục Hải quan khu vực tiếp nhận nhiệm vụ từ cơ quan nào?",
+			"options": [
+				"Cục Hải quan liên tỉnh",
+				"Cục Hải quan tỉnh, liên tỉnh, thành phố trực thuộc trung ương trước đây",
+				"Tổng cục Hải quan",
+				"Chi cục Hải quan cửa khẩu cũ"
+			],
+			"answer": 1,
+			"explanation": "Chi cục khu vực là đơn vị kế thừa toàn bộ trách nhiệm khi chuyển đổi mô hình 3 cấp. Ví dụ: Mọi hồ sơ nợ thuế doanh nghiệp đang xử lý tại Cục Hải quan tỉnh cũ sẽ được bàn giao nguyên trạng cho Chi cục khu vực mới để tiếp tục quản lý."
+		},
+		{
+			"id": 80,
+			"question": "Cục trưởng Cục Hải quan phải tổ chức sắp xếp để Chi cục đi vào hoạt động trước ngày nào?",
+			"options": [
+				"Ngày 01 tháng 6 năm 2025",
+				"Ngày 30 tháng 6 năm 2025",
+				"Ngày 01 tháng 7 năm 2025",
+				"Ngày 31 tháng 5 năm 2025"
+			],
+			"answer": 0,
+			"explanation": "Đây là thời hạn cuối cùng để hoàn tất việc chuyển đổi tổ chức. Ví dụ: Cục trưởng phải hoàn thành việc điều động cán bộ và chuẩn bị trụ sở để đúng sáng ngày 1/6/2025, các Chi cục khu vực có thể chính thức mở cửa làm việc."
+		},
+		{
+			"id": 81,
+			"question": "Nhận định nào đúng về trách nhiệm pháp lý của lãnh đạo Chi cục Hải quan khu vực?",
+			"options": [
+				"Chi cục trưởng chịu trước Cục trưởng; Phó chịu trước Chi cục trưởng",
+				"Tất cả đều chịu trách nhiệm trước Tổng cục trưởng",
+				"Phó chịu trách nhiệm trực tiếp trước Cục trưởng",
+				"Chỉ có Chi cục trưởng mới phải chịu trách nhiệm trước pháp luật"
+			],
+			"answer": 0,
+			"explanation": "Hệ thống trách nhiệm được phân cấp rõ ràng theo tầng bậc hành chính. Ví dụ: Nếu một hồ sơ tại cửa khẩu bị sai lệch, Phó phụ trách trực tiếp sẽ chịu trách nhiệm trước Chi cục trưởng, sau đó Chi cục trưởng chịu trách nhiệm trước Cục trưởng."
+		},
+		{
+			"id": 82,
+			"question": "Các văn bản hướng dẫn hiện hành của Bộ Tài chính và Tổng cục sẽ thế nào khi QĐ 819 có hiệu lực?",
+			"options": [
+				"Hết hiệu lực ngay lập tức",
+				"Bị thay thế hoàn toàn",
+				"Tiếp tục áp dụng cho đến khi có văn bản sửa đổi, bổ sung hoặc thay thế",
+				"Chỉ áp dụng cho hàng hóa xuất khẩu"
+			],
+			"answer": 2,
+			"explanation": "Đảm bảo công việc không bị gián đoạn trong lúc chờ văn bản mới. Ví dụ: Quy trình kiểm tra thực tế hàng hóa đang dùng từ năm ngoái vẫn được Chi cục mới áp dụng bình thường cho đến khi có thông tư mới thay thế."
+		},
+		{
+			"id": 83,
+			"question": "Ai là người chịu trách nhiệm trực tiếp tổ chức, sắp xếp đưa Chi cục vào hoạt động?",
+			"options": [
+				"Tổng cục trưởng",
+				"Cục trưởng Cục Hải quan",
+				"Bộ trưởng Bộ Tài chính",
+				"Chi cục trưởng"
+			],
+			"answer": 1,
+			"explanation": "Cục trưởng là cấp quản lý trực tiếp có quyền điều phối nhân sự tại địa phương. Ví dụ: Cục trưởng Cục Hải quan Hà Nội sẽ ký lệnh chuyển kho hồ sơ và bố trí công chức về trụ sở Chi cục khu vực I để kịp tiến độ hoạt động."
+		},
+		{
+			"id": 84,
+			"question": "Theo Phụ lục QĐ 819, toàn quốc được tổ chức bao nhiêu Chi cục Hải quan khu vực?",
+			"options": [
+				"18 Chi cục",
+				"20 Chi cục",
+				"22 Chi cục",
+				"25 Chi cục"
+			],
+			"answer": 1,
+			"explanation": "Con số này thể hiện sự tinh gọn đầu mối quản lý theo mô hình mới. Ví dụ: Thay vì mỗi tỉnh có một Cục riêng lẻ, nay được gộp lại thành 20 đầu mối khu vực lớn để dễ dàng quản lý tập trung và đồng bộ hơn."
+		},
+		{
+			"id": 85,
+			"question": "Sự khác biệt cơ bản giữa Chi cục khu vực và Hải quan cửa khẩu là gì?",
+			"options": [
+				"Cửa khẩu có pháp nhân, Chi cục khu vực thì không",
+				"Chi cục khu vực là cấp quản lý trung gian; Cửa khẩu là đơn vị trực tiếp thực hiện",
+				"Cả hai đều do Bộ Tài chính trực tiếp quản lý",
+				"Chi cục khu vực chỉ giám sát phương tiện"
+			],
+			"answer": 1,
+			"explanation": "Chi cục khu vực đóng vai trò quản lý cấp trên của các cửa khẩu thực địa. Ví dụ: Khi Long đi làm thủ tục thông quan hàng hóa tại cảng, đơn vị trực tiếp làm việc với Long là Hải quan cửa khẩu, nhưng đơn vị quản lý và hậu kiểm phía sau là Chi cục khu vực."
+		},
+		{
+			"id": 86,
+			"question": "Cấp nào quyết định biên chế, tên gọi và địa bàn quản lý của các đơn vị thuộc Chi cục?",
+			"options": [
+				"Tổng cục trưởng",
+				"Bộ trưởng Bộ Tài chính",
+				"Cục trưởng Cục Hải quan",
+				"Chi cục trưởng"
+			],
+			"answer": 2,
+			"explanation": "Cục trưởng nắm quyền quyết định tổ chức nội bộ trong phạm vi được giao. Ví dụ: Cục trưởng sẽ quyết định Đội Nghiệp vụ 1 sẽ phụ trách quản lý hàng hóa tại các kho bãi nào và bao nhiêu nhân sự sẽ làm việc tại đó."
+		},
+		{
+			"id": 87,
+			"question": "Điểm giống nhau về tư cách pháp lý giữa Cục Hải quan và Chi cục khu vực là gì?",
+			"options": [
+				"Đều có tư cách pháp nhân, con dấu và tài khoản tại Kho bạc Nhà nước",
+				"Đều trực thuộc Tổng cục Hải quan",
+				"Đều có quyền ban hành văn bản quy phạm pháp luật",
+				"Đều không có quyền xử phạt hành chính"
+			],
+			"answer": 0,
+			"explanation": "Cả hai đều là đơn vị có đầy đủ quyền tự chủ về pháp lý và tài chính để thực thi công vụ. Ví dụ: Cả Cục và Chi cục đều có tài khoản riêng tại Kho bạc để tiếp nhận tiền thuế và phí hải quan từ doanh nghiệp nộp vào ngân sách."
+		},
+		{
+			"id": 88,
+			"question": "Nhận định nào sau đây SAI khi so sánh về quyền hạn của Chi cục khu vực?",
+			"options": [
+				"Cục trực thuộc Tổng cục, Chi cục trực thuộc Cục",
+				"Chi cục khu vực có quyền ban hành quy chế nghiệp vụ áp dụng toàn ngành",
+				"Chi cục khu vực quản lý hoạt động trong phạm vi nhiều tỉnh/thành phố",
+				"Chi cục khu vực thực hiện hậu kiểm theo thẩm quyền"
+			],
+			"answer": 1,
+			"explanation": "Chi cục chỉ thực thi pháp luật, không có thẩm quyền ban hành quy định áp dụng toàn quốc. Ví dụ: Chỉ Tổng cục hoặc Bộ mới được phép đưa ra quy trình nghiệp vụ chung cho cả nước, Chi cục khu vực I không thể ra lệnh cho Chi cục khu vực II làm theo mình."
+		},
+		{
+			"id": 89,
+			"question": "Thứ tự quản lý đúng theo mô hình 3 cấp mới là:",
+			"options": [
+				"Cục -> Chi cục khu vực -> Hải quan cửa khẩu",
+				"Tổng cục -> Cục -> Chi cục khu vực",
+				"Bộ Tài chính -> Cục -> Hải quan cửa khẩu",
+				"Cục -> Đội nghiệp vụ -> Hải quan cửa khẩu"
+			],
+			"answer": 0,
+			"explanation": "Đây là 3 nấc thang quản lý hải quan mới tại địa phương. Ví dụ: Khi Long làm thủ tục tại cửa khẩu, cán bộ cửa khẩu báo cáo Chi cục khu vực, và Chi cục khu vực sẽ báo cáo hoặc xin ý kiến chỉ đạo từ Cục Hải quan tỉnh/liên tỉnh."
+		},
+		{
+			"id": 90,
+			"question": "Toàn hệ thống 20 Chi cục khu vực hiện có bao nhiêu Phòng/Đội và Cửa khẩu?",
+			"options": [
+				"150 phòng/đội - 159 cửa khẩu",
+				"147 phòng/đội - 157 cửa khẩu",
+				"155 phòng/đội - 157 cửa khẩu",
+				"150 phòng/đội - 157 cửa khẩu"
+			],
+			"answer": 0,
+			"explanation": "Con số này phản ánh quy mô bao phủ của mạng lưới hải quan mới trên toàn lãnh thổ. Ví dụ: Với 159 điểm cửa khẩu, ngành hải quan đảm bảo kiểm soát chặt chẽ hàng hóa tại mọi điểm xuất nhập từ đường bộ, đường biển đến đường hàng không."
+		},
+		{
+			"id": 91,
+			"question": "Chi cục Hải quan khu vực nào có quy mô lớn nhất hệ thống?",
+			"options": [
+				"KV I - Hà Nội",
+				"KV II - TP. Hồ Chí Minh",
+				"KV XVIII - Đồng Nai",
+				"KV XX - An Giang"
+			],
+			"answer": 1,
+			"explanation": "KV II (TP.HCM) lớn nhất do lưu lượng hàng hóa giao thương qua cảng biển tại đây đứng đầu cả nước. Ví dụ: Do quản lý tới 21 cửa khẩu cảng lớn như Cát Lái, Hiệp Phước, KV II cần bộ máy tới 10 Phòng/Đội để điều hành công việc."
+		},
+		{
+			"id": 92,
+			"question": "Chi cục Hải quan khu vực nào nhỏ nhất toàn hệ thống?",
+			"options": [
+				"KV XIV - Gia Lai",
+				"KV XV - Sân bay Tân Sơn Nhất, Long Thành",
+				"KV X - Sơn La",
+				"KV IV - Hưng Yên"
+			],
+			"answer": 1,
+			"explanation": "KV XV có cấu trúc tinh gọn nhất vì chỉ chuyên trách mảng sân bay quốc tế. Ví dụ: Khác với các khu vực quản lý biên giới dài hàng trăm km, KV XV chỉ tập trung nhân lực tại 2 điểm sân bay nên bộ máy chỉ cần 3 phòng nội bộ là đủ."
+		},
+		{
+			"id": 93,
+			"question": "Nhóm khu vực Hải quan nào có số lượng cửa khẩu ít nhất (dưới 5)?",
+			"options": [
+				"KV IV, VI, X, XIV",
+				"KV III, V, VII, XI",
+				"KV II, XVIII, XX, I",
+				"KV XIII, XIX, XII, XVII"
+			],
+			"answer": 0,
+			"explanation": "Đây là các đơn vị quản lý địa bàn có ít điểm thông quan quốc tế do đặc thù địa lý. Ví dụ: KV XIV quản lý Gia Lai - Đắk Lắk chỉ có 4 cửa khẩu đường bộ, thấp nhất trong toàn hệ thống 20 chi cục khu vực."
+		},
+		{
+			"id": 94,
+			"question": "Khu vực Hải quan nào quản lý đồng thời 3 tỉnh tại Tây Bắc và Tây Nam Bộ?",
+			"options": [
+				"KV VII và KV XIX",
+				"KV IV và KV XIV",
+				"KV II và KV XX",
+				"KV I và KV V"
+			],
+			"answer": 0,
+			"explanation": "Sự phân chia này giúp tinh giản bộ máy cấp Cục tại các tỉnh lân cận. Ví dụ: KV VII quản lý Lào Cai, Điện Biên, Lai Châu; KV XIX quản lý Cần Thơ, Vĩnh Long, Cà Mau - gom 3 tỉnh về một đầu mối Chi cục khu vực quản lý."
+		},
+		{
+			"id": 95,
+			"question": "Chi cục khu vực nào có nhiều cửa khẩu thứ hai cả nước, sau KV II?",
+			"options": [
+				"KV I - Hà Nội",
+				"KV XVIII - Đồng Nai",
+				"KV XX - Đồng Tháp, An Giang",
+				"KV VII - Lào Cai"
+			],
+			"answer": 2,
+			"explanation": "Khu vực biên giới Tây Nam có lượng cửa khẩu đường bộ và đường sông rất lớn. Ví dụ: Với 12 cửa khẩu sang Campuchia, KV XX chỉ đứng sau KV II (TP.HCM) về số lượng các điểm thực hiện thủ tục hải quan."
+		},
+		{
+			"id": 96,
+			"question": "Khu vực Hải quan KV V quản lý địa bàn đặc thù kết hợp các tỉnh nào?",
+			"options": [
+				"Hưng Yên, Ninh Bình",
+				"Bắc Ninh, Thái Nguyên",
+				"Thanh Hóa, Sơn La",
+				"Cao Bằng, Tuyên Quang"
+			],
+			"answer": 1,
+			"explanation": "KV V phụ trách vùng công nghiệp trọng điểm phía Bắc với địa hình đa dạng. Ví dụ: Các lô hàng linh kiện điện tử tại khu công nghiệp Bắc Ninh và Thái Nguyên đều được tập trung về Chi cục khu vực V để quản lý chung."
+		},
+		{
+			"id": 97,
+			"question": "Chi cục khu vực IX quản lý Huế và Quảng Trị, nhưng trụ sở chính đặt tại đâu?",
+			"options": [
+				"Thừa Thiên Huế",
+				"Quảng Trị",
+				"Quảng Bình",
+				"Đà Nẵng"
+			],
+			"answer": 2,
+			"explanation": "Dù địa bàn quản lý bao trùm cả Huế nhưng cơ quan đầu não đặt tại Quảng Trị. Ví dụ: Nếu doanh nghiệp tại Huế có vướng mắc lớn về tờ khai, họ sẽ phải gửi hồ sơ hoặc ra trụ sở tại Quảng Trị để gặp lãnh đạo Chi cục khu vực IX giải quyết."
+		},
+		{
+			"id": 98,
+			"question": "Nhóm khu vực nào dưới đây đều có quy mô 9 cửa khẩu trực thuộc?",
+			"options": [
+				"KV IX, XII, XVI, XVII, XIX",
+				"KV I, III, V, VIII, XIV",
+				"KV IV, VI, X, XIII, XV",
+				"KV II, XVIII, XX, XI, VII"
+			],
+			"answer": 0,
+			"explanation": "Đây là nhóm các đơn vị quy mô tầm trung có cấu trúc tổ chức tương đương nhau. Ví dụ: Cả 5 đơn vị này đều duy trì mạng lưới 9 checkpoint cửa khẩu để giám sát hàng hóa tại địa bàn mình phụ trách."
+		},
+		{
+			"id": 99,
+			"question": "Khu vực Hải quan nào quản lý địa bàn vùng Tây Nguyên và Nam Trung Bộ?",
+			"options": [
+				"KV XIII và KV XIV",
+				"KV XVI và KV XVII",
+				"KV XI và KV XII",
+				"KV VIII và KV IX"
+			],
+			"answer": 0,
+			"explanation": "Sự phân chia địa bàn dựa trên cụm các tỉnh cao nguyên và duyên hải miền Trung. Ví dụ: Lô hàng cà phê từ Lâm Đồng xuất khẩu sẽ do KV XIII quản lý, còn cà phê từ Đắk Lắk sẽ do KV XIV trực tiếp giám sát."
+		},
+		{
+			"id": 100,
+			"question": "Chi cục khu vực XV được thành lập để chuyên trách quản lý những sân bay nào?",
+			"options": [
+				"Nội Bài và Cát Bi",
+				"Tân Sơn Nhất và Long Thành",
+				"Đà Nẵng và Cam Ranh",
+				"Phú Quốc và Phú Bài"
+			],
+			"answer": 1,
+			"explanation": "Đơn vị này chuyên trách hải quan hàng không cho 2 sân bay quốc tế lớn nhất miền Nam. Ví dụ: Sau này khi sân bay Long Thành đi vào vận hành, các thủ tục hải quan tại đây sẽ do Chi cục khu vực XV này thực hiện quản lý."
+		},
+		{
+			"id": 101,
+			"question": "Đặc điểm nổi bật nhất của KV XV so với 19 khu vực còn lại là gì?",
+			"options": [
+				"Quản lý nhiều tỉnh nhất",
+				"Duy nhất chỉ quản lý sân bay, không quản lý đất liền hay cảng biển",
+				"Có nhiều phòng đội nhất",
+				"Có thẩm quyền cao nhất"
+			],
+			"answer": 1,
+			"explanation": "Đây là đơn vị hải quan 'trên không' duy nhất trong hệ thống mới. Ví dụ: Khác với các khu vực phải đi tuần tra biên giới rừng núi, cán bộ KV XV chỉ tập trung xử lý luồng hàng hóa và hành lý đi qua đường hàng không tại sân bay."
+		},
+		{
+			"id": 102,
+			"question": "Khu vực nào quản lý 10 Phòng/Đội và 21 cửa khẩu, lớn nhất hệ thống?",
+			"options": [
+				"KV I",
+				"KV II - TP. Hồ Chí Minh",
+				"KV XVIII",
+				"KV XX"
+			],
+			"answer": 1,
+			"explanation": "TP.HCM luôn là trung tâm giao thương lớn nhất nên cần bộ máy hải quan mạnh nhất. Ví dụ: Với 21 cửa khẩu trực thuộc, KV II sở hữu mạng lưới giám sát hải quan dày đặc nhất tại các cảng biển và kho ICD miền Nam."
+		},
+		{
+			"id": 103,
+			"question": "Quy mô tổ chức cụ thể của Chi cục khu vực XV là bao nhiêu?",
+			"options": [
+				"05 Phòng - 03 Cửa khẩu",
+				"04 Phòng - 04 Cửa khẩu",
+				"03 Phòng - 02 Cửa khẩu",
+				"06 Phòng - 04 Cửa khẩu"
+			],
+			"answer": 2,
+			"explanation": "Mô hình này là mô hình tinh gọn nhất dành cho đơn vị chuyên biệt sân bay. Ví dụ: Chỉ với 3 phòng nội bộ và 2 chi cục cửa khẩu sân bay, KV XV vẫn đảm bảo quản lý lượng hành khách và hàng hóa hàng không khổng lồ."
+		},
+		{
+			"id": 104,
+			"question": "So sánh quy mô số Phòng/Đội giữa Chi cục khu vực I và Chi cục khu vực XV?",
+			"options": [
+				"KV I có 9 Phòng/Đội, gấp 3 lần KV XV",
+				"KV XV gấp 3 lần KV I",
+				"Hai khu vực bằng nhau về số lượng",
+				"KV I chỉ bằng 1/2 KV XV"
+			],
+			"answer": 0,
+			"explanation": "Sự chênh lệch về quy mô tổ chức dựa trên khối lượng công việc và địa bàn. Ví dụ: KV I quản lý vùng Hà Nội rộng lớn nên cần 9 phòng chuyên môn, trong khi KV XV chỉ cần 3 phòng do tính chất quản lý tập trung tại sân bay."
+		},
+		{
+			"id": 105,
+			"question": "Chi cục Hải quan khu vực XV được bổ sung mới hoàn toàn theo Quyết định nào?",
+			"options": [
+				"QĐ 819 ngày 30/6/2025",
+				"QĐ 1942 ngày 04/12/2025",
+				"QĐ 966 ngày 05/3/2025",
+				"QĐ 819 ngày 05/3/2025"
+			],
+			"answer": 1,
+			"explanation": "QĐ 1942 là văn bản bổ sung để hoàn thiện mạng lưới hải quan khu vực. Ví dụ: Ban đầu danh sách chỉ có 19 khu vực, nhưng để đón đầu sân bay Long Thành, QĐ 1942 đã chính thức thêm khu vực thứ 20 là KV XV vào hệ thống."
+		}
+	]
 }

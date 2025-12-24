@@ -9,7 +9,7 @@ export default function HomePage() {
 	const router = useRouter();
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+		<div className="min-h-screen bg-linear-to-br from-blue-50 via-white to-indigo-50">
 			<div className="container mx-auto px-4 py-16">
 				{/* Hero Section */}
 				<div className="text-center mb-16">
@@ -18,7 +18,7 @@ export default function HomePage() {
 							<BookOpen className="h-16 w-16 text-primary" />
 						</div>
 					</div>
-					<div className="text-5xl font-black mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent p-2">
+					<div className="text-5xl font-black mb-4 bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent p-2">
 						Hệ Thống Ôn Thi Hải Quan
 					</div>
 					<p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
@@ -82,26 +82,6 @@ export default function HomePage() {
 							</p>
 						</CardContent>
 					</Card>
-				</div>
-
-				{/* Stats Section */}
-				<div className="mt-16 max-w-4xl mx-auto">
-					<div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-slate-100">
-						<div className="grid grid-cols-3 gap-8 text-center">
-							<div>
-								<div className="text-4xl font-black text-primary mb-2">160+</div>
-								<div className="text-slate-600">Câu hỏi</div>
-							</div>
-							<div>
-								<div className="text-4xl font-black text-primary mb-2">2</div>
-								<div className="text-slate-600">Bộ đề thi</div>
-							</div>
-							<div>
-								<div className="text-4xl font-black text-primary mb-2">100%</div>
-								<div className="text-slate-600">Miễn phí</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

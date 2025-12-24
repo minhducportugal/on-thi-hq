@@ -26,17 +26,29 @@ export default function QuizResult() {
 			return;
 		}
 
-		const answers: Record<number, number> = JSON.parse(answersData);
-		const quiz: QuizData = JSON.parse(quizData);
+		try {
+			const answers: Record<number, number> = JSON.parse(answersData);
+			const shuffledQuestions = JSON.parse(quizData);
 
-		const calculatedScore = quiz.questions.reduce(
-			(acc, q, idx) => acc + (answers[idx] === q.answer ? 1 : 0),
-			0
-		);
+			if (!Array.isArray(shuffledQuestions) || shuffledQuestions.length === 0) {
+				router.push("/quizz");
+				return;
+			}
 
-		setScore(calculatedScore);
-		setTotal(quiz.questions.length);
-		setQuizTitle(quiz.title);
+			const calculatedScore = shuffledQuestions.reduce(
+				(acc: number, q: any, idx: number) => acc + (answers[idx] === q.correct_option ? 1 : 0),
+				0
+			);
+
+			setScore(calculatedScore);
+			setTotal(shuffledQuestions.length);
+			
+			const titleData = sessionStorage.getItem(`quiz_${slug}_title`);
+			setQuizTitle(titleData || "");
+		} catch (error) {
+			console.error("Error loading quiz result:", error);
+			router.push("/quizz");
+		}
 	}, [slug, router]);
 
 	const handleReview = () => {
@@ -44,14 +56,25 @@ export default function QuizResult() {
 	};
 
 	const handleRetry = () => {
+		// Keep the question count for retry from the actual selected count
+		const savedCount = sessionStorage.getItem(`quiz_${slug}_selected_count`);
+		
 		sessionStorage.removeItem(`quiz_${slug}_answers`);
 		sessionStorage.removeItem(`quiz_${slug}_shuffled`);
-		router.push(`/quizz/${slug}`);
+		
+		// Set the count for next quiz attempt
+		if (savedCount) {
+			sessionStorage.setItem(`quiz_${slug}_count`, savedCount);
+		}
+		
+		router.push(`/quizz/${slug}/test`);
 	};
 
 	const handleHome = () => {
 		sessionStorage.removeItem(`quiz_${slug}_answers`);
 		sessionStorage.removeItem(`quiz_${slug}_shuffled`);
+		sessionStorage.removeItem(`quiz_${slug}_count`);
+		sessionStorage.removeItem(`quiz_${slug}_selected_count`);
 		router.push("/quizz");
 	};
 

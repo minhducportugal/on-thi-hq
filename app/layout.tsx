@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -16,7 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Ôn thi HQ",
 	description: "Ôn thi Công chức Hải Quan trực tuyến miễn phí",
+	icons: {
+		icon: "logo.svg",
+	},
 };
+
 
 export default function RootLayout({
 	children,
@@ -24,11 +29,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+		<html lang="en" suppressHydrationWarning>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
 				<Providers>
 					{children}
 				</Providers>
+				<Toaster />
 			</body>
 		</html>
 	);

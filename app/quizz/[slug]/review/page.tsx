@@ -1,47 +1,118 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useParams, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { CheckCircle2, XCircle, Home, RotateCcw } from "lucide-react";
-import { QuizData } from "@/lib/quizData";
+import { supabase } from "@/lib/supabase";
+
+interface ShuffledQuestion {
+	id: string;
+	question: string;
+	shuffled_options: string[];
+	correct_option: number;
+	explanation?: string;
+}
 
 export default function QuizReview() {
 	const router = useRouter();
 	const params = useParams();
+	const searchParams = useSearchParams();
 	const slug = params.slug as string;
+	const attemptId = searchParams.get('attempt');
 
 	const [answers, setAnswers] = useState<Record<number, number>>({});
-	const [quiz, setQuiz] = useState<QuizData | null>(null);
+	const [questions, setQuestions] = useState<ShuffledQuestion[]>([]);
+	const [quizTitle, setQuizTitle] = useState("");
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		// Load data from sessionStorage
-		const answersData = sessionStorage.getItem(`quiz_${slug}_answers`);
-		const quizData = sessionStorage.getItem(`quiz_${slug}_shuffled`);
+		async function loadReview() {
+			// If viewing from history (has attemptId), load from database
+			if (attemptId) {
+				try {
+					// Get user answers for this attempt
+					const { data: userAnswers } = await supabase
+						.from('user_answers')
+						.select('question_id, selected_option_id, questions(id, question_text, explanation, options(id, option_text, is_correct))')
+						.eq('attempt_id', attemptId);
 
-		if (!answersData || !quizData) {
-			router.push("/quizz");
-			return;
+					if (!userAnswers || userAnswers.length === 0) {
+						router.push("/quizz");
+						return;
+					}
+
+					// Build questions and answers
+					const loadedQuestions: ShuffledQuestion[] = [];
+					const loadedAnswers: Record<number, number> = {};
+
+					userAnswers.forEach((ua: any, idx: number) => {
+						const q = ua.questions;
+						const options = q.options.sort((a: any, b: any) => a.option_text.localeCompare(b.option_text));
+						const correctIdx = options.findIndex((opt: any) => opt.is_correct);
+						const selectedIdx = options.findIndex((opt: any) => opt.id === ua.selected_option_id);
+
+						loadedQuestions.push({
+							id: q.id,
+							question: q.question_text,
+							shuffled_options: options.map((opt: any) => opt.option_text),
+							correct_option: correctIdx,
+							explanation: q.explanation
+						});
+
+						loadedAnswers[idx] = selectedIdx;
+					});
+
+					setQuestions(loadedQuestions);
+					setAnswers(loadedAnswers);
+					setQuizTitle("Xem lại lịch sử");
+					setLoading(false);
+				} catch (error) {
+					console.error("Error loading attempt:", error);
+					router.push("/quizz");
+				}
+			} else {
+				// Load from sessionStorage (just completed quiz)
+				const answersData = sessionStorage.getItem(`quiz_${slug}_answers`);
+				const quizData = sessionStorage.getItem(`quiz_${slug}_shuffled`);
+				const titleData = sessionStorage.getItem(`quiz_${slug}_title`);
+
+				if (!answersData || !quizData) {
+					router.push("/quizz");
+					return;
+				}
+
+				try {
+					setAnswers(JSON.parse(answersData));
+					setQuestions(JSON.parse(quizData));
+					setQuizTitle(titleData || "");
+					setLoading(false);
+				} catch (error) {
+					console.error("Error loading quiz review:", error);
+					router.push("/quizz");
+				}
+			}
 		}
 
-		setAnswers(JSON.parse(answersData));
-		setQuiz(JSON.parse(quizData));
-	}, [slug, router]);
+		loadReview();
+	}, [slug, attemptId, router]);
 
 	const handleRetry = () => {
 		sessionStorage.removeItem(`quiz_${slug}_answers`);
 		sessionStorage.removeItem(`quiz_${slug}_shuffled`);
+		sessionStorage.removeItem(`quiz_${slug}_title`);
 		router.push(`/quizz/${slug}`);
 	};
 
 	const handleHome = () => {
 		sessionStorage.removeItem(`quiz_${slug}_answers`);
 		sessionStorage.removeItem(`quiz_${slug}_shuffled`);
+		sessionStorage.removeItem(`quiz_${slug}_title`);
 		router.push("/quizz");
 	};
 
-	if (!quiz) {
+	if (questions.length === 0 || loading) {
 		return (
 			<div className="flex items-center justify-center min-h-screen">
 				<div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
@@ -60,8 +131,8 @@ export default function QuizReview() {
 				</div>
 
 				<ScrollArea className="h-[70vh] rounded-md border p-4 bg-white">
-					{quiz.questions.map((q, idx) => {
-						const isCorrect = answers[idx] === q.answer;
+					{questions.map((q, idx) => {
+						const isCorrect = answers[idx] === q.correct_option;
 						return (
 							<div key={idx} className="mb-8 p-4 border-b last:border-0">
 								<div className="flex items-start gap-3 mb-3">
@@ -75,11 +146,11 @@ export default function QuizReview() {
 									</p>
 								</div>
 								<div className="ml-9 space-y-2">
-									{q.options.map((opt, i) => (
+									{q.shuffled_options.map((opt, i) => (
 										<div
 											key={i}
 											className={`text-sm p-2 rounded ${
-												i === q.answer
+												i === q.correct_option
 													? "bg-green-100 border-green-200 border text-green-800"
 													: i === answers[idx] && !isCorrect
 													? "bg-red-100 border-red-200 border text-red-800"
@@ -87,9 +158,23 @@ export default function QuizReview() {
 											}`}
 										>
 											{String.fromCharCode(65 + i)}. {opt}
-											{i === q.answer && <span className="ml-2 font-bold">(Đáp án đúng)</span>}
+											{i === q.correct_option && (
+												<span className="ml-2 font-bold">(Đáp án đúng)</span>
+											)}
 										</div>
 									))}
+
+									{/* Show explanation if available */}
+									{q.explanation && (
+										<div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+											<div className="flex items-start gap-2">
+												<span className="font-semibold text-blue-700">💡 Giải thích:</span>
+												<p className="text-slate-700 text-sm leading-relaxed flex-1">
+													{q.explanation}
+												</p>
+											</div>
+										</div>
+									)}
 								</div>
 							</div>
 						);

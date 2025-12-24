@@ -1,24 +1,15 @@
-import luatHQ from "@/data/luat_hai_quan_2014.json";
-import quyetDinh819 from "@/data/quyet_dinh_819.json";
-import testQuiz from "@/data/test.json";
-
 export interface Question {
 	id: number;
 	question: string;
 	options: string[];
 	answer: number;
+	explanation?: string;
 }
 
 export interface QuizData {
 	title: string;
 	questions: Question[];
 }
-
-export const QUIZZES: Record<string, QuizData> = {
-	luat_hq: luatHQ,
-	qd_819: quyetDinh819,
-	test: testQuiz,
-};
 
 export function shuffleArray<T>(array: T[]): T[] {
 	const shuffled = [...array];

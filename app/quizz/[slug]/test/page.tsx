@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { ChevronLeft, ChevronRight, CheckCircle2, Timer, AlertTriangle, Flag } from "lucide-react";
 import { shuffleArray } from "@/lib/quizData";
-import { useQuestions, useQuizSubmit } from "@/hooks/useQuiz";
+import { useQuestions, useQuizSubmit, useSettings } from "@/hooks/useQuiz";
 import { Question as DBQuestion } from "@/lib/supabase";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -33,6 +33,7 @@ export default function QuizTest() {
 	const hasInitialized = useRef(false);
 	const { questions, loading, error } = useQuestions(slug);
 	const { submitQuiz, submitting } = useQuizSubmit();
+	const { settings } = useSettings(user?.id);
 	const [showAnswerMode, setShowAnswerMode] = useState<"instant" | "end">("end");
 	const [timerEnabled, setTimerEnabled] = useState(false);
 	const [timeLeft, setTimeLeft] = useState(0);
@@ -69,24 +70,22 @@ export default function QuizTest() {
 			sessionStorage.removeItem(`quiz_${slug}_count`);
 		}
 
-		// Shuffle questions and their options
-		const shuffled = shuffleArray(questionsToUse).map((q) => {
-			// Get correct option text
+		// Shuffle questions if enabled in settings
+		const shuffleEnabled = settings?.shuffle_questions ?? true;
+
+		// Shuffle questions if enabled, otherwise keep original order
+		const orderedQuestions = shuffleEnabled ? shuffleArray(questionsToUse) : questionsToUse;
+		const shuffled = orderedQuestions.map((q) => {
+			// Get option texts in original order
 			const optionTexts = q.options.map(opt => opt.option_text);
 			
-			// Shuffle option texts
-			const indexMapping = optionTexts.map((_, i) => i);
-			const shuffledMapping = shuffleArray(indexMapping);
-			const shuffledOptions = shuffledMapping.map((i) => optionTexts[i]);
-			
-			// Find new index of correct answer
+			// Find index of correct answer (keep original position)
 			const correctIndex = q.options.findIndex(opt => opt.is_correct);
-			const newAnswerIndex = shuffledMapping.indexOf(correctIndex);
 
 			return {
 				...q,
-				shuffled_options: shuffledOptions,
-				correct_option: newAnswerIndex,
+				shuffled_options: optionTexts,
+				correct_option: correctIndex,
 			};
 		});
 
@@ -95,20 +94,15 @@ export default function QuizTest() {
 			setQuizTitle(questions[0].quiz.title);
 		}
 
-		// Load settings from localStorage
-		const savedMode = localStorage.getItem("quiz_showAnswerMode");
-		if (savedMode === "instant" || savedMode === "end") {
-			setShowAnswerMode(savedMode);
+		// Load settings from useSettings hook
+		if (settings) {
+			setShowAnswerMode(settings.show_answer_mode);
+			setTimerEnabled(settings.timer_enabled);
+			if (settings.timer_enabled) {
+				setTimeLeft(settings.timer_minutes * 60);
+			}
 		}
-
-		const savedTimerEnabled = localStorage.getItem("quiz_timerEnabled");
-		if (savedTimerEnabled === "true") {
-			setTimerEnabled(true);
-			const savedMinutes = localStorage.getItem("quiz_timerMinutes");
-			const minutes = savedMinutes ? parseInt(savedMinutes) : 30;
-			setTimeLeft(minutes * 60);
-		}
-	}, [questions, slug]);
+	}, [questions, slug, settings]);
 
 	useEffect(() => {
 		const handleBeforeUnload = (e: BeforeUnloadEvent) => {

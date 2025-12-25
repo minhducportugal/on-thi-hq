@@ -115,7 +115,8 @@ export function useSettings(userId?: string) {
   const [settings, setSettings] = useState<UserSettings>({
     show_answer_mode: 'end',
     timer_enabled: false,
-    timer_minutes: 30
+    timer_minutes: 30,
+    shuffle_questions: true
   });
   const [loading, setLoading] = useState(true);
 
@@ -124,19 +125,25 @@ export function useSettings(userId?: string) {
     const localMode = localStorage.getItem('quiz_showAnswerMode');
     const localTimer = localStorage.getItem('quiz_timerEnabled');
     const localMinutes = localStorage.getItem('quiz_timerMinutes');
+    const localShuffle = localStorage.getItem('quiz_shuffleQuestions');
 
-    if (localMode || localTimer || localMinutes) {
+    if (localMode || localTimer || localMinutes || localShuffle) {
       setSettings({
         show_answer_mode: (localMode as 'instant' | 'end') || 'end',
         timer_enabled: localTimer === 'true',
-        timer_minutes: parseInt(localMinutes || '30')
+        timer_minutes: parseInt(localMinutes || '30'),
+        shuffle_questions: localShuffle === null || localShuffle === 'true'
       });
     }
 
     // Then load from DB if user exists
-    getUserSettings(userId)
-      .then(setSettings)
-      .finally(() => setLoading(false));
+    if (userId) {
+      getUserSettings(userId)
+        .then(setSettings)
+        .finally(() => setLoading(false));
+    } else {
+      setLoading(false);
+    }
   }, [userId]);
 
   const saveSettings = async (newSettings: Partial<UserSettings>) => {

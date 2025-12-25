@@ -57,6 +57,7 @@ export interface UserSettings {
   show_answer_mode: 'instant' | 'end'
   timer_enabled: boolean
   timer_minutes: number
+  shuffle_questions?: boolean
   dark_mode?: boolean
   auto_next?: boolean
 }

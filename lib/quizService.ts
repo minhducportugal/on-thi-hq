@@ -140,6 +140,7 @@ export async function getUserSettings(userId?: string): Promise<UserSettings> {
   // If no settings found, return defaults
   if (error || !data) {
     return {
+      shuffle_questions: false,
       show_answer_mode: 'end',
       timer_enabled: false,
       timer_minutes: 30
@@ -155,6 +156,7 @@ export async function saveUserSettings(settings: UserSettings, userId?: string) 
     localStorage.setItem('quiz_showAnswerMode', settings.show_answer_mode)
     localStorage.setItem('quiz_timerEnabled', settings.timer_enabled.toString())
     localStorage.setItem('quiz_timerMinutes', settings.timer_minutes.toString())
+    localStorage.setItem('quiz_shuffleQuestions', (settings.shuffle_questions ?? true).toString())
     return
   }
   

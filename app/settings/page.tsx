@@ -8,13 +8,16 @@ import { Label } from "@/components/ui/label";
 import { ArrowLeft, Save, ChevronDown, ChevronUp, Eye, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useSettings } from "@/hooks/useQuiz";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function SettingsPage() {
 	const router = useRouter();
-	const { settings, loading, saveSettings, saving } = useSettings();
+	const { user } = useAuth();
+	const { settings, loading, saveSettings, saving } = useSettings(user?.id);
 	const [showAnswerMode, setShowAnswerMode] = useState<"instant" | "end">("end");
 	const [timerEnabled, setTimerEnabled] = useState(false);
 	const [timerMinutes, setTimerMinutes] = useState(30);
+	const [shuffleQuestions, setShuffleQuestions] = useState(true);
 	const [saved, setSaved] = useState(false);
 	const [expandedSection, setExpandedSection] = useState<string | null>("display");
 
@@ -23,6 +26,7 @@ export default function SettingsPage() {
 			setShowAnswerMode(settings.show_answer_mode);
 			setTimerEnabled(settings.timer_enabled);
 			setTimerMinutes(settings.timer_minutes);
+			setShuffleQuestions(settings.shuffle_questions ?? true);
 		}
 	}, [settings]);
 
@@ -32,8 +36,9 @@ export default function SettingsPage() {
 			show_answer_mode: showAnswerMode,
 			timer_enabled: timerEnabled,
 			timer_minutes: timerMinutes,
+			shuffle_questions: shuffleQuestions,
 		});
-		
+
 		setSaved(true);
 		await new Promise((resolve) => setTimeout(resolve, 1000));
 		router.push("/quizz");
@@ -95,8 +100,8 @@ export default function SettingsPage() {
 													Hiển thị đáp án sau khi hoàn thành
 												</div>
 												<div className="text-sm text-muted-foreground">
-													Chỉ xem kết quả và đáp án đúng/sai sau khi làm xong toàn bộ bài thi. Phù hợp
-													cho việc tự kiểm tra năng lực.
+													Chỉ xem kết quả và đáp án đúng/sai sau khi làm xong toàn bộ bài thi.
+													Phù hợp cho việc tự kiểm tra năng lực.
 												</div>
 											</Label>
 										</div>
@@ -111,14 +116,35 @@ export default function SettingsPage() {
 										>
 											<RadioGroupItem value="instant" id="instant" className="mt-1" />
 											<Label htmlFor="instant" className="flex-1 cursor-pointer">
-												<div className="font-semibold text-base mb-1">Hiển thị đáp án ngay lập tức</div>
+												<div className="font-semibold text-base mb-1">
+													Hiển thị đáp án ngay lập tức
+												</div>
 												<div className="text-sm text-muted-foreground">
-													Hiển thị đúng/sai ngay sau khi chọn đáp án. Phù hợp cho việc học và ghi nhớ
-													kiến thức.
+													Hiển thị đúng/sai ngay sau khi chọn đáp án. Phù hợp cho việc học và
+													ghi nhớ kiến thức.
 												</div>
 											</Label>
 										</div>
 									</RadioGroup>
+								</div>
+
+								<div>
+									<Label className="text-base font-semibold mb-4 block">Trộn câu hỏi</Label>
+									<div className="flex items-center justify-between p-4 rounded-lg border-2 border-slate-200">
+										<div className="flex-1">
+											<div className="font-semibold text-base mb-1">Trộn thứ tự câu hỏi</div>
+											<div className="text-sm text-muted-foreground">
+												Câu hỏi sẽ xuất hiện theo thứ tự ngẫu nhiên mỗi lần làm bài
+											</div>
+										</div>
+										<Button
+											variant={shuffleQuestions ? "outline" : "default"}
+											size="sm"
+											onClick={() => setShuffleQuestions(!shuffleQuestions)}
+										>
+											{shuffleQuestions ? "Tắt" : "Bật"}
+										</Button>
+									</div>
 								</div>
 							</CardContent>
 						)}
@@ -144,7 +170,7 @@ export default function SettingsPage() {
 						</CardHeader>
 						{expandedSection === "timer" && (
 							<CardContent className="space-y-4">
-								<div className="flex items-center justify-between p-4 rounded-lg border-2 border-slate-200">
+								<div className="flex items-center justify-between p-4 rounded-lg border-2 border-slate-200 gap-1">
 									<div className="flex-1">
 										<div className="font-semibold text-base mb-1">Bật hẹn giờ</div>
 										<div className="text-sm text-muted-foreground">
@@ -182,30 +208,21 @@ export default function SettingsPage() {
 					</Card>
 
 					{/* Save Button */}
-					<Card className="shadow-lg">
-						<CardContent className="pt-6">
-							<Button 
-								onClick={handleSave} 
-								className="w-full" 
-								size="lg"
-								disabled={saving || loading}
-							>
-								<Save className="mr-2 h-4 w-4" />
-								{saving ? "Đang lưu..." : saved ? "Đã lưu!" : "Lưu cài đặt"}
-							</Button>
-							{saved && (
-								<p className="text-center text-sm text-green-600 mt-2">
-									✓ Cài đặt đã được lưu thành công
-								</p>
-							)}
-						</CardContent>
-					</Card>
+					<div className="flex flex-col items-center">
+						<Button onClick={handleSave} className="w-auto" size="lg" disabled={saving || loading}>
+							<Save className="mr-2 h-4 w-4" />
+							{saving ? "Đang lưu..." : saved ? "Đã lưu!" : "Lưu cài đặt"}
+						</Button>
+						{saved && (
+							<p className="text-center text-sm text-green-600 mt-2">✓ Cài đặt đã được lưu thành công</p>
+						)}
+					</div>
 				</div>
 
 				<div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
 					<p className="text-sm text-blue-800">
-						<strong>Lưu ý:</strong> Cài đặt của bạn sẽ được lưu trữ trên thiết bị này và tự động áp
-						dụng cho các lần làm bài tiếp theo.
+						<strong>Lưu ý:</strong> Cài đặt của bạn sẽ được lưu trữ trên thiết bị này và tự động áp dụng cho
+						các lần làm bài tiếp theo.
 					</p>
 				</div>
 			</div>

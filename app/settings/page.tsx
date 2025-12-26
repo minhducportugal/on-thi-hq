@@ -178,11 +178,11 @@ export default function SettingsPage() {
 										</div>
 									</div>
 									<Button
-										variant={timerEnabled ? "default" : "outline"}
+										variant={timerEnabled ?  "outline" : "default"}
 										size="sm"
 										onClick={() => setTimerEnabled(!timerEnabled)}
 									>
-										{timerEnabled ? "Bật" : "Tắt"}
+										{timerEnabled ? "Tắt" : "Bật"}
 									</Button>
 								</div>
 

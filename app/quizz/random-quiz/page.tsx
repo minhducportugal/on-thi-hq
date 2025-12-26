@@ -1,14 +1,11 @@
 "use client";
 
-import { useRouter, useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { History, Award, Trash2, CheckSquare, Square, ArrowLeft } from "lucide-react";
-import { useQuizHistory, useQuizzes } from "@/hooks/useQuiz";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { supabase } from "@/lib/supabase";
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import {
@@ -23,16 +20,18 @@ import {
 } from "@/components/ui/alert-dialog";
 import { toast } from "sonner";
 
-export default function QuizConfig() {
+interface QuizAttempt {
+	id: string;
+	score: number;
+	total_questions: number;
+	completed_at: string;
+}
+
+export default function RandomQuizHistory() {
 	const router = useRouter();
-	const params = useParams();
-	const slug = params.slug as string;
 	const { user, loading: authLoading } = useAuth();
-	const { quizzes, loading: quizzesLoading } = useQuizzes();
-	const [questionCount, setQuestionCount] = useState<number>(0);
-	const [maxQuestions, setMaxQuestions] = useState<number>(0);
-	const [quizTitle, setQuizTitle] = useState<string>("");
-	const { attempts, loading: historyLoading, refetch } = useQuizHistory(slug, user?.id);
+	const [attempts, setAttempts] = useState<QuizAttempt[]>([]);
+	const [loading, setLoading] = useState(true);
 	const [selectedAttempts, setSelectedAttempts] = useState<string[]>([]);
 	const [deleteDialog, setDeleteDialog] = useState<{
 		open: boolean;
@@ -52,18 +51,43 @@ export default function QuizConfig() {
 		}
 	}, [user, authLoading, router]);
 
-	useEffect(() => {
-		if (quizzes && quizzes.length > 0) {
-			const currentQuiz = quizzes.find(q => q.slug === slug);
-			if (currentQuiz) {
-				setMaxQuestions(currentQuiz.total_questions);
-				setQuestionCount(currentQuiz.total_questions);
-				setQuizTitle(currentQuiz.title);
-			} else {
-				router.push("/quizz");
-			}
+	const fetchHistory = async () => {
+		if (!user) {
+			setLoading(false);
+			setAttempts([]);
+			return;
 		}
-	}, [quizzes, slug, router]);
+
+		setLoading(true);
+
+		// Get the "random-quiz" quiz id
+		const { data: quiz } = await supabase
+			.from('quizzes')
+			.select('id')
+			.eq('slug', 'random-quiz')
+			.single();
+
+		if (!quiz) {
+			setLoading(false);
+			setAttempts([]);
+			return;
+		}
+
+		const { data } = await supabase
+			.from('quiz_attempts')
+			.select('id, score, total_questions, completed_at')
+			.eq('user_id', user.id)
+			.eq('quiz_id', quiz.id)
+			.order('completed_at', { ascending: false });
+
+		setAttempts(data || []);
+		setLoading(false);
+	};
+
+	useEffect(() => {
+		fetchHistory();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [user]);
 
 	const toggleSelectAttempt = (attemptId: string, e: React.MouseEvent) => {
 		e.stopPropagation();
@@ -110,7 +134,7 @@ export default function QuizConfig() {
 					if (attemptsError) throw attemptsError;
 
 					setSelectedAttempts([]);
-					refetch();
+					fetchHistory();
 					toast.success("Đã xóa lịch sử thành công");
 				} catch (error) {
 					console.error("Error deleting attempts:", error);
@@ -147,7 +171,7 @@ export default function QuizConfig() {
 					if (attemptsError) throw attemptsError;
 
 					setSelectedAttempts([]);
-					refetch();
+					fetchHistory();
 					toast.success("Đã xóa tất cả lịch sử");
 				} catch (error) {
 					console.error("Error deleting all attempts:", error);
@@ -158,7 +182,7 @@ export default function QuizConfig() {
 		});
 	};
 
-	if (authLoading || quizzesLoading) {
+	if (authLoading || loading) {
 		return (
 			<div className="flex items-center justify-center min-h-screen">
 				<div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
@@ -184,38 +208,13 @@ export default function QuizConfig() {
 
 				<Card>
 					<CardHeader>
-						<CardTitle>{quizTitle}</CardTitle>
+						<CardTitle>Đề thi ngẫu nhiên 60 câu</CardTitle>
 					</CardHeader>
 					<CardContent className="space-y-4">
-						<div className="space-y-2">
-							<Label htmlFor="questionCount">Số câu hỏi muốn thi</Label>
-							<div className="flex items-center gap-2">
-								<Input
-									id="questionCount"
-									type="text"
-									inputMode="numeric"
-									pattern="[0-9]*"
-									value={questionCount}
-									onChange={(e) => {
-										const value = e.target.value.replace(/[^0-9]/g, '');
-										setQuestionCount(value === '' ? 0 : Number(value));
-									}}
-									onBlur={(e) => {
-										const value = e.target.value.replace(/[^0-9]/g, '');
-										const num = value === '' ? 1 : Number(value);
-										setQuestionCount(Math.min(maxQuestions, Math.max(1, num)));
-									}}
-								/>
-							</div>
-							<p className="text-xs text-muted-foreground">Tối đa: {maxQuestions} câu</p>
-						</div>
 						<Button
 							onClick={() => {
-								sessionStorage.setItem(
-									`quiz_${slug}_count`,
-									String(questionCount)
-								);
-								router.push(`/quizz/${slug}/test`);
+								sessionStorage.setItem('random_quiz_mode', '60');
+								router.push(`/quizz/random-quiz/test`);
 							}}
 							className="w-full"
 							size="lg"
@@ -232,7 +231,7 @@ export default function QuizConfig() {
 								<History className="h-5 w-5" />
 								<CardTitle className="text-lg">Lịch sử làm bài</CardTitle>
 							</div>
-							{!historyLoading && attempts.length > 0 && (
+							{attempts.length > 0 && (
 								<div className="flex gap-2">
 									<Button
 										variant="outline"
@@ -274,7 +273,7 @@ export default function QuizConfig() {
 						</div>
 					</CardHeader>
 					<CardContent>
-						{historyLoading ? (
+						{loading ? (
 							<div className="flex items-center justify-center py-8">
 								<div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
 							</div>
@@ -288,7 +287,7 @@ export default function QuizConfig() {
 											key={attempt.id}
 											onClick={() =>
 												router.push(
-													`/quizz/${slug}/review?attempt=${attempt.id}`
+													`/quizz/random-quiz/review?attempt=${attempt.id}`
 												)
 											}
 											className={`flex items-center justify-between p-3 rounded-lg hover:bg-slate-100 transition cursor-pointer ${
@@ -313,7 +312,7 @@ export default function QuizConfig() {
 													}`}
 												/>
 												<div>
-													<p className="font-medium text-sm">
+													<p className="font-medium">
 														{attempt.score}/{attempt.total_questions} câu đúng
 													</p>
 													<p className="text-xs text-slate-500">
@@ -323,7 +322,7 @@ export default function QuizConfig() {
 											</div>
 											<div className="flex items-center gap-3">
 												<div
-													className={`text-md font-bold ${
+													className={`text-lg font-bold ${
 														percentage >= 80
 															? "text-green-600"
 															: percentage >= 50

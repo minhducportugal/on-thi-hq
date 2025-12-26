@@ -111,6 +111,35 @@ export function useQuestions(slug: string | null) {
   return { questions, loading, error };
 }
 
+export function useAllQuestions() {
+	const [questions, setQuestions] = useState<(Question & { quiz: Quiz })[]>([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState<string | null>(null);
+
+	useEffect(() => {
+		setLoading(true);
+		
+		// Get all quizzes
+		getQuizzes()
+			.then(async (quizzes) => {
+				// Get questions from all quizzes
+				const allQuestionsPromises = quizzes.map(quiz => 
+					getQuestions(quiz.id).then(qs => 
+						qs.map(q => ({ ...q, quiz }))
+					)
+				);
+				
+				const allQuestions = await Promise.all(allQuestionsPromises);
+				return allQuestions.flat();
+			})
+			.then(setQuestions)
+			.catch((e) => setError(e.message))
+			.finally(() => setLoading(false));
+	}, []);
+
+  return { questions, loading, error };
+}
+
 export function useSettings(userId?: string) {
   const [settings, setSettings] = useState<UserSettings>({
     show_answer_mode: 'end',

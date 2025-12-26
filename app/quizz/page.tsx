@@ -62,21 +62,35 @@ export default function QuizSelection() {
 					</Button>
 				</div>
 			</div>
+
+			{/* Random Quiz Button */}
+			<div className="w-full max-w-2xl mb-6 space-y-3">
+				<Button
+					onClick={() => router.push("/quizz/random-quiz")}
+					variant="outline"
+					className="w-full h-20 text-lg font-semibold bg-linear-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 shadow-lg"
+				>
+					<span className="text-white">🎲 Đề thi ngẫu nhiên</span>
+				</Button>
+			</div>
+
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
-				{quizzes.map((quiz) => (
-					<Card
-						key={quiz.id}
-						className="hover:ring-2 hover:ring-primary cursor-pointer transition-all"
-						onClick={() => router.push(`/quizz/${quiz.slug}`)}
-					>
-						<CardHeader>
-							<CardTitle className="text-lg">{quiz.title}</CardTitle>
-							<p className="text-sm text-muted-foreground">
-								{quiz.total_questions} câu hỏi trắc nghiệm
-							</p>
-						</CardHeader>
-					</Card>
-				))}
+				{quizzes
+					.filter((quiz) => quiz.slug !== "random-quiz")
+					.map((quiz) => (
+						<Card
+							key={quiz.id}
+							className="hover:ring-2 hover:ring-primary cursor-pointer transition-all"
+							onClick={() => router.push(`/quizz/${quiz.slug}`)}
+						>
+							<CardHeader>
+								<CardTitle className="text-lg">{quiz.title}</CardTitle>
+								<p className="text-sm text-muted-foreground">
+									{quiz.total_questions} câu hỏi trắc nghiệm
+								</p>
+							</CardHeader>
+						</Card>
+					))}
 			</div>
 		</div>
 	);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -9,8 +9,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { ChevronLeft, ChevronRight, CheckCircle2, Timer, AlertTriangle, Flag } from "lucide-react";
 import { shuffleArray } from "@/lib/quizData";
-import { useQuestions, useQuizSubmit, useSettings } from "@/hooks/useQuiz";
-import { Question as DBQuestion } from "@/lib/supabase";
+import { useAllQuestions, useQuizSubmit, useSettings } from "@/hooks/useQuiz";
+import { Question as DBQuestion, supabase } from "@/lib/supabase";
 import { useAuth } from "@/contexts/AuthContext";
 
 // Extended type for shuffled question
@@ -19,24 +19,22 @@ interface ShuffledQuestion extends DBQuestion {
 	shuffled_options: string[]; // shuffled option texts
 }
 
-export default function QuizTest() {
+export default function RandomQuizTest() {
 	const router = useRouter();
-	const params = useParams();
-	const slug = params.slug as string;
 	const { user, loading: authLoading } = useAuth();
 
 	const [currentIdx, setCurrentIdx] = useState(0);
 	const [answers, setAnswers] = useState<Record<number, number>>({});
 	const [shuffledQuestions, setShuffledQuestions] = useState<ShuffledQuestion[]>([]);
-	const [quizTitle, setQuizTitle] = useState("");
-	const [originalQuestions, setOriginalQuestions] = useState<DBQuestion[]>([]);
+	const [quizTitle] = useState("Đề thi ngẫu nhiên - 60 câu");
 	const hasInitialized = useRef(false);
-	const { questions, loading, error } = useQuestions(slug);
+	const { questions, loading, error } = useAllQuestions();
 	const { submitQuiz, submitting } = useQuizSubmit();
 	const { settings } = useSettings(user?.id);
 	const [showAnswerMode, setShowAnswerMode] = useState<"instant" | "end">("end");
 	const [timerEnabled, setTimerEnabled] = useState(false);
 	const [timeLeft, setTimeLeft] = useState(0);
+	const [initialTime, setInitialTime] = useState(0);
 	const [showExitDialog, setShowExitDialog] = useState(false);
 	const [flaggedQuestions, setFlaggedQuestions] = useState<Set<number>>(new Set());
 
@@ -51,30 +49,18 @@ export default function QuizTest() {
 		if (!questions || questions.length === 0 || hasInitialized.current) return;
 
 		hasInitialized.current = true;
-		setOriginalQuestions(questions);
 
-		// Check if user selected specific number of questions
-		const selectedCount = sessionStorage.getItem(`quiz_${slug}_count`);
-		const questionCount = selectedCount ? parseInt(selectedCount) : questions.length;
+		// Get random 60 questions from all available questions
+		const randomMode = sessionStorage.getItem("random_quiz_mode");
+		const questionCount = randomMode ? parseInt(randomMode) : 60;
 
-		// Get random subset if user selected fewer questions
-		const questionsToUse =
-			questionCount < questions.length ? shuffleArray([...questions]).slice(0, questionCount) : questions;
+		// Clear the mode after using it
+		sessionStorage.removeItem("random_quiz_mode");
 
-		// Save the actual selected count for retry
-		sessionStorage.setItem(`quiz_${slug}_selected_count`, String(questionCount));
+		// Shuffle all questions and take only the required count
+		const selectedQuestions = shuffleArray([...questions]).slice(0, Math.min(questionCount, questions.length));
 
-		// Clear the count after using it
-		if (selectedCount) {
-			sessionStorage.removeItem(`quiz_${slug}_count`);
-		}
-
-		// Shuffle questions if enabled in settings
-		const shuffleEnabled = settings?.shuffle_questions ?? true;
-
-		// Shuffle questions if enabled, otherwise keep original order
-		const orderedQuestions = shuffleEnabled ? shuffleArray(questionsToUse) : questionsToUse;
-		const shuffled = orderedQuestions.map((q) => {
+		const shuffled = selectedQuestions.map((q) => {
 			// Get option texts in original order
 			const optionTexts = q.options.map((opt) => opt.option_text);
 
@@ -89,19 +75,18 @@ export default function QuizTest() {
 		});
 
 		setShuffledQuestions(shuffled);
-		if (questions[0]?.quiz) {
-			setQuizTitle(questions[0].quiz.title);
-		}
 
 		// Load settings from useSettings hook
 		if (settings) {
 			setShowAnswerMode(settings.show_answer_mode);
 			setTimerEnabled(settings.timer_enabled);
 			if (settings.timer_enabled) {
-				setTimeLeft(settings.timer_minutes * 60);
+				const timeInSeconds = settings.timer_minutes * 60;
+				setTimeLeft(timeInSeconds);
+				setInitialTime(timeInSeconds);
 			}
 		}
-	}, [questions, slug, settings]);
+	}, [questions, settings]);
 
 	useEffect(() => {
 		const handleBeforeUnload = (e: BeforeUnloadEvent) => {
@@ -119,13 +104,10 @@ export default function QuizTest() {
 
 	// Prevent browser back button
 	useEffect(() => {
-		// Push a state to history when component mounts
 		window.history.pushState(null, "", window.location.href);
 
 		const handlePopState = () => {
-			// Push the state again to prevent going back
 			window.history.pushState(null, "", window.location.href);
-			// Show exit dialog instead
 			setShowExitDialog(true);
 		};
 
@@ -143,7 +125,6 @@ export default function QuizTest() {
 		const interval = setInterval(() => {
 			setTimeLeft((prev) => {
 				if (prev <= 1) {
-					// Auto submit when time is up
 					handleSubmit();
 					return 0;
 				}
@@ -156,35 +137,53 @@ export default function QuizTest() {
 	}, [timerEnabled, timeLeft]);
 
 	const handleSubmit = async () => {
-		if (!shuffledQuestions.length || !originalQuestions.length) return;
+		if (!shuffledQuestions.length) return;
+
+		// Calculate time taken
+		const timeTaken = timerEnabled ? initialTime - timeLeft : undefined;
 
 		// Save answers to sessionStorage for result page
-		sessionStorage.setItem(`quiz_${slug}_answers`, JSON.stringify(answers));
-		sessionStorage.setItem(`quiz_${slug}_shuffled`, JSON.stringify(shuffledQuestions));
-		sessionStorage.setItem(`quiz_${slug}_title`, quizTitle);
+		sessionStorage.setItem(`quiz_random_answers`, JSON.stringify(answers));
+		sessionStorage.setItem(`quiz_random_shuffled`, JSON.stringify(shuffledQuestions));
+		sessionStorage.setItem(`quiz_random_title`, quizTitle);
 
-		// Save to database
-		const quizId = shuffledQuestions[0]?.quiz_id;
-		if (quizId && user) {
-			const userAnswers = Object.entries(answers).map(([idx, selectedOption]) => {
-				const questionIdx = parseInt(idx);
-				const shuffledQ = shuffledQuestions[questionIdx];
+		// Save to database if user is logged in
+		if (user) {
+			try {
+				// First, get the random-quiz from database
+				const { data: quiz, error: quizError } = await supabase
+					.from("quizzes")
+					.select("id")
+					.eq("slug", "random-quiz")
+					.single();
 
-				// Map shuffled option index back to original option
-				const selectedText = shuffledQ.shuffled_options[selectedOption];
-				const originalOption = shuffledQ.options.find((opt) => opt.option_text === selectedText);
+				if (quizError) {
+					console.error("Error fetching random quiz:", quizError);
+				} else if (quiz) {
+					const userAnswers = Object.entries(answers).map(([idx, selectedOption]) => {
+						const questionIdx = parseInt(idx);
+						const shuffledQ = shuffledQuestions[questionIdx];
 
-				return {
-					questionId: shuffledQ.id,
-					selectedOptionId: originalOption?.id || "",
-					isCorrect: originalOption?.is_correct || false,
-				};
-			});
+						// Map shuffled option index back to original option
+						const selectedText = shuffledQ.shuffled_options[selectedOption];
+						const originalOption = shuffledQ.options.find((opt) => opt.option_text === selectedText);
 
-			await submitQuiz(quizId, userAnswers, timeLeft, user.id);
+						return {
+							questionId: shuffledQ.id,
+							selectedOptionId: originalOption?.id || "",
+							isCorrect: originalOption?.is_correct || false,
+						};
+					});
+
+					const result = await submitQuiz(quiz.id, userAnswers, timeTaken, user.id);
+					console.log("Quiz submitted:", result);
+				}
+			} catch (error) {
+				console.error("Error submitting quiz:", error);
+			}
 		}
 
-		router.push(`/quizz/${slug}/result`);
+		router.push(`/quizz/random-quiz/result`);
 	};
 
 	const handleExit = () => {
@@ -192,8 +191,8 @@ export default function QuizTest() {
 	};
 
 	const confirmExit = () => {
-		sessionStorage.removeItem(`quiz_${slug}_answers`);
-		sessionStorage.removeItem(`quiz_${slug}_shuffled`);
+		sessionStorage.removeItem(`quiz_random_answers`);
+		sessionStorage.removeItem(`quiz_random_shuffled`);
 		router.push("/quizz");
 	};
 
@@ -216,7 +215,7 @@ export default function QuizTest() {
 	}
 
 	if (!user) {
-		return null; // Will redirect in useEffect
+		return null;
 	}
 
 	if (error) {
@@ -293,6 +292,7 @@ export default function QuizTest() {
 						)}
 					</div>
 				</header>
+
 				<div className="flex flex-col">
 					<span className="px-3 py-1 rounded-full text-sm font-bold min-w-20 text-right">
 						{currentIdx + 1} / {shuffledQuestions.length}
@@ -331,7 +331,7 @@ export default function QuizTest() {
 				<Card className="shadow-xl min-h-[400px] flex flex-col">
 					<CardHeader>
 						<div className="flex items-start justify-between gap-4">
-							<CardTitle className="text-lg leading-relaxed text-slate-800 flex-1">
+							<CardTitle className="text-xl leading-relaxed text-slate-800 flex-1">
 								{q.question_text}
 							</CardTitle>
 							<Button
@@ -383,7 +383,7 @@ export default function QuizTest() {
 											className="flex-1 cursor-pointer font-medium text-base leading-6 justify-between"
 										>
 											<div>
-												<span className="inline-block w-8 h-8 rounded-full text-center leading-8 mr-3 transition-colors">
+												<span className="inline-block w-8 h-8 rounded-full text-center leading-8 transition-colors">
 													{String.fromCharCode(65 + i) + "."}
 												</span>
 												{opt}
